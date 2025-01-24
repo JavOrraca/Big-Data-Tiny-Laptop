@@ -1,0 +1,324 @@
+---
+format: 
+  revealjs:
+    embed-resources: false
+eval: false
+---
+
+## {background-image="Big_Data_Tiny_Laptop.png" background-size="contain"}
+
+# About Javier {background-color="#119BFE"}
+
+## About Javier
+
+<br>
+
+:::: {layout="[[1,1], [1]]"}
+
+::: {#finance}
+::: {style="text-align: center"}
+```{mermaid}
+%%| eval: true
+---
+config:
+  look: handDrawn
+---
+
+flowchart LR
+  id[Financial Modeling]
+
+  classDef yellowdrawn fill:#FFC600,stroke:#612200,color:#000000;
+  class id yellowdrawn;
+```
+
+:::
+:::
+
+::: {#datascience}
+::: {style="text-align: center"}
+```{mermaid}
+%%| eval: true
+---
+config:
+  look: handDrawn
+---
+
+flowchart LR
+  id2[Data Science]
+
+  classDef bluedrawn fill:#86ccfe,stroke:#612200,color:#000000;
+  class id2 bluedrawn;
+```
+
+:::
+:::
+
+::: {#career}
+::: {style="text-align: center"}
+```{mermaid}
+%%| eval: true
+---
+config:
+  look: handDrawn
+---
+
+flowchart LR
+  A[EY] --> B[PG&E]
+  B --> C[KPMG]
+  C --> D((Grad School))
+  D --> E[Centene]
+  E --> F[Bloomreach]
+  F --> G[Centene]
+
+  classDef whitedrawn fill:#ffffff,stroke:#612200,color:#000000;
+  class A,B,C,D,E,F,G whitedrawn;
+```
+
+:::
+:::
+
+::::
+
+## About Javier
+
+<br>
+
+:::: {layout="[[1,1], [1]]"}
+
+::: {#finance}
+::: {style="text-align: center"}
+```{mermaid}
+%%| eval: true
+---
+config:
+  look: handDrawn
+---
+
+flowchart LR
+  id[Financial Modeling]
+
+  classDef yellowdrawn fill:#FFC600,stroke:#612200,color:#000000;
+  class id yellowdrawn;
+```
+
+:::
+:::
+
+::: {#datascience}
+::: {style="text-align: center"}
+```{mermaid}
+%%| eval: true
+---
+config:
+  look: handDrawn
+---
+
+flowchart LR
+  id2[Data Science]
+
+  classDef bluedrawn fill:#86ccfe,stroke:#612200,color:#000000;
+  class id2 bluedrawn;
+```
+
+:::
+:::
+
+::: {#career}
+::: {style="text-align: center"}
+```{mermaid}
+%%| eval: true
+---
+config:
+  look: handDrawn
+---
+
+flowchart LR
+  A[EY] --> B[PG&E]
+  B --> C[KPMG]
+  C --> D((Grad School))
+  D --> E[Centene]
+  E --> F[Bloomreach]
+  F --> G[Centene]
+
+  classDef yellowdrawn fill:#fee179,stroke:#612200,color:#000000;
+  classDef whitedrawn fill:#ffffff,stroke:#612200,color:#000000;
+  class A,B,C yellowdrawn;
+  class D,E,F,G whitedrawn;
+```
+
+:::
+:::
+
+::::
+
+## About Javier
+
+<br>
+
+:::: {layout="[[1,1], [1]]"}
+
+::: {#finance}
+::: {style="text-align: center"}
+```{mermaid}
+%%| eval: true
+---
+config:
+  look: handDrawn
+---
+
+flowchart LR
+  id[Financial Modeling]
+
+  classDef yellowdrawn fill:#FFC600,stroke:#612200,color:#000000;
+  class id yellowdrawn;
+```
+
+:::
+:::
+
+::: {#datascience}
+::: {style="text-align: center"}
+```{mermaid}
+%%| eval: true
+---
+config:
+  look: handDrawn
+---
+
+flowchart LR
+  id2[Data Science]
+
+  classDef bluedrawn fill:#86ccfe,stroke:#612200,color:#000000;
+  class id2 bluedrawn;
+```
+
+:::
+:::
+
+::: {#career}
+::: {style="text-align: center"}
+```{mermaid}
+%%| eval: true
+---
+config:
+  look: handDrawn
+---
+
+flowchart LR
+  A[EY] --> B[PG&E]
+  B --> C[KPMG]
+  C --> D((Grad School))
+  D --> E[Centene]
+  E --> F[Bloomreach]
+  F --> G[Centene]
+
+  classDef yellowdrawn fill:#fee179,stroke:#612200,color:#000000;
+  classDef bluedrawn fill:#b7dffc,stroke:#612200,color:#000000;
+  classDef whitedrawn fill:#ffffff,stroke:#612200,color:#000000;
+  class A,B,C yellowdrawn;
+  class D whitedrawn;
+  class E,F,G bluedrawn;
+```
+
+:::
+:::
+
+::::
+
+## About Javier
+
+<br>
+
+:::: {layout="[[1,1], [1], [1]]"}
+
+::: {#finance}
+::: {style="text-align: center"}
+```{mermaid}
+%%| eval: true
+---
+config:
+  look: handDrawn
+---
+
+flowchart LR
+  id[Financial Modeling]
+
+  classDef yellowdrawn fill:#FFC600,stroke:#612200,color:#000000;
+  class id yellowdrawn;
+```
+
+:::
+:::
+
+::: {#datascience}
+::: {style="text-align: center"}
+```{mermaid}
+%%| eval: true
+---
+config:
+  look: handDrawn
+---
+
+flowchart LR
+  id2[Data Science]
+
+  classDef bluedrawn fill:#86ccfe,stroke:#612200,color:#000000;
+  class id2 bluedrawn;
+```
+
+:::
+:::
+
+::: {#career}
+::: {style="text-align: center"}
+```{mermaid}
+%%| eval: true
+---
+config:
+  look: handDrawn
+---
+
+flowchart LR
+  A[EY] --> B[PG&E]
+  B --> C[KPMG]
+  C --> D((Grad School))
+  D --> E[Centene]
+  E --> F[Bloomreach]
+  F --> G[Centene]
+
+  classDef yellowdrawn fill:#fee179,stroke:#612200,color:#000000;
+  classDef bluedrawn fill:#b7dffc,stroke:#612200,color:#000000;
+  classDef whitedrawn fill:#ffffff,stroke:#612200,color:#000000;
+  class A,B,C yellowdrawn;
+  class D whitedrawn;
+  class E,F,G bluedrawn;
+```
+
+:::
+:::
+
+::: {#skills}
+::: {style="text-align: center"}
+```{mermaid}
+%%| eval: true
+---
+config:
+  look: handDrawn
+---
+
+flowchart LR
+  A[Excel, Access, SQL] --> B[Communication]
+  B --> C[Management]
+  C --> D[R/Python]
+  D --> E[ML/AI and MLOps]
+
+  classDef yellowdrawn fill:#fee179,stroke:#612200,color:#000000;
+  classDef bluedrawn fill:#b7dffc,stroke:#612200,color:#000000;
+  class A,B,C yellowdrawn;
+  class D,E bluedrawn;
+```
+
+:::
+:::
+
+::::

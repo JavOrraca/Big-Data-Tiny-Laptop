@@ -1,0 +1,35 @@
+color:
+  palette:
+    lightgrey: "#F4F2F2"
+    blue: "#119BFE"
+    peach: "#FF6B4D"
+    lightpeach: "#FFDDD6"
+    yellow: "#FFC600"
+  background: lightgrey
+  # foreground: dark-grey
+  primary: peach
+
+typography:
+  fonts:
+    - family: Rubik
+      source: google
+    - family: Space Mono
+      source: google
+  base: Rubik
+  headings: 
+    family: Rubik
+    weight: 400
+  link:
+    color: peach
+    decoration: underline
+  monospace: Space Mono
+  monospace-inline:
+    color: peach
+    background-color: lightpeach
+  
+meta:
+  name: Javier Orraca-Deatcu
+  link:
+    home: https://www.javierorracadeatcu.com/
+    linkedin: https://www.linkedin.com/in/orraca
+    github: https://github.com/JavOrraca
