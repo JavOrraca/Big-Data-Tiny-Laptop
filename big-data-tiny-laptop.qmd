@@ -2,14 +2,17 @@
 format: 
   revealjs:
     embed-resources: false
+    theme: [brand, styling.scss]
+    width: 1280
+    height: 720
 eval: false
 ---
 
-## {background-image="Big_Data_Tiny_Laptop.png" background-size="contain"}
+## {background-image="Big_Data_Tiny_Laptop.png" background-size="contain" background-color='{{< brand color lightgrey >}}'}
 
-# About Javier {background-color="#119BFE"}
+# Hi, I'm Javier {background-color='{{< brand color blue >}}'}
 
-## About Javier
+## Career & Skills Progression
 
 <br>
 
@@ -25,10 +28,10 @@ config:
 ---
 
 flowchart LR
-  id[Financial Modeling]
+  id[****FINANCIAL MODELING****]
 
-  classDef yellowdrawn fill:#FFC600,stroke:#612200,color:#000000;
-  class id yellowdrawn;
+  classDef bluedrawn fill:#c0e5fe,stroke:#612200,color:#000000;
+  class id bluedrawn;
 ```
 
 :::
@@ -44,10 +47,10 @@ config:
 ---
 
 flowchart LR
-  id2[Data Science]
+  id2[****DATA SCIENCE****]
 
-  classDef bluedrawn fill:#86ccfe,stroke:#612200,color:#000000;
-  class id2 bluedrawn;
+  classDef peachdrawn fill:#ffddd6,stroke:#612200,color:#000000;
+  class id2 peachdrawn;
 ```
 
 :::
@@ -65,7 +68,7 @@ config:
 flowchart LR
   A[EY] --> B[PG&E]
   B --> C[KPMG]
-  C --> D((Grad School))
+  C --> D{UCI's<br>MSBA<br>Program}
   D --> E[Centene]
   E --> F[Bloomreach]
   F --> G[Centene]
@@ -79,7 +82,11 @@ flowchart LR
 
 ::::
 
-## About Javier
+::: footer
+Personal Site: <https://www.javierorracadeatcu.com> | LinkedIn: <https://www.linkedin.com/in/orraca>
+:::
+
+## Career & Skills Progression
 
 <br>
 
@@ -95,10 +102,10 @@ config:
 ---
 
 flowchart LR
-  id[Financial Modeling]
+  id[**FINANCIAL MODELING**]
 
-  classDef yellowdrawn fill:#FFC600,stroke:#612200,color:#000000;
-  class id yellowdrawn;
+  classDef bluedrawn fill:#c0e5fe,stroke:#612200,color:#000000;
+  class id bluedrawn;
 ```
 
 :::
@@ -114,10 +121,10 @@ config:
 ---
 
 flowchart LR
-  id2[Data Science]
+  id2[**DATA SCIENCE**]
 
-  classDef bluedrawn fill:#86ccfe,stroke:#612200,color:#000000;
-  class id2 bluedrawn;
+  classDef peachdrawn fill:#ffddd6,stroke:#612200,color:#000000;
+  class id2 peachdrawn;
 ```
 
 :::
@@ -135,14 +142,14 @@ config:
 flowchart LR
   A[EY] --> B[PG&E]
   B --> C[KPMG]
-  C --> D((Grad School))
+  C --> D{UCI's<br>MSBA<br>Program}
   D --> E[Centene]
   E --> F[Bloomreach]
   F --> G[Centene]
 
-  classDef yellowdrawn fill:#fee179,stroke:#612200,color:#000000;
+  classDef bluedrawn fill:#c0e5fe,stroke:#612200,color:#000000;
   classDef whitedrawn fill:#ffffff,stroke:#612200,color:#000000;
-  class A,B,C yellowdrawn;
+  class A,B,C bluedrawn;
   class D,E,F,G whitedrawn;
 ```
 
@@ -151,7 +158,11 @@ flowchart LR
 
 ::::
 
-## About Javier
+::: footer
+Personal Site: <https://www.javierorracadeatcu.com> | LinkedIn: <https://www.linkedin.com/in/orraca>
+:::
+
+## Career & Skills Progression
 
 <br>
 
@@ -167,10 +178,10 @@ config:
 ---
 
 flowchart LR
-  id[Financial Modeling]
+  id[**FINANCIAL MODELING**]
 
-  classDef yellowdrawn fill:#FFC600,stroke:#612200,color:#000000;
-  class id yellowdrawn;
+  classDef bluedrawn fill:#c0e5fe,stroke:#612200,color:#000000;
+  class id bluedrawn;
 ```
 
 :::
@@ -186,10 +197,10 @@ config:
 ---
 
 flowchart LR
-  id2[Data Science]
+  id2[**DATA SCIENCE**]
 
-  classDef bluedrawn fill:#86ccfe,stroke:#612200,color:#000000;
-  class id2 bluedrawn;
+  classDef peachdrawn fill:#ffddd6,stroke:#612200,color:#000000;
+  class id2 peachdrawn;
 ```
 
 :::
@@ -207,17 +218,17 @@ config:
 flowchart LR
   A[EY] --> B[PG&E]
   B --> C[KPMG]
-  C --> D((Grad School))
+  C --> D{UCI's<br>MSBA<br>Program}
   D --> E[Centene]
   E --> F[Bloomreach]
   F --> G[Centene]
 
-  classDef yellowdrawn fill:#fee179,stroke:#612200,color:#000000;
-  classDef bluedrawn fill:#b7dffc,stroke:#612200,color:#000000;
+  classDef bluedrawn fill:#c0e5fe,stroke:#612200,color:#000000;
+  classDef peachdrawn fill:#ffddd6,stroke:#612200,color:#000000;
   classDef whitedrawn fill:#ffffff,stroke:#612200,color:#000000;
-  class A,B,C yellowdrawn;
+  class A,B,C bluedrawn;
   class D whitedrawn;
-  class E,F,G bluedrawn;
+  class E,F,G peachdrawn;
 ```
 
 :::
@@ -225,7 +236,11 @@ flowchart LR
 
 ::::
 
-## About Javier
+::: footer
+Personal Site: <https://www.javierorracadeatcu.com> | LinkedIn: <https://www.linkedin.com/in/orraca>
+:::
+
+## Career & Skills Progression
 
 <br>
 
@@ -241,10 +256,10 @@ config:
 ---
 
 flowchart LR
-  id[Financial Modeling]
+  id[**FINANCIAL MODELING**]
 
-  classDef yellowdrawn fill:#FFC600,stroke:#612200,color:#000000;
-  class id yellowdrawn;
+  classDef bluedrawn fill:#c0e5fe,stroke:#612200,color:#000000;
+  class id bluedrawn;
 ```
 
 :::
@@ -260,10 +275,10 @@ config:
 ---
 
 flowchart LR
-  id2[Data Science]
+  id2[**DATA SCIENCE**]
 
-  classDef bluedrawn fill:#86ccfe,stroke:#612200,color:#000000;
-  class id2 bluedrawn;
+  classDef peachdrawn fill:#ffddd6,stroke:#612200,color:#000000;
+  class id2 peachdrawn;
 ```
 
 :::
@@ -281,17 +296,17 @@ config:
 flowchart LR
   A[EY] --> B[PG&E]
   B --> C[KPMG]
-  C --> D((Grad School))
+  C --> D{UCI's<br>MSBA<br>Program}
   D --> E[Centene]
   E --> F[Bloomreach]
   F --> G[Centene]
-
-  classDef yellowdrawn fill:#fee179,stroke:#612200,color:#000000;
-  classDef bluedrawn fill:#b7dffc,stroke:#612200,color:#000000;
+  
+  classDef bluedrawn fill:#c0e5fe,stroke:#612200,color:#000000;
+  classDef peachdrawn fill:#ffddd6,stroke:#612200,color:#000000;
   classDef whitedrawn fill:#ffffff,stroke:#612200,color:#000000;
-  class A,B,C yellowdrawn;
+  class A,B,C bluedrawn;
   class D whitedrawn;
-  class E,F,G bluedrawn;
+  class E,F,G peachdrawn;
 ```
 
 :::
@@ -307,18 +322,885 @@ config:
 ---
 
 flowchart LR
-  A[Excel, Access, SQL] --> B[Communication]
-  B --> C[Management]
-  C --> D[R/Python]
-  D --> E[ML/AI and MLOps]
+  A[Excel, PowerPoint, Access, SQL] --> B{UCI's<br>MSBA<br>Program}
+  B --> C[Automating Manual Excel Work]
+  C --> D[Developing R Packages & Web Apps]
+  B --> E[Code-based Analytics]
+  E --> F[Machine Learning & AI]
+  F --> G[R, Linux, git, Posit tools, Databricks]
 
-  classDef yellowdrawn fill:#fee179,stroke:#612200,color:#000000;
-  classDef bluedrawn fill:#b7dffc,stroke:#612200,color:#000000;
-  class A,B,C yellowdrawn;
-  class D,E bluedrawn;
+  classDef bluedrawn fill:#c0e5fe,stroke:#612200,color:#000000;
+  classDef peachdrawn fill:#ffddd6,stroke:#612200,color:#000000;
+  classDef whitedrawn fill:#ffffff,stroke:#612200,color:#000000;
+  class A,C bluedrawn;
+  class D,E,F,G peachdrawn;
+  class B whitedrawn;
 ```
 
 :::
 :::
 
 ::::
+
+::: footer
+[Personal Site](https://www.javierorracadeatcu.com/): javierorracadeatcu.com | [LinkedIn](https://www.linkedin.com/in/orraca/): linkedin.com/in/orraca
+:::
+
+
+## Standing Out with Shiny
+
+<br>
+
+:::: {layout="[[100], [60,40]]"}
+
+::: {#shiny}
+::: {style="text-align: left"}
+
+- Shiny is a [code-based web app framework]{.fragment .highlight-red} for Python and R
+
+- *Easy-ish-ly* build web apps with no formal web dev experience
+
+:::
+:::
+
+::: {#shinyleft_text}
+::: {style="text-align: left"}
+
+- Use [reactive programming]{.fragment .highlight-red} that allows for dynamic, real-time updates to the app based on user input
+
+- Extend your Shiny apps with HTML widgets, [real-time data polling]{.fragment .highlight-red}, JavaScript, CSS, and more
+
+:::
+:::
+
+::: {#shinyright_image}
+::: {style="text-align: left"}
+
+![Image: © Analythium](images/shiny_structure.png){fig-align="left"}
+
+:::
+:::
+
+::::
+
+::: footer
+Learn more about [Shiny for Python](https://shiny.posit.co/py/) and [Shiny for R](https://shiny.posit.co/r/)
+:::
+
+
+## Shiny Demo as a Resume Accessory
+
+<br>
+
+- Most [corporate dashboards feel clunky]{.fragment .highlight-red}...
+
+- They're laggy, very boxy, e.g., Power BI, Tableau, MicroStrategy
+
+- Dashboards typically struggle with fast, real-time calculations, search, and data manipulation capabilities
+
+- [For hiring teams, you can use Shiny as a resume accessory]{.fragment .highlight-red} to demonstrate how easy it is to develop **and** deploy a web app styled with the company’s brand aesthetics
+
+::: footer
+Check out my blog post: [Impressing Hiring Teams with a Shiny App Demo (2023-03-28)](https://www.javierorracadeatcu.com/posts/2023-03-28-shiny-bslib-socal-rug/2023-03-28-shiny-bslib-socal-rug)
+:::
+
+
+## Shiny Demo as a Resume Accessory
+
+*Bloomreach's website:*
+
+![Image: © 2025 Bloomreach, Inc.](images/bloomreach_site.png){height="50%" width="50%" fig-align="center"}
+
+::: footer
+Check out my blog post: [Impressing Hiring Teams with a Shiny App Demo (2023-03-28)](https://www.javierorracadeatcu.com/posts/2023-03-28-shiny-bslib-socal-rug/2023-03-28-shiny-bslib-socal-rug)
+:::
+
+
+## Shiny Demo as a Resume Accessory
+
+*Javier's Shiny demo:*
+
+![](images/shiny_app_demo.gif){height="70%" width="70%" fig-align="center"}
+
+::: footer
+Launch this live Shiny app demo: <https://javierorraca.shinyapps.io/Bloomreach_Shiny_App>
+:::
+
+
+## My Professional Data Science Workflow
+
+<br>
+
+![](images/data_science_process.png){fig-align="center"}
+
+::: footer
+*R for Data Science, 2nd Edition* by Wickham, Çetinkaya-Rundel, & Grolemund | <https://r4ds.hadley.nz>
+:::
+
+
+## My Professional Data Science Toolkit
+
+<br>
+
+![Image: © Posit Software, PBC.](images/rstudio_ide.png){height="70%" width="70%" fig-align="center"}
+
+::: footer
+Learn more about the open-source RStudio IDE | <https://posit.co/products/open-source/rstudio>
+:::
+
+
+## My Professional Data Science Toolkit
+
+![Image: © Posit Software, PBC.](images/rstudio-panes-labeled.jpeg){height="55%" width="55%" fig-align="center"}
+
+::: footer
+RStudio User Guide | <https://docs.posit.co/ide/user/ide/get-started>
+:::
+
+
+## My Professional Data Science Toolkit
+
+![](images/connect_concept-map.png){height="75%" width="75%" fig-align="center"}
+
+::: footer
+Learn about Posit Professional Products & Solutions | <https://solutions.posit.co/get-started>
+:::
+
+
+## Typical Python Tools for Data Science
+
+![](images/vs_code.png){height="65%" width="65%" fig-align="center"}
+
+::: footer
+Learn about Microsoft's Virtual Studio Code ("VS Code") User Interface | <https://code.visualstudio.com/docs/getstarted/userinterface>
+:::
+
+
+## Typical Python Tools for Data Science {.center}
+
+![Image: © Ander Fernández Jauregui](images/jupyter_notebook.png){height="50%" width="50%"}
+
+::: footer
+Learn about Project Jupyter's Jupyter Notebook | <https://jupyter.org>
+:::
+
+
+## In Review
+
+<br>
+
+- RStudio IDE's "always on" panes welcomed R users seeking a data-analysis-first experience
+
+- [For Python users, RStudio felt too R-centric]{.fragment .highlight-red} and other tools worked *just fine* including VS Code, Jupyter Notebooks, PyCharm, etc.
+
+- There are many programming languages that can be used for data science, but [Python and R serve as the de facto standards]{.fragment .highlight-red}
+
+## {.center background-color='{{< brand color yellow >}}'}
+
+::: r-fit-text
+So, why isn't there
+:::
+
+## {.center background-color='{{< brand color yellow >}}'}
+
+::: r-fit-text
+*one tool*
+:::
+
+## {.center background-color='{{< brand color yellow >}}'}
+
+::: r-fit-text
+that blends the best<br>
+features from all IDEs?
+:::
+
+##
+
+<br>
+
+![](images/tobias.gif){height="60%" width="60%" fig-align="center"}
+
+::: footer
+Me, using RStudio while my teammates use VS Code, on any given Monday morning...
+:::
+
+# Introducing: Positron™ {background-color='{{< brand color blue >}}'}
+
+## About Positron
+
+- What is Positron? From Posit's getting started docs:
+
+> - A next-generation data science IDE built by Posit PBC
+> - An extensible, polyglot tool for writing code and exploring data
+> - A familiar environment for reproducible authoring and publishing
+
+- Positron is [a tailor-made IDE for data science]{.fragment .highlight-blue} built on top of [Code OSS](https://github.com/microsoft/vscode) that can be used with any combination of programming languages 
+
+::: footer
+Visit the new Positron website to learn more | <https://positron.posit.co/>
+:::
+
+
+## Positron... *It looks familiar!*
+
+![](images/positron.png){fig-align="center"}
+
+::: footer
+Visit the new Positron website to learn more | <https://positron.posit.co/>
+:::
+
+
+## VS Code OSS w/ RStudio panes!
+
+![](images/positron-panes.svg){fig-align="center"}
+
+::: footer
+Layout by Dr. Athanasia Mo Mowinckel | [Positron IDE - A new IDE for data science](https://drmowinckels.io/blog/2024/positron/)
+:::
+
+
+## Prerequisites {.smaller}
+
+<br>
+
+- **Windows** prereqs:
+  <br><br>
+  - Ensure the latest [Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#latest-microsoft-visual-c-redistributable-version) is installed
+  <br><br>
+  - If you're an R user package developer, note that Positron doesn't currently bundle `Rtools`.
+  <br><br>
+  - For reference, `RTools` contains the required compilers needed to build R packages from source code on Windows
+
+::: footer
+Getting Started with Positron | [Machine Prerequisites](https://positron.posit.co/start.html)
+:::
+
+
+## Prerequisites {.smaller}
+
+<br>
+
+- **Python** prereqs:
+  <br><br>
+  - The Posit team recommends [pyenv](https://github.com/pyenv/pyenv) to manage Python versions, and actively supported Python versions from 3.8 to 3.12 are fully supported on Positron
+  <br><br>
+  - For Linux users, install the SQLite system libraries (`sqlite-devel` or `libsqlite3-dev`) ahead of time so `pyenv` can build your Python version(s) of choice
+  <br><br>
+  - Positron communicates with Python via the `ipykernel`
+  <br><br>
+  - If you're using `venv` or `conda` to manage your Python projects, you can install `ipykernal` manually as follows: `python3 -m pip install ipykernel`
+
+::: footer
+Getting Started with Positron | [Machine Prerequisites](https://positron.posit.co/start.html)
+:::
+
+
+## Prerequisites {.smaller}
+
+<br>
+
+- **R** prereqs:
+  <br><br>
+  - Positron requires R 4.2 or higher - To install R, follow the instructions for your OS at <https://cloud.r-project.org>
+  <br><br>
+  - If you’d like to have multiple R installations, [rig](https://github.com/r-lib/rig) is a great tool that works on macOS, Windows and Linux, and works well with Positron
+
+::: footer
+Getting Started with Positron | [Machine Prerequisites](https://positron.posit.co/start.html)
+:::
+
+
+## Interpreter Selector {.smaller}
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="60%"}
+- When Positron starts for the first time in a new workspace (or project directory), it will start Python and/or R depending on your workspace characteristics
+<br><br>
+- In subsequent runs, [Positron will start the same interpreter(s) that was running the last time]{.fragment .highlight-blue} that you used that workspace
+<br><br>
+- You can start, stop, and switch interpreters from the interpreter selector
+:::
+
+::: {.column width="40%"}
+![](images/interpreter_selector.png){width="393px" height="330px" fig-align="center"}
+:::
+
+::::
+
+::: footer
+Getting Started with Positron | [Interpreter Selection](https://positron.posit.co/interpreters.html)
+:::
+
+
+## Global Keyboard Shortcuts {.smaller}
+
+<br>
+
+| Shortcut | Description |
+| -------- | ----------- |
+| <kbd>Cmd/Ctrl</kbd>+<kbd>Enter</kbd> | Run the selected code in the editor; if no code is selected, run the current statement | 
+| <kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>0</kbd> | Restart the interpreter currently open in the Console | 
+| <kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd> | Run the file open in the editor (using e.g. `source()` or `%run`) | 
+| <kbd>F1</kbd> | Show contextual help for the topic under the cursor |
+| <kbd>Cmd/Ctrl</kbd>+<kbd>K</kbd>, <kbd>Cmd/Ctrl</kbd>+<kbd>R</kbd> | Show contextual help for the topic under the cursor (alternate binding) |
+| <kbd>Cmd/Ctrl</kbd>+<kbd>K</kbd>, <kbd>F</kbd> | Focus the Console |
+| <kbd>Ctrl</kbd>+<kbd>L</kbd> | Clear the Console |
+
+::: footer
+Positron docs | [Keyboard Shortcuts](https://positron.posit.co/keyboard-shortcuts.html)
+:::
+
+
+## R Keyboard Shortcuts {.smaller}
+
+<br>
+
+| Shortcut | Description |
+| -------- | ----------- |
+| <kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>M</kbd> | Insert the pipe operator | 
+| <kbd>Alt</kbd>+<kbd>-</kbd> | Insert the assignment operator (`<-`) |
+| <kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>L</kbd> | Load the current R package, if any | 
+| <kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> | Build and install the current R package, if any | 
+| <kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd> | Test the current R package, if any | 
+| <kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd> | Check the current R package, if any | 
+| <kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>D</kbd> | Document the current R package, if any | 
+
+::: footer
+Positron docs | [Keyboard Shortcuts](https://positron.posit.co/keyboard-shortcuts.html)
+:::
+
+
+## RStudio Keymap {.smaller}
+
+<br>
+
+If you're an experienced RStudio user, you can [easily set the RStudio keybindings]{.fragment .highlight-blue} in the Positron settings:
+
+- Open Positron's settings in the UI or the keystroke <kbd>Cmd/Ctrl</kbd>+<kbd>,</kbd>
+- Search for "keymap", or navigate to *Extensions > RStudio Keymap*
+- Check the "Enable RStudio key mappings for Positron" checkbox
+
+::: footer
+Positron docs | [Keyboard Shortcuts](https://positron.posit.co/keyboard-shortcuts.html)
+:::
+
+
+## Data Explorer Overview {.smaller}
+
+<br>
+
+- The new [Data Explorer allows for interactive exploration]{.fragment .highlight-blue} of various types of dataframes using Python (`pandas`, `polars`) or R (`data.frame`, `tibble`, `data.table`, `polars`)
+<br><br>
+- Navigate to the Variables Pane and click on the Data Explorer icon:
+
+![](images/data-explorer-variables.png){width="70%" height="70%" fig-align="center"}
+
+::: footer
+Positron docs | [Data Explorer](https://positron.posit.co/data-explorer.html)
+:::
+
+
+## Data Explorer Overview {.smaller}
+
+<br>
+
+- The Data Explorer has three primary components
+  - **Data grid**: Spreadsheet-like display of the data with sorting
+  - **Summary panel**: Column name, type and missing data percentage for each column
+  - **Filter bar**: Ephemeral filters for specific columns
+
+::: footer
+Positron docs | [Data Explorer](https://positron.posit.co/data-explorer.html)
+:::
+
+
+## Data Explorer Overview
+
+![](images/data-explorer.png){width="80%" height="80%" fig-align="center"}
+
+::: footer
+Positron docs | [Data Explorer](https://positron.posit.co/data-explorer.html)
+:::
+
+
+## Data Explorer's *Data Grid* {.smaller}
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="60%"}
+- The data grid is the primary display and [scales efficiently]{.fragment .highlight-blue} with large in-memory datasets up to millions of rows or columns
+<br><br>
+- At the top right of each column, there is a context menu to [control sorting or add a filter]{.fragment .highlight-blue} for the selected column
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="35%"}
+![](images/data-grid-menu.png){fig-align="center"}
+:::
+
+::::
+
+::: footer
+Positron docs | [Data Explorer](https://positron.posit.co/data-explorer.html)
+:::
+
+
+## Data Explorer's *Summary Panel* {.smaller}
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="60%"}
+- Displays a vertical scrolling list of all columns in the data
+<br><br>
+- It [displays a sparkline histogram of that column’s data]{.fragment .highlight-blue}, displays the amount of missing data, and shows some summary statistics about that column
+<br><br>
+- Double clicking on a column name will bring the column into focus in the data grid
+:::
+
+::: {.column width="40%"}
+![](images/data-explorer-summary-panel.png){fig-align="center"}
+:::
+
+::::
+
+::: footer
+Positron docs | [Data Explorer](https://positron.posit.co/data-explorer.html)
+:::
+
+
+## Data Explorer's *Filter Bar* {.smaller}
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="40%"}
+- The filter bar has controls to add filters, show/hide existing filters, or clear filters
+<br><br>
+- Clicking the <kbd>+</kbd> button quickly adds a new filter
+<br><br>
+- The status bar at the bottom of the Data Explorer also displays the percentage and number of remaining rows relative to the original total after applying a filter
+:::
+
+::: {.column width="60%"}
+![](images/data-explorer-filter-ui.png){fig-align="center"}
+:::
+
+::::
+
+::: footer
+Positron docs | [Data Explorer](https://positron.posit.co/data-explorer.html)
+:::
+
+
+## Connections Pane {.smaller}
+
+:::: {.columns}
+
+::: {.column width="35%"}
+<br>
+- [Explore database connections]{.fragment .highlight-blue} established with ODBC drivers or packages
+<br><br>
+- For Python users, the `sqlite3` and `SQLAlchemy` packages are supported
+<br><br>
+- For R users, the `odbc`, `sparklyr`, `bigrquery`, and more packages are supported
+:::
+
+::: {.column width="65%"}
+![](images/connections-pane.png){fig-align="center"}
+:::
+
+::::
+
+::: footer
+Positron docs | [Connections Pane](https://positron.posit.co/connections-pane.html)
+:::
+
+
+## Interactive Apps {.smaller}
+
+:::: {.columns}
+
+::: {.column width="35%"}
+<br>
+- Instead of running apps from a Terminal, Positron lets you run supported apps by clicking the <kbd>Play</kbd> button in Editor Actions
+<br><br>
+- [Supported apps include the following: Shiny, Dash, FastAPI, Flask, Gradio, and Streamlit]{.fragment .highlight-blue}
+<br><br>
+- You can also start apps in Debug mode
+:::
+
+::: {.column width="65%"}
+![](images/run-app-button.png){fig-align="center"}
+:::
+
+::::
+
+::: footer
+Positron docs | [Run Interactive Apps](https://positron.posit.co/run-interactive-apps.html)
+:::
+
+## {.center background-color='{{< brand color peach >}}'}
+
+::: r-fit-text
+So, lesson learned...<br>
+Positron = Amazing.
+:::
+
+## {.center background-color='{{< brand color peach >}}'}
+
+::: r-fit-text
+But next,
+:::
+
+## {.center background-color='{{< brand color peach >}}'}
+
+::: r-fit-text
+let's talk about
+:::
+
+## {.center background-color='{{< brand color peach >}}'}
+
+::: r-fit-text
+ULTRA
+:::
+
+## {.center background-color='{{< brand color peach >}}'}
+
+::: r-fit-text
+FAST
+:::
+
+## {.center background-color='{{< brand color peach >}}'}
+
+::: r-fit-text
+ETL 💨
+:::
+
+## {.center background-color='{{< brand color peach >}}'}
+
+![](images/jake_the_dog.gif){fig-align="center"}
+
+# Ultra Fast ETL with Apache Arrow, DuckDB, and Polars {background-color='{{< brand color blue >}}'}
+
+## Apache Arrow
+
+### Larger-than-Memory Data
+
+<br>
+
+![](images/apache_arrow.png)
+
+::: footer
+Arrow | Learn more at <https://arrow.apache.org/>
+:::
+
+## Arrow and Parquet
+
+-   Columnar memory format for flat data
+-   Ultra-fast read times from Parquet files
+-   Easily convert data.frames and tibbles to Arrow tables in-line
+-   Plays well with Pandas (Python) and dplyr (R)
+-   Arrow will soon be able to process nested list data
+
+::: footer
+Arrow | Learn more at <https://arrow.apache.org/>
+:::
+
+## How fast is fast?
+
+-   My personal laptop has 24 GB RAM
+-   To test Arrow's capabilities, I read a [40 GB dataset]{.fragment .highlight-blue} with over [1.1 billion rows]{.fragment .highlight-blue} and 24 columns
+-   The `.parquet` dataset was partitioned by Year and Month (120 files)
+-   Important to note that my laptop would not be able to load this object entirely into memory as a data.frame or tibble given my laptop's limited RAM
+
+::: footer
+Arrow | Learn more at <https://arrow.apache.org/>
+:::
+
+## Installing Arrow
+
+<br>
+
+To install Arrow with AWS S3 and GCS support:
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="49%"}
+
+*Python*
+
+```{python}
+#| eval: false
+#| echo: true
+
+# Set required env vars
+import os
+os.environ["LIBARROW_MINIMAL"] = "FALSE"
+os.environ["ARROW_S3"] = "ON"
+os.environ["ARROW_GCS"] = "ON"
+
+# Install PyArrow
+!pip install pyarrow
+```
+
+:::
+
+::: {.column width="2%"}
+:::
+
+::: {.column width="49%"}
+
+*R*
+
+```{r}
+#| eval: false
+#| echo: true
+
+# Set required env vars
+Sys.setenv(LIBARROW_MINIMAL = "false")
+Sys.setenv(ARROW_S3 = "ON")
+Sys.setenv(ARROW_GCS = "ON")
+
+# Download & Install Arrow
+install.packages('arrow', repos = 'https://apache.r-universe.dev')
+```
+:::
+
+::::
+
+
+## Reading the Parquet Data
+
+```{r}
+#| eval: false
+#| echo: true
+
+library(here)
+library(arrow)
+library(dplyr)
+library(ggplot2)
+library(bench)
+
+# NYC Taxi Data download (40 GB)
+data_path <- here::here("data/nyc-taxi")
+
+open_dataset("s3://voltrondata-labs-datasets/nyc-taxi") |>
+  filter(year %in% 2012:2021) |> 
+  write_dataset(data_path, partitioning = c("year", "month"))
+
+```
+
+::: footer
+Arrow | Learn more at <https://arrow.apache.org/>
+:::
+
+## Benchmarking Read Times
+
+```{r}
+#| eval: false
+#| echo: true
+
+# 2. Benchmark Read Times
+bnch <- bench::mark(
+  min_iterations = 1000,
+  arrow = open_dataset(here::here("data/nyc-taxi"))
+)
+
+autoplot(bnch)
+```
+
+::: footer
+Arrow | Learn more at <https://arrow.apache.org/>
+:::
+
+## Benchmarking Read Times
+
+-   Results show read times from a 40GB parquet, 1.1 billion row dataset (benchmarked over 1,000 iterations)
+
+![](images/arrow_read.png){width="55%" fig-align="center"}
+
+::: footer
+Arrow | Learn more at <https://arrow.apache.org/>
+:::
+
+## arrow + dplyr Benchmark
+
+```{r}
+#| eval: false
+#| echo: true
+
+# 1. Open Arrow connection to dataset (40 GB)
+nyc_taxi <- open_dataset(here::here("data/nyc-taxi"))
+
+# 2. Benchmark dplyr pipeline
+bnch <- bench::mark(
+  min_iterations = 10,
+  arrow = nyc_taxi |> 
+    dplyr::group_by(year) |> 
+    dplyr::summarise(all_trips = n(),
+                     shared_trips = sum(passenger_count > 1, na.rm = T)) |>
+    dplyr::mutate(pct_shared = shared_trips / all_trips * 100) |> 
+    dplyr::collect()
+)
+
+autoplot(bnch)
+```
+
+::: footer
+Arrow | [Arrow + dplyr compatibility](https://r4ds.hadley.nz/arrow.html)
+:::
+
+## arrow + dplyr Benchmark
+
+-   Arrow + dplyr summarized 1.1 billion rows in less than 5s (benchmarked over 10 iterations) to a 10 x 4 tibble
+
+![](images/arrow_group_by.png){width="55%" fig-align="center"}
+
+::: footer
+Arrow | [Arrow + dplyr compatibility](https://r4ds.hadley.nz/arrow.html)
+:::
+
+## Tidyverse Compatibility
+
+-  Many functions from the tidyverse collections of packages have 1:1 compatibility with Arrow tables
+-  However, sometimes you'll encounter a breaking point
+-  Take this `stringr::str_replace_na()` example:
+
+```{r}
+#| echo: true
+#| code-line-numbers: "1-4|3-4"
+nyc_taxi |> 
+  mutate(vendor_name = str_replace_na(vendor_name, "No vendor"))
+#> Error: Expression str_replace_na(vendor_name, "No vendor") 
+#> not supported in Arrow
+```
+
+. . .
+
+-   This `stringr` function is not supported by Arrow
+
+::: footer
+Arrow | [Arrow + dplyr compatibility](https://r4ds.hadley.nz/arrow.html)
+:::
+
+##
+
+![](images/crying_cat.gif){fig-align="center"}
+
+## {.center}
+
+::: r-fit-text
+but wait!
+:::
+
+::: r-fit-text
+problem solved
+:::
+
+## User Defined Functions
+
+-   Lucky for us, Arrow allows us to create and register ***User Defined Functions ("UDFs")*** to the Arrow engine
+-   Almost any function can be made compatible with Arrow by registering custom UDFs
+-   Let's learn how to register `str_replace_na()` with the Arrow kernel
+
+::: footer
+Arrow | Learn more about registering Arrow [User Defined Functions ("UDFs")](https://arrow.apache.org/docs/r/reference/register_scalar_function.html)
+:::
+
+## Registering UDFs
+
+-   First, run `arrow::schema()` on your Arrow table to review the field name / data type pairs
+-   Since I want to mutate the `vendor_name` field, I know I'll be working with an Arrow `string()` data type
+
+```{r}
+#| echo: true
+#| code-line-numbers: "1-10|3"
+arrow::schema(nyc_taxi)
+#> Schema
+#> vendor_name: string
+#> pickup_datetime: timestamp[ms]
+#> dropoff_datetime: timestamp[ms]
+#> passenger_count: int64
+#> trip_distance: double
+#> pickup_longitude: double
+#> pickup_latitude: double
+#> ...
+```
+
+::: footer
+Arrow | Learn more about registering Arrow [User Defined Functions ("UDFs")](https://arrow.apache.org/docs/r/reference/register_scalar_function.html)
+:::
+
+## Registering UDFs
+
+-   Next, use `register_scalar_function()`
+-   Name your UDF "replace_arrow_nas" and remember to set `auto_convert = TRUE`
+
+```{r}
+#| echo: true
+#| code-line-numbers: "1-13|3-4|3-4,12"
+arrow::register_scalar_function(
+  name = "replace_arrow_nas",
+  # Note: The first argument must always be context
+  function(context, x, replacement) {
+    stringr::str_replace_na(x, replacement)
+  },
+  in_type = schema(
+    x = string(),
+    replacement = string()
+  ),
+  out_type = string(),
+  auto_convert = TRUE
+)
+```
+
+::: notes
+Unless you're developing a package, `auto_convert` should be set to `TRUE`
+:::
+
+::: footer
+Arrow | Learn more about registering Arrow [User Defined Functions ("UDFs")](https://arrow.apache.org/docs/r/reference/register_scalar_function.html)
+:::
+
+## Registering UDFs
+
+-   Try your new registered function
+
+```{r}
+#| echo: true
+nyc_taxi |> 
+  mutate(vendor_name = replace_arrow_nas(vendor_name, "No vendor")) |> 
+  distinct(vendor_name) |> 
+  arrange(vendor_name) |> 
+  collect()
+#> # A tibble: 3 × 1
+#>   vendor_name
+#>   <chr>      
+#> 1 CMT
+#> 2 No vendor
+#> 3 VTS
+```
+
+::: footer
+Arrow | Learn more about registering Arrow [User Defined Functions ("UDFs")](https://arrow.apache.org/docs/r/reference/register_scalar_function.html)
+:::
+
+##
+
+![](images/pokemon.gif)
+
+::: footer
+Eevee can't believe it... "Wooooooooooow, Javi!"
+:::

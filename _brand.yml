@@ -3,10 +3,9 @@ color:
     lightgrey: "#F4F2F2"
     blue: "#119BFE"
     peach: "#FF6B4D"
+    brightpeach: "#ff3a12"
     lightpeach: "#FFDDD6"
     yellow: "#FFC600"
-  background: lightgrey
-  # foreground: dark-grey
   primary: peach
 
 typography:
@@ -15,16 +14,18 @@ typography:
       source: google
     - family: Space Mono
       source: google
-  base: Rubik
+  base: 
+    family: Rubik
+    weight: normal
   headings: 
     family: Rubik
     weight: 400
   link:
-    color: peach
+    color: brightpeach
     decoration: underline
   monospace: Space Mono
   monospace-inline:
-    color: peach
+    color: "#3d3d3d"
     background-color: lightpeach
   
 meta:

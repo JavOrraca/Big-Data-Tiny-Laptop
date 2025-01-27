@@ -1,0 +1,57 @@
+/*-- scss:defaults --*/
+
+
+/*-- scss:rules --*/
+
+ul {
+  margin-bottom: 0px !important;
+}
+
+kbd {
+  font-size: 0.75em !important;
+}
+
+td {
+  vertical-align: middle !important;
+}
+
+// figure and caption overrides
+img {
+  margin-bottom: 0px !important;
+}
+
+figcaption {
+  font-size: 0.3em !important;
+  text-align: center !important;
+}
+
+// fragment highlight colors
+.reveal .slides section {
+    .fragment.highlight-red,
+    .fragment.highlight-blue,
+    .fragment.highlight-green {
+      opacity: 1;
+      visibility: inherit
+    }
+  
+    .fragment.highlight-red.visible {
+      background-color: $brand-peach;
+      color: white;
+      border-radius: 10px;
+      padding: 0px
+    }
+
+    .fragment.highlight-blue.visible {
+      background-color: $brand-blue;
+      color: white;
+      border-radius: 10px;
+      padding: 0px;
+    }
+
+    .fragment.highlight-green.visible {
+        background-color: $brand-yellow;
+        color: black;
+        border-radius: 10px;
+        padding: 0px;
+    }
+  }

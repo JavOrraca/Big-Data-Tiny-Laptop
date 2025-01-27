@@ -27,8 +27,73 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="big-data-tiny-laptop_files/libs/revealjs/dist/theme/quarto-27c610be6965937c202fc462a4635a18.css">
+  <link rel="stylesheet" href="big-data-tiny-laptop_files/libs/revealjs/dist/theme/quarto-ce32ae1854cdea5ced72074587d87fba.css">
   <link href="big-data-tiny-laptop_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="big-data-tiny-laptop_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="big-data-tiny-laptop_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -129,16 +194,16 @@
     <div class="slides">
 
 
-<section id="section" class="slide level2" data-background-image="Big_Data_Tiny_Laptop.png" data-background-size="contain">
+<section id="section" class="slide level2" data-background-image="Big_Data_Tiny_Laptop.png" data-background-size="contain" data-background-color="#F4F2F2">
 <h2></h2>
 </section>
 <section>
-<section id="about-javier" class="title-slide slide level1 center" data-background-color="#119BFE">
-<h1>About Javier</h1>
+<section id="hi-im-javier" class="title-slide slide level1 center" data-background-color="#119BFE">
+<h1>Hi, I’m Javier</h1>
 
 </section>
-<section id="about-javier-1" class="slide level2">
-<h2>About Javier</h2>
+<section id="career-skills-progression" class="slide level2">
+<h2>Career &amp; Skills Progression</h2>
 <p><br></p>
 <div>
 
@@ -158,10 +223,10 @@ config:
 ---
 
 flowchart LR
-  id[Financial Modeling]
+  id[****FINANCIAL MODELING****]
 
-  classDef yellowdrawn fill:#FFC600,stroke:#612200,color:#000000;
-  class id yellowdrawn;
+  classDef bluedrawn fill:#c0e5fe,stroke:#612200,color:#000000;
+  class id bluedrawn;
 </pre>
 </div>
 <p></p></figure><p></p>
@@ -183,10 +248,10 @@ config:
 ---
 
 flowchart LR
-  id2[Data Science]
+  id2[****DATA SCIENCE****]
 
-  classDef bluedrawn fill:#86ccfe,stroke:#612200,color:#000000;
-  class id2 bluedrawn;
+  classDef peachdrawn fill:#ffddd6,stroke:#612200,color:#000000;
+  class id2 peachdrawn;
 </pre>
 </div>
 <p></p></figure><p></p>
@@ -212,7 +277,7 @@ config:
 flowchart LR
   A[EY] --&gt; B[PG&amp;E]
   B --&gt; C[KPMG]
-  C --&gt; D((Grad School))
+  C --&gt; D{UCI's&lt;br&gt;MSBA&lt;br&gt;Program}
   D --&gt; E[Centene]
   E --&gt; F[Bloomreach]
   F --&gt; G[Centene]
@@ -229,9 +294,12 @@ flowchart LR
 </div>
 </div>
 </div>
+<div class="footer">
+<p>Personal Site: <a href="https://www.javierorracadeatcu.com" class="uri">https://www.javierorracadeatcu.com</a> | LinkedIn: <a href="https://www.linkedin.com/in/orraca" class="uri">https://www.linkedin.com/in/orraca</a></p>
+</div>
 </section>
-<section id="about-javier-2" class="slide level2">
-<h2>About Javier</h2>
+<section id="career-skills-progression-1" class="slide level2">
+<h2>Career &amp; Skills Progression</h2>
 <p><br></p>
 <div>
 
@@ -251,10 +319,10 @@ config:
 ---
 
 flowchart LR
-  id[Financial Modeling]
+  id[**FINANCIAL MODELING**]
 
-  classDef yellowdrawn fill:#FFC600,stroke:#612200,color:#000000;
-  class id yellowdrawn;
+  classDef bluedrawn fill:#c0e5fe,stroke:#612200,color:#000000;
+  class id bluedrawn;
 </pre>
 </div>
 <p></p></figure><p></p>
@@ -276,10 +344,10 @@ config:
 ---
 
 flowchart LR
-  id2[Data Science]
+  id2[**DATA SCIENCE**]
 
-  classDef bluedrawn fill:#86ccfe,stroke:#612200,color:#000000;
-  class id2 bluedrawn;
+  classDef peachdrawn fill:#ffddd6,stroke:#612200,color:#000000;
+  class id2 peachdrawn;
 </pre>
 </div>
 <p></p></figure><p></p>
@@ -305,14 +373,14 @@ config:
 flowchart LR
   A[EY] --&gt; B[PG&amp;E]
   B --&gt; C[KPMG]
-  C --&gt; D((Grad School))
+  C --&gt; D{UCI's&lt;br&gt;MSBA&lt;br&gt;Program}
   D --&gt; E[Centene]
   E --&gt; F[Bloomreach]
   F --&gt; G[Centene]
 
-  classDef yellowdrawn fill:#fee179,stroke:#612200,color:#000000;
+  classDef bluedrawn fill:#c0e5fe,stroke:#612200,color:#000000;
   classDef whitedrawn fill:#ffffff,stroke:#612200,color:#000000;
-  class A,B,C yellowdrawn;
+  class A,B,C bluedrawn;
   class D,E,F,G whitedrawn;
 </pre>
 </div>
@@ -324,9 +392,12 @@ flowchart LR
 </div>
 </div>
 </div>
+<div class="footer">
+<p>Personal Site: <a href="https://www.javierorracadeatcu.com" class="uri">https://www.javierorracadeatcu.com</a> | LinkedIn: <a href="https://www.linkedin.com/in/orraca" class="uri">https://www.linkedin.com/in/orraca</a></p>
+</div>
 </section>
-<section id="about-javier-3" class="slide level2">
-<h2>About Javier</h2>
+<section id="career-skills-progression-2" class="slide level2">
+<h2>Career &amp; Skills Progression</h2>
 <p><br></p>
 <div>
 
@@ -346,10 +417,10 @@ config:
 ---
 
 flowchart LR
-  id[Financial Modeling]
+  id[**FINANCIAL MODELING**]
 
-  classDef yellowdrawn fill:#FFC600,stroke:#612200,color:#000000;
-  class id yellowdrawn;
+  classDef bluedrawn fill:#c0e5fe,stroke:#612200,color:#000000;
+  class id bluedrawn;
 </pre>
 </div>
 <p></p></figure><p></p>
@@ -371,10 +442,10 @@ config:
 ---
 
 flowchart LR
-  id2[Data Science]
+  id2[**DATA SCIENCE**]
 
-  classDef bluedrawn fill:#86ccfe,stroke:#612200,color:#000000;
-  class id2 bluedrawn;
+  classDef peachdrawn fill:#ffddd6,stroke:#612200,color:#000000;
+  class id2 peachdrawn;
 </pre>
 </div>
 <p></p></figure><p></p>
@@ -400,17 +471,17 @@ config:
 flowchart LR
   A[EY] --&gt; B[PG&amp;E]
   B --&gt; C[KPMG]
-  C --&gt; D((Grad School))
+  C --&gt; D{UCI's&lt;br&gt;MSBA&lt;br&gt;Program}
   D --&gt; E[Centene]
   E --&gt; F[Bloomreach]
   F --&gt; G[Centene]
 
-  classDef yellowdrawn fill:#fee179,stroke:#612200,color:#000000;
-  classDef bluedrawn fill:#b7dffc,stroke:#612200,color:#000000;
+  classDef bluedrawn fill:#c0e5fe,stroke:#612200,color:#000000;
+  classDef peachdrawn fill:#ffddd6,stroke:#612200,color:#000000;
   classDef whitedrawn fill:#ffffff,stroke:#612200,color:#000000;
-  class A,B,C yellowdrawn;
+  class A,B,C bluedrawn;
   class D whitedrawn;
-  class E,F,G bluedrawn;
+  class E,F,G peachdrawn;
 </pre>
 </div>
 <p></p></figure><p></p>
@@ -421,9 +492,12 @@ flowchart LR
 </div>
 </div>
 </div>
+<div class="footer">
+<p>Personal Site: <a href="https://www.javierorracadeatcu.com" class="uri">https://www.javierorracadeatcu.com</a> | LinkedIn: <a href="https://www.linkedin.com/in/orraca" class="uri">https://www.linkedin.com/in/orraca</a></p>
+</div>
 </section>
-<section id="about-javier-4" class="slide level2">
-<h2>About Javier</h2>
+<section id="career-skills-progression-3" class="slide level2">
+<h2>Career &amp; Skills Progression</h2>
 <p><br></p>
 <div>
 
@@ -443,10 +517,10 @@ config:
 ---
 
 flowchart LR
-  id[Financial Modeling]
+  id[**FINANCIAL MODELING**]
 
-  classDef yellowdrawn fill:#FFC600,stroke:#612200,color:#000000;
-  class id yellowdrawn;
+  classDef bluedrawn fill:#c0e5fe,stroke:#612200,color:#000000;
+  class id bluedrawn;
 </pre>
 </div>
 <p></p></figure><p></p>
@@ -468,10 +542,10 @@ config:
 ---
 
 flowchart LR
-  id2[Data Science]
+  id2[**DATA SCIENCE**]
 
-  classDef bluedrawn fill:#86ccfe,stroke:#612200,color:#000000;
-  class id2 bluedrawn;
+  classDef peachdrawn fill:#ffddd6,stroke:#612200,color:#000000;
+  class id2 peachdrawn;
 </pre>
 </div>
 <p></p></figure><p></p>
@@ -497,17 +571,17 @@ config:
 flowchart LR
   A[EY] --&gt; B[PG&amp;E]
   B --&gt; C[KPMG]
-  C --&gt; D((Grad School))
+  C --&gt; D{UCI's&lt;br&gt;MSBA&lt;br&gt;Program}
   D --&gt; E[Centene]
   E --&gt; F[Bloomreach]
   F --&gt; G[Centene]
-
-  classDef yellowdrawn fill:#fee179,stroke:#612200,color:#000000;
-  classDef bluedrawn fill:#b7dffc,stroke:#612200,color:#000000;
+  
+  classDef bluedrawn fill:#c0e5fe,stroke:#612200,color:#000000;
+  classDef peachdrawn fill:#ffddd6,stroke:#612200,color:#000000;
   classDef whitedrawn fill:#ffffff,stroke:#612200,color:#000000;
-  class A,B,C yellowdrawn;
+  class A,B,C bluedrawn;
   class D whitedrawn;
-  class E,F,G bluedrawn;
+  class E,F,G peachdrawn;
 </pre>
 </div>
 <p></p></figure><p></p>
@@ -531,15 +605,19 @@ config:
 ---
 
 flowchart LR
-  A[Excel, Access, SQL] --&gt; B[Communication]
-  B --&gt; C[Management]
-  C --&gt; D[R/Python]
-  D --&gt; E[ML/AI and MLOps]
+  A[Excel, PowerPoint, Access, SQL] --&gt; B{UCI's&lt;br&gt;MSBA&lt;br&gt;Program}
+  B --&gt; C[Automating Manual Excel Work]
+  C --&gt; D[Developing R Packages &amp; Web Apps]
+  B --&gt; E[Code-based Analytics]
+  E --&gt; F[Machine Learning &amp; AI]
+  F --&gt; G[R, Linux, git, Posit tools, Databricks]
 
-  classDef yellowdrawn fill:#fee179,stroke:#612200,color:#000000;
-  classDef bluedrawn fill:#b7dffc,stroke:#612200,color:#000000;
-  class A,B,C yellowdrawn;
-  class D,E bluedrawn;
+  classDef bluedrawn fill:#c0e5fe,stroke:#612200,color:#000000;
+  classDef peachdrawn fill:#ffddd6,stroke:#612200,color:#000000;
+  classDef whitedrawn fill:#ffffff,stroke:#612200,color:#000000;
+  class A,C bluedrawn;
+  class D,E,F,G peachdrawn;
+  class B whitedrawn;
 </pre>
 </div>
 <p></p></figure><p></p>
@@ -549,6 +627,875 @@ flowchart LR
 </div>
 </div>
 </div>
+</div>
+<div class="footer">
+<p><a href="https://www.javierorracadeatcu.com/">Personal Site</a>: javierorracadeatcu.com | <a href="https://www.linkedin.com/in/orraca/">LinkedIn</a>: linkedin.com/in/orraca</p>
+</div>
+</section>
+<section id="standing-out-with-shiny" class="slide level2">
+<h2>Standing Out with Shiny</h2>
+<p><br></p>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout="[[100], [60,40]]">
+<div class="quarto-layout-row">
+<div id="shiny" class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div style="text-align: left">
+<ul>
+<li><p>Shiny is a <span class="fragment highlight-red">code-based web app framework</span> for Python and R</p></li>
+<li><p><em>Easy-ish-ly</em> build web apps with no formal web dev experience</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div id="shinyleft_text" class="quarto-layout-cell" style="flex-basis: 60.0%;justify-content: flex-start;">
+<div style="text-align: left">
+<ul>
+<li><p>Use <span class="fragment highlight-red">reactive programming</span> that allows for dynamic, real-time updates to the app based on user input</p></li>
+<li><p>Extend your Shiny apps with HTML widgets, <span class="fragment highlight-red">real-time data polling</span>, JavaScript, CSS, and more</p></li>
+</ul>
+</div>
+</div>
+<div id="shinyright_image" class="quarto-layout-cell" style="flex-basis: 40.0%;justify-content: flex-start;">
+<div style="text-align: left">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><img data-src="images/shiny_structure.png"></p>
+<figcaption>Image: © Analythium</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<p>Learn more about <a href="https://shiny.posit.co/py/">Shiny for Python</a> and <a href="https://shiny.posit.co/r/">Shiny for R</a></p>
+</div>
+</section>
+<section id="shiny-demo-as-a-resume-accessory" class="slide level2">
+<h2>Shiny Demo as a Resume Accessory</h2>
+<p><br></p>
+<ul>
+<li><p>Most <span class="fragment highlight-red">corporate dashboards feel clunky</span>…</p></li>
+<li><p>They’re laggy, very boxy, e.g., Power BI, Tableau, MicroStrategy</p></li>
+<li><p>Dashboards typically struggle with fast, real-time calculations, search, and data manipulation capabilities</p></li>
+<li><p><span class="fragment highlight-red">For hiring teams, you can use Shiny as a resume accessory</span> to demonstrate how easy it is to develop <strong>and</strong> deploy a web app styled with the company’s brand aesthetics</p></li>
+</ul>
+<div class="footer">
+<p>Check out my blog post: <a href="https://www.javierorracadeatcu.com/posts/2023-03-28-shiny-bslib-socal-rug/2023-03-28-shiny-bslib-socal-rug">Impressing Hiring Teams with a Shiny App Demo (2023-03-28)</a></p>
+</div>
+</section>
+<section id="shiny-demo-as-a-resume-accessory-1" class="slide level2">
+<h2>Shiny Demo as a Resume Accessory</h2>
+<p><em>Bloomreach’s website:</em></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/bloomreach_site.png" style="width:50.0%;height:50.0%"></p>
+<figcaption>Image: © 2025 Bloomreach, Inc.</figcaption>
+</figure>
+</div>
+<div class="footer">
+<p>Check out my blog post: <a href="https://www.javierorracadeatcu.com/posts/2023-03-28-shiny-bslib-socal-rug/2023-03-28-shiny-bslib-socal-rug">Impressing Hiring Teams with a Shiny App Demo (2023-03-28)</a></p>
+</div>
+</section>
+<section id="shiny-demo-as-a-resume-accessory-2" class="slide level2">
+<h2>Shiny Demo as a Resume Accessory</h2>
+<p><em>Javier’s Shiny demo:</em></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/shiny_app_demo.gif" class="quarto-figure quarto-figure-center" style="width:70.0%;height:70.0%"></p>
+</figure>
+</div>
+<div class="footer">
+<p>Launch this live Shiny app demo: <a href="https://javierorraca.shinyapps.io/Bloomreach_Shiny_App" class="uri">https://javierorraca.shinyapps.io/Bloomreach_Shiny_App</a></p>
+</div>
+</section>
+<section id="my-professional-data-science-workflow" class="slide level2">
+<h2>My Professional Data Science Workflow</h2>
+<p><br></p>
+
+<img data-src="images/data_science_process.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p><em>R for Data Science, 2nd Edition</em> by Wickham, Çetinkaya-Rundel, &amp; Grolemund | <a href="https://r4ds.hadley.nz" class="uri">https://r4ds.hadley.nz</a></p>
+</div>
+</section>
+<section id="my-professional-data-science-toolkit" class="slide level2">
+<h2>My Professional Data Science Toolkit</h2>
+<p><br></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/rstudio_ide.png" style="width:70.0%;height:70.0%"></p>
+<figcaption>Image: © Posit Software, PBC.</figcaption>
+</figure>
+</div>
+<div class="footer">
+<p>Learn more about the open-source RStudio IDE | <a href="https://posit.co/products/open-source/rstudio" class="uri">https://posit.co/products/open-source/rstudio</a></p>
+</div>
+</section>
+<section id="my-professional-data-science-toolkit-1" class="slide level2">
+<h2>My Professional Data Science Toolkit</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/rstudio-panes-labeled.jpeg" style="width:55.0%;height:55.0%"></p>
+<figcaption>Image: © Posit Software, PBC.</figcaption>
+</figure>
+</div>
+<div class="footer">
+<p>RStudio User Guide | <a href="https://docs.posit.co/ide/user/ide/get-started" class="uri">https://docs.posit.co/ide/user/ide/get-started</a></p>
+</div>
+</section>
+<section id="my-professional-data-science-toolkit-2" class="slide level2">
+<h2>My Professional Data Science Toolkit</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/connect_concept-map.png" class="quarto-figure quarto-figure-center" style="width:75.0%;height:75.0%"></p>
+</figure>
+</div>
+<div class="footer">
+<p>Learn about Posit Professional Products &amp; Solutions | <a href="https://solutions.posit.co/get-started" class="uri">https://solutions.posit.co/get-started</a></p>
+</div>
+</section>
+<section id="typical-python-tools-for-data-science" class="slide level2">
+<h2>Typical Python Tools for Data Science</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/vs_code.png" class="quarto-figure quarto-figure-center" style="width:65.0%;height:65.0%"></p>
+</figure>
+</div>
+<div class="footer">
+<p>Learn about Microsoft’s Virtual Studio Code (“VS Code”) User Interface | <a href="https://code.visualstudio.com/docs/getstarted/userinterface" class="uri">https://code.visualstudio.com/docs/getstarted/userinterface</a></p>
+</div>
+</section>
+<section id="typical-python-tools-for-data-science-1" class="slide level2 center">
+<h2>Typical Python Tools for Data Science</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/jupyter_notebook.png" style="width:50.0%;height:50.0%"></p>
+<figcaption>Image: © Ander Fernández Jauregui</figcaption>
+</figure>
+</div>
+<div class="footer">
+<p>Learn about Project Jupyter’s Jupyter Notebook | <a href="https://jupyter.org" class="uri">https://jupyter.org</a></p>
+</div>
+</section>
+<section id="in-review" class="slide level2">
+<h2>In Review</h2>
+<p><br></p>
+<ul>
+<li><p>RStudio IDE’s “always on” panes welcomed R users seeking a data-analysis-first experience</p></li>
+<li><p><span class="fragment highlight-red">For Python users, RStudio felt too R-centric</span> and other tools worked <em>just fine</em> including VS Code, Jupyter Notebooks, PyCharm, etc.</p></li>
+<li><p>There are many programming languages that can be used for data science, but <span class="fragment highlight-red">Python and R serve as the de facto standards</span></p></li>
+</ul>
+</section>
+<section id="section-1" class="slide level2 center" data-background-color="#FFC600">
+<h2></h2>
+<div class="r-fit-text">
+<p>So, why isn’t there</p>
+</div>
+</section>
+<section id="section-2" class="slide level2 center" data-background-color="#FFC600">
+<h2></h2>
+<div class="r-fit-text">
+<p><em>one tool</em></p>
+</div>
+</section>
+<section id="section-3" class="slide level2 center" data-background-color="#FFC600">
+<h2></h2>
+<div class="r-fit-text">
+<p>that blends the best<br> features from all IDEs?</p>
+</div>
+</section>
+<section id="section-4" class="slide level2">
+<h2></h2>
+<p><br></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/tobias.gif" class="quarto-figure quarto-figure-center" style="width:60.0%;height:60.0%"></p>
+</figure>
+</div>
+<div class="footer">
+<p>Me, using RStudio while my teammates use VS Code, on any given Monday morning…</p>
+</div>
+</section></section>
+<section>
+<section id="introducing-positron" class="title-slide slide level1 center" data-background-color="#119BFE">
+<h1>Introducing: Positron™</h1>
+
+</section>
+<section id="about-positron" class="slide level2">
+<h2>About Positron</h2>
+<ul>
+<li>What is Positron? From Posit’s getting started docs:</li>
+</ul>
+<blockquote>
+
+<ul>
+<li>A next-generation data science IDE built by Posit PBC</li>
+<li>An extensible, polyglot tool for writing code and exploring data</li>
+<li>A familiar environment for reproducible authoring and publishing</li>
+</ul>
+
+</blockquote>
+<ul>
+<li>Positron is <span class="fragment highlight-blue">a tailor-made IDE for data science</span> built on top of <a href="https://github.com/microsoft/vscode">Code OSS</a> that can be used with any combination of programming languages</li>
+</ul>
+<div class="footer">
+<p>Visit the new Positron website to learn more | <a href="https://positron.posit.co/" class="uri">https://positron.posit.co/</a></p>
+</div>
+</section>
+<section id="positron-it-looks-familiar" class="slide level2">
+<h2>Positron… <em>It looks familiar!</em></h2>
+
+<img data-src="images/positron.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p>Visit the new Positron website to learn more | <a href="https://positron.posit.co/" class="uri">https://positron.posit.co/</a></p>
+</div>
+</section>
+<section id="vs-code-oss-w-rstudio-panes" class="slide level2">
+<h2>VS Code OSS w/ RStudio panes!</h2>
+
+<img data-src="images/positron-panes.svg" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p>Layout by Dr.&nbsp;Athanasia Mo Mowinckel | <a href="https://drmowinckels.io/blog/2024/positron/">Positron IDE - A new IDE for data science</a></p>
+</div>
+</section>
+<section id="prerequisites" class="slide level2 smaller">
+<h2>Prerequisites</h2>
+<p><br></p>
+<ul>
+<li><strong>Windows</strong> prereqs: <br><br>
+<ul>
+<li>Ensure the latest <a href="https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#latest-microsoft-visual-c-redistributable-version">Visual C++ Redistributable</a> is installed <br><br></li>
+<li>If you’re an R user package developer, note that Positron doesn’t currently bundle <code>Rtools</code>. <br><br></li>
+<li>For reference, <code>RTools</code> contains the required compilers needed to build R packages from source code on Windows</li>
+</ul></li>
+</ul>
+<div class="footer">
+<p>Getting Started with Positron | <a href="https://positron.posit.co/start.html">Machine Prerequisites</a></p>
+</div>
+</section>
+<section id="prerequisites-1" class="slide level2 smaller">
+<h2>Prerequisites</h2>
+<p><br></p>
+<ul>
+<li><strong>Python</strong> prereqs: <br><br>
+<ul>
+<li>The Posit team recommends <a href="https://github.com/pyenv/pyenv">pyenv</a> to manage Python versions, and actively supported Python versions from 3.8 to 3.12 are fully supported on Positron <br><br></li>
+<li>For Linux users, install the SQLite system libraries (<code>sqlite-devel</code> or <code>libsqlite3-dev</code>) ahead of time so <code>pyenv</code> can build your Python version(s) of choice <br><br></li>
+<li>Positron communicates with Python via the <code>ipykernel</code> <br><br></li>
+<li>If you’re using <code>venv</code> or <code>conda</code> to manage your Python projects, you can install <code>ipykernal</code> manually as follows: <code>python3 -m pip install ipykernel</code></li>
+</ul></li>
+</ul>
+<div class="footer">
+<p>Getting Started with Positron | <a href="https://positron.posit.co/start.html">Machine Prerequisites</a></p>
+</div>
+</section>
+<section id="prerequisites-2" class="slide level2 smaller">
+<h2>Prerequisites</h2>
+<p><br></p>
+<ul>
+<li><strong>R</strong> prereqs: <br><br>
+<ul>
+<li>Positron requires R 4.2 or higher - To install R, follow the instructions for your OS at <a href="https://cloud.r-project.org" class="uri">https://cloud.r-project.org</a> <br><br></li>
+<li>If you’d like to have multiple R installations, <a href="https://github.com/r-lib/rig">rig</a> is a great tool that works on macOS, Windows and Linux, and works well with Positron</li>
+</ul></li>
+</ul>
+<div class="footer">
+<p>Getting Started with Positron | <a href="https://positron.posit.co/start.html">Machine Prerequisites</a></p>
+</div>
+</section>
+<section id="interpreter-selector" class="slide level2 smaller">
+<h2>Interpreter Selector</h2>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li>When Positron starts for the first time in a new workspace (or project directory), it will start Python and/or R depending on your workspace characteristics <br><br></li>
+<li>In subsequent runs, <span class="fragment highlight-blue">Positron will start the same interpreter(s) that was running the last time</span> that you used that workspace <br><br></li>
+<li>You can start, stop, and switch interpreters from the interpreter selector</li>
+</ul>
+</div><div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/interpreter_selector.png" class="quarto-figure quarto-figure-center" width="393" height="330"></p>
+</figure>
+</div>
+</div></div>
+<div class="footer">
+<p>Getting Started with Positron | <a href="https://positron.posit.co/interpreters.html">Interpreter Selection</a></p>
+</div>
+</section>
+<section id="global-keyboard-shortcuts" class="slide level2 smaller">
+<h2>Global Keyboard Shortcuts</h2>
+<p><br></p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 42%">
+<col style="width: 57%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Shortcut</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><kbd>Cmd/Ctrl</kbd>+<kbd>Enter</kbd></td>
+<td>Run the selected code in the editor; if no code is selected, run the current statement</td>
+</tr>
+<tr class="even">
+<td><kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>0</kbd></td>
+<td>Restart the interpreter currently open in the Console</td>
+</tr>
+<tr class="odd">
+<td><kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd></td>
+<td>Run the file open in the editor (using e.g.&nbsp;<code>source()</code> or <code>%run</code>)</td>
+</tr>
+<tr class="even">
+<td><kbd>F1</kbd></td>
+<td>Show contextual help for the topic under the cursor</td>
+</tr>
+<tr class="odd">
+<td><kbd>Cmd/Ctrl</kbd>+<kbd>K</kbd>, <kbd>Cmd/Ctrl</kbd>+<kbd>R</kbd></td>
+<td>Show contextual help for the topic under the cursor (alternate binding)</td>
+</tr>
+<tr class="even">
+<td><kbd>Cmd/Ctrl</kbd>+<kbd>K</kbd>, <kbd>F</kbd></td>
+<td>Focus the Console</td>
+</tr>
+<tr class="odd">
+<td><kbd>Ctrl</kbd>+<kbd>L</kbd></td>
+<td>Clear the Console</td>
+</tr>
+</tbody>
+</table>
+<div class="footer">
+<p>Positron docs | <a href="https://positron.posit.co/keyboard-shortcuts.html">Keyboard Shortcuts</a></p>
+</div>
+</section>
+<section id="r-keyboard-shortcuts" class="slide level2 smaller">
+<h2>R Keyboard Shortcuts</h2>
+<p><br></p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 42%">
+<col style="width: 57%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Shortcut</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>M</kbd></td>
+<td>Insert the pipe operator</td>
+</tr>
+<tr class="even">
+<td><kbd>Alt</kbd>+<kbd>-</kbd></td>
+<td>Insert the assignment operator (<code>&lt;-</code>)</td>
+</tr>
+<tr class="odd">
+<td><kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>L</kbd></td>
+<td>Load the current R package, if any</td>
+</tr>
+<tr class="even">
+<td><kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd></td>
+<td>Build and install the current R package, if any</td>
+</tr>
+<tr class="odd">
+<td><kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd></td>
+<td>Test the current R package, if any</td>
+</tr>
+<tr class="even">
+<td><kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd></td>
+<td>Check the current R package, if any</td>
+</tr>
+<tr class="odd">
+<td><kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>D</kbd></td>
+<td>Document the current R package, if any</td>
+</tr>
+</tbody>
+</table>
+<div class="footer">
+<p>Positron docs | <a href="https://positron.posit.co/keyboard-shortcuts.html">Keyboard Shortcuts</a></p>
+</div>
+</section>
+<section id="rstudio-keymap" class="slide level2 smaller">
+<h2>RStudio Keymap</h2>
+<p><br></p>
+<p>If you’re an experienced RStudio user, you can <span class="fragment highlight-blue">easily set the RStudio keybindings</span> in the Positron settings:</p>
+<ul>
+<li>Open Positron’s settings in the UI or the keystroke <kbd>Cmd/Ctrl</kbd>+<kbd>,</kbd></li>
+<li>Search for “keymap”, or navigate to <em>Extensions &gt; RStudio Keymap</em></li>
+<li>Check the “Enable RStudio key mappings for Positron” checkbox</li>
+</ul>
+<div class="footer">
+<p>Positron docs | <a href="https://positron.posit.co/keyboard-shortcuts.html">Keyboard Shortcuts</a></p>
+</div>
+</section>
+<section id="data-explorer-overview" class="slide level2 smaller">
+<h2>Data Explorer Overview</h2>
+<p><br></p>
+<ul>
+<li>The new <span class="fragment highlight-blue">Data Explorer allows for interactive exploration</span> of various types of dataframes using Python (<code>pandas</code>, <code>polars</code>) or R (<code>data.frame</code>, <code>tibble</code>, <code>data.table</code>, <code>polars</code>) <br><br></li>
+<li>Navigate to the Variables Pane and click on the Data Explorer icon:</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/data-explorer-variables.png" class="quarto-figure quarto-figure-center" style="width:70.0%;height:70.0%"></p>
+</figure>
+</div>
+<div class="footer">
+<p>Positron docs | <a href="https://positron.posit.co/data-explorer.html">Data Explorer</a></p>
+</div>
+</section>
+<section id="data-explorer-overview-1" class="slide level2 smaller">
+<h2>Data Explorer Overview</h2>
+<p><br></p>
+<ul>
+<li>The Data Explorer has three primary components
+<ul>
+<li><strong>Data grid</strong>: Spreadsheet-like display of the data with sorting</li>
+<li><strong>Summary panel</strong>: Column name, type and missing data percentage for each column</li>
+<li><strong>Filter bar</strong>: Ephemeral filters for specific columns</li>
+</ul></li>
+</ul>
+<div class="footer">
+<p>Positron docs | <a href="https://positron.posit.co/data-explorer.html">Data Explorer</a></p>
+</div>
+</section>
+<section id="data-explorer-overview-2" class="slide level2">
+<h2>Data Explorer Overview</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/data-explorer.png" class="quarto-figure quarto-figure-center" style="width:80.0%;height:80.0%"></p>
+</figure>
+</div>
+<div class="footer">
+<p>Positron docs | <a href="https://positron.posit.co/data-explorer.html">Data Explorer</a></p>
+</div>
+</section>
+<section id="data-explorers-data-grid" class="slide level2 smaller">
+<h2>Data Explorer’s <em>Data Grid</em></h2>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li>The data grid is the primary display and <span class="fragment highlight-blue">scales efficiently</span> with large in-memory datasets up to millions of rows or columns <br><br></li>
+<li>At the top right of each column, there is a context menu to <span class="fragment highlight-blue">control sorting or add a filter</span> for the selected column</li>
+</ul>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:35%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/data-grid-menu.png" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div></div>
+<div class="footer">
+<p>Positron docs | <a href="https://positron.posit.co/data-explorer.html">Data Explorer</a></p>
+</div>
+</section>
+<section id="data-explorers-summary-panel" class="slide level2 smaller">
+<h2>Data Explorer’s <em>Summary Panel</em></h2>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li>Displays a vertical scrolling list of all columns in the data <br><br></li>
+<li>It <span class="fragment highlight-blue">displays a sparkline histogram of that column’s data</span>, displays the amount of missing data, and shows some summary statistics about that column <br><br></li>
+<li>Double clicking on a column name will bring the column into focus in the data grid</li>
+</ul>
+</div><div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/data-explorer-summary-panel.png" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div></div>
+<div class="footer">
+<p>Positron docs | <a href="https://positron.posit.co/data-explorer.html">Data Explorer</a></p>
+</div>
+</section>
+<section id="data-explorers-filter-bar" class="slide level2 smaller">
+<h2>Data Explorer’s <em>Filter Bar</em></h2>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:40%;">
+<ul>
+<li>The filter bar has controls to add filters, show/hide existing filters, or clear filters <br><br></li>
+<li>Clicking the <kbd>+</kbd> button quickly adds a new filter <br><br></li>
+<li>The status bar at the bottom of the Data Explorer also displays the percentage and number of remaining rows relative to the original total after applying a filter</li>
+</ul>
+</div><div class="column" style="width:60%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/data-explorer-filter-ui.png" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div></div>
+<div class="footer">
+<p>Positron docs | <a href="https://positron.posit.co/data-explorer.html">Data Explorer</a></p>
+</div>
+</section>
+<section id="connections-pane" class="slide level2 smaller">
+<h2>Connections Pane</h2>
+<div class="columns">
+<div class="column" style="width:35%;">
+<p><br> - <span class="fragment highlight-blue">Explore database connections</span> established with ODBC drivers or packages <br><br> - For Python users, the <code>sqlite3</code> and <code>SQLAlchemy</code> packages are supported <br><br> - For R users, the <code>odbc</code>, <code>sparklyr</code>, <code>bigrquery</code>, and more packages are supported</p>
+</div><div class="column" style="width:65%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/connections-pane.png" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div></div>
+<div class="footer">
+<p>Positron docs | <a href="https://positron.posit.co/connections-pane.html">Connections Pane</a></p>
+</div>
+</section>
+<section id="interactive-apps" class="slide level2 smaller">
+<h2>Interactive Apps</h2>
+<div class="columns">
+<div class="column" style="width:35%;">
+<p><br> - Instead of running apps from a Terminal, Positron lets you run supported apps by clicking the <kbd>Play</kbd> button in Editor Actions <br><br> - <span class="fragment highlight-blue">Supported apps include the following: Shiny, Dash, FastAPI, Flask, Gradio, and Streamlit</span> <br><br> - You can also start apps in Debug mode</p>
+</div><div class="column" style="width:65%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/run-app-button.png" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div></div>
+<div class="footer">
+<p>Positron docs | <a href="https://positron.posit.co/run-interactive-apps.html">Run Interactive Apps</a></p>
+</div>
+</section>
+<section id="section-5" class="slide level2 center" data-background-color="#FF6B4D">
+<h2></h2>
+<div class="r-fit-text">
+<p>So, lesson learned…<br> Positron = Amazing.</p>
+</div>
+</section>
+<section id="section-6" class="slide level2 center" data-background-color="#FF6B4D">
+<h2></h2>
+<div class="r-fit-text">
+<p>But next,</p>
+</div>
+</section>
+<section id="section-7" class="slide level2 center" data-background-color="#FF6B4D">
+<h2></h2>
+<div class="r-fit-text">
+<p>let’s talk about</p>
+</div>
+</section>
+<section id="section-8" class="slide level2 center" data-background-color="#FF6B4D">
+<h2></h2>
+<div class="r-fit-text">
+<p>ULTRA</p>
+</div>
+</section>
+<section id="section-9" class="slide level2 center" data-background-color="#FF6B4D">
+<h2></h2>
+<div class="r-fit-text">
+<p>FAST</p>
+</div>
+</section>
+<section id="section-10" class="slide level2 center" data-background-color="#FF6B4D">
+<h2></h2>
+<div class="r-fit-text">
+<p>ETL 💨</p>
+</div>
+</section>
+<section id="section-11" class="slide level2 center" data-background-color="#FF6B4D">
+<h2></h2>
+
+<img data-src="images/jake_the_dog.gif" class="quarto-figure quarto-figure-center r-stretch"></section></section>
+<section>
+<section id="ultra-fast-etl-with-apache-arrow-duckdb-and-polars" class="title-slide slide level1 center" data-background-color="#119BFE">
+<h1>Ultra Fast ETL with Apache Arrow, DuckDB, and Polars</h1>
+
+</section>
+<section id="apache-arrow" class="slide level2">
+<h2>Apache Arrow</h2>
+<h3 id="larger-than-memory-data">Larger-than-Memory Data</h3>
+<p><br></p>
+
+<img data-src="images/apache_arrow.png" class="r-stretch"><div class="footer">
+<p>Arrow | Learn more at <a href="https://arrow.apache.org/" class="uri">https://arrow.apache.org/</a></p>
+</div>
+</section>
+<section id="arrow-and-parquet" class="slide level2">
+<h2>Arrow and Parquet</h2>
+<ul>
+<li>Columnar memory format for flat data</li>
+<li>Ultra-fast read times from Parquet files</li>
+<li>Easily convert data.frames and tibbles to Arrow tables in-line</li>
+<li>Plays well with Pandas (Python) and dplyr (R)</li>
+<li>Arrow will soon be able to process nested list data</li>
+</ul>
+<div class="footer">
+<p>Arrow | Learn more at <a href="https://arrow.apache.org/" class="uri">https://arrow.apache.org/</a></p>
+</div>
+</section>
+<section id="how-fast-is-fast" class="slide level2">
+<h2>How fast is fast?</h2>
+<ul>
+<li>My personal laptop has 24 GB RAM</li>
+<li>To test Arrow’s capabilities, I read a <span class="fragment highlight-blue">40 GB dataset</span> with over <span class="fragment highlight-blue">1.1 billion rows</span> and 24 columns</li>
+<li>The <code>.parquet</code> dataset was partitioned by Year and Month (120 files)</li>
+<li>Important to note that my laptop would not be able to load this object entirely into memory as a data.frame or tibble given my laptop’s limited RAM</li>
+</ul>
+<div class="footer">
+<p>Arrow | Learn more at <a href="https://arrow.apache.org/" class="uri">https://arrow.apache.org/</a></p>
+</div>
+</section>
+<section id="installing-arrow" class="slide level2">
+<h2>Installing Arrow</h2>
+<p><br></p>
+<p>For the Arrow installation including AWS S3 and GCS support:</p>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:49%;">
+<p><em>Python</em></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href=""></a><span class="co"># Set required env vars</span></span>
+<span id="cb1-2"><a href=""></a><span class="im">import</span> os</span>
+<span id="cb1-3"><a href=""></a>os.environ[<span class="st">"LIBARROW_MINIMAL"</span>] <span class="op">=</span> <span class="st">"FALSE"</span></span>
+<span id="cb1-4"><a href=""></a>os.environ[<span class="st">"ARROW_S3"</span>] <span class="op">=</span> <span class="st">"ON"</span></span>
+<span id="cb1-5"><a href=""></a>os.environ[<span class="st">"ARROW_GCS"</span>] <span class="op">=</span> <span class="st">"ON"</span></span>
+<span id="cb1-6"><a href=""></a></span>
+<span id="cb1-7"><a href=""></a><span class="co"># Install PyArrow</span></span>
+<span id="cb1-8"><a href=""></a><span class="op">!</span>pip install pyarrow</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div><div class="column" style="width:2%;">
+
+</div><div class="column" style="width:49%;">
+<p><em>R</em></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href=""></a><span class="co"># Set required env vars</span></span>
+<span id="cb2-2"><a href=""></a><span class="fu">Sys.setenv</span>(<span class="at">LIBARROW_MINIMAL =</span> <span class="st">"false"</span>)</span>
+<span id="cb2-3"><a href=""></a><span class="fu">Sys.setenv</span>(<span class="at">ARROW_S3 =</span> <span class="st">"ON"</span>)</span>
+<span id="cb2-4"><a href=""></a><span class="fu">Sys.setenv</span>(<span class="at">ARROW_GCS =</span> <span class="st">"ON"</span>)</span>
+<span id="cb2-5"><a href=""></a></span>
+<span id="cb2-6"><a href=""></a><span class="co"># Download &amp; Install Arrow</span></span>
+<span id="cb2-7"><a href=""></a><span class="fu">install.packages</span>(<span class="st">'arrow'</span>, <span class="at">repos =</span> <span class="st">'https://apache.r-universe.dev'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div></div>
+</section>
+<section id="benchmarking-read-times" class="slide level2">
+<h2>Benchmarking Read Times</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href=""></a><span class="fu">library</span>(here)</span>
+<span id="cb3-2"><a href=""></a><span class="fu">library</span>(arrow)</span>
+<span id="cb3-3"><a href=""></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb3-4"><a href=""></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb3-5"><a href=""></a><span class="fu">library</span>(bench)</span>
+<span id="cb3-6"><a href=""></a></span>
+<span id="cb3-7"><a href=""></a><span class="co"># NYC Taxi Data download (40 GB)</span></span>
+<span id="cb3-8"><a href=""></a>data_path <span class="ot">&lt;-</span> here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data/nyc-taxi"</span>)</span>
+<span id="cb3-9"><a href=""></a></span>
+<span id="cb3-10"><a href=""></a><span class="fu">open_dataset</span>(<span class="st">"s3://voltrondata-labs-datasets/nyc-taxi"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb3-11"><a href=""></a>  <span class="fu">filter</span>(year <span class="sc">%in%</span> <span class="dv">2012</span><span class="sc">:</span><span class="dv">2021</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb3-12"><a href=""></a>  <span class="fu">write_dataset</span>(data_path, <span class="at">partitioning =</span> <span class="fu">c</span>(<span class="st">"year"</span>, <span class="st">"month"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="footer">
+<p>Arrow | Learn more at <a href="https://arrow.apache.org/" class="uri">https://arrow.apache.org/</a></p>
+</div>
+</section>
+<section id="benchmarking-read-times-1" class="slide level2">
+<h2>Benchmarking Read Times</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href=""></a><span class="co"># 2. Benchmark Read Times</span></span>
+<span id="cb4-2"><a href=""></a>bnch <span class="ot">&lt;-</span> bench<span class="sc">::</span><span class="fu">mark</span>(</span>
+<span id="cb4-3"><a href=""></a>  <span class="at">min_iterations =</span> <span class="dv">1000</span>,</span>
+<span id="cb4-4"><a href=""></a>  <span class="at">arrow =</span> <span class="fu">open_dataset</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data/nyc-taxi"</span>))</span>
+<span id="cb4-5"><a href=""></a>)</span>
+<span id="cb4-6"><a href=""></a></span>
+<span id="cb4-7"><a href=""></a><span class="fu">autoplot</span>(bnch)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="footer">
+<p>Arrow | Learn more at <a href="https://arrow.apache.org/" class="uri">https://arrow.apache.org/</a></p>
+</div>
+</section>
+<section id="benchmarking-read-times-2" class="slide level2">
+<h2>Benchmarking Read Times</h2>
+<ul>
+<li>Results show read times from a 40GB parquet, 1.1 billion row dataset (benchmarked over 1,000 iterations)</li>
+</ul>
+
+<img data-src="images/arrow_read.png" class="quarto-figure quarto-figure-center r-stretch" style="width:55.0%"><div class="footer">
+<p>Arrow | Learn more at <a href="https://arrow.apache.org/" class="uri">https://arrow.apache.org/</a></p>
+</div>
+</section>
+<section id="arrow-dplyr-benchmark" class="slide level2">
+<h2>arrow + dplyr Benchmark</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href=""></a><span class="co"># 1. Open Arrow connection to dataset (40 GB)</span></span>
+<span id="cb5-2"><a href=""></a>nyc_taxi <span class="ot">&lt;-</span> <span class="fu">open_dataset</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data/nyc-taxi"</span>))</span>
+<span id="cb5-3"><a href=""></a></span>
+<span id="cb5-4"><a href=""></a><span class="co"># 2. Benchmark dplyr pipeline</span></span>
+<span id="cb5-5"><a href=""></a>bnch <span class="ot">&lt;-</span> bench<span class="sc">::</span><span class="fu">mark</span>(</span>
+<span id="cb5-6"><a href=""></a>  <span class="at">min_iterations =</span> <span class="dv">10</span>,</span>
+<span id="cb5-7"><a href=""></a>  <span class="at">arrow =</span> nyc_taxi <span class="sc">|&gt;</span> </span>
+<span id="cb5-8"><a href=""></a>    dplyr<span class="sc">::</span><span class="fu">group_by</span>(year) <span class="sc">|&gt;</span> </span>
+<span id="cb5-9"><a href=""></a>    dplyr<span class="sc">::</span><span class="fu">summarise</span>(<span class="at">all_trips =</span> <span class="fu">n</span>(),</span>
+<span id="cb5-10"><a href=""></a>                     <span class="at">shared_trips =</span> <span class="fu">sum</span>(passenger_count <span class="sc">&gt;</span> <span class="dv">1</span>, <span class="at">na.rm =</span> T)) <span class="sc">|&gt;</span></span>
+<span id="cb5-11"><a href=""></a>    dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">pct_shared =</span> shared_trips <span class="sc">/</span> all_trips <span class="sc">*</span> <span class="dv">100</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb5-12"><a href=""></a>    dplyr<span class="sc">::</span><span class="fu">collect</span>()</span>
+<span id="cb5-13"><a href=""></a>)</span>
+<span id="cb5-14"><a href=""></a></span>
+<span id="cb5-15"><a href=""></a><span class="fu">autoplot</span>(bnch)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="footer">
+<p>Arrow | <a href="https://r4ds.hadley.nz/arrow.html">Arrow + dplyr compatibility</a></p>
+</div>
+</section>
+<section id="arrow-dplyr-benchmark-1" class="slide level2">
+<h2>arrow + dplyr Benchmark</h2>
+<ul>
+<li>Arrow + dplyr summarized 1.1 billion rows in less than 5s (benchmarked over 10 iterations) to a 10 x 4 tibble</li>
+</ul>
+
+<img data-src="images/arrow_group_by.png" class="quarto-figure quarto-figure-center r-stretch" style="width:55.0%"><div class="footer">
+<p>Arrow | <a href="https://r4ds.hadley.nz/arrow.html">Arrow + dplyr compatibility</a></p>
+</div>
+</section>
+<section id="tidyverse-compatibility" class="slide level2">
+<h2>Tidyverse Compatibility</h2>
+<ul>
+<li>Many functions from the tidyverse collections of packages have 1:1 compatibility with Arrow tables</li>
+<li>However, sometimes you’ll encounter a breaking point</li>
+<li>Take this <code>stringr::str_replace_na()</code> example:</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6" data-code-line-numbers="1-4|3-4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href=""></a>nyc_taxi <span class="sc">|&gt;</span> </span>
+<span id="cb6-2"><a href=""></a>  <span class="fu">mutate</span>(<span class="at">vendor_name =</span> <span class="fu">str_replace_na</span>(vendor_name, <span class="st">"No vendor"</span>))</span>
+<span id="cb6-3"><a href=""></a><span class="co">#&gt; Error: Expression str_replace_na(vendor_name, "No vendor") </span></span>
+<span id="cb6-4"><a href=""></a><span class="co">#&gt; not supported in Arrow</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="fragment">
+<ul>
+<li>This <code>stringr</code> function is not supported by Arrow</li>
+</ul>
+<div class="footer">
+<p>Arrow | <a href="https://r4ds.hadley.nz/arrow.html">Arrow + dplyr compatibility</a></p>
+</div>
+</div>
+</section>
+<section id="section-12" class="slide level2">
+<h2></h2>
+
+<img data-src="images/crying_cat.gif" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="section-13" class="slide level2 center">
+<h2></h2>
+<div class="r-fit-text">
+<p>but wait!</p>
+</div>
+<div class="r-fit-text">
+<p>problem solved</p>
+</div>
+</section>
+<section id="user-defined-functions" class="slide level2">
+<h2>User Defined Functions</h2>
+<ul>
+<li>Lucky for us, Arrow allows us to create and register <strong><em>User Defined Functions (“UDFs”)</em></strong> to the Arrow engine</li>
+<li>Almost any function can be made compatible with Arrow by registering custom UDFs</li>
+<li>Let’s learn how to register <code>str_replace_na()</code> with the Arrow kernel</li>
+</ul>
+<div class="footer">
+<p>Arrow | Learn more about registering Arrow <a href="https://arrow.apache.org/docs/r/reference/register_scalar_function.html">User Defined Functions (“UDFs”)</a></p>
+</div>
+</section>
+<section id="registering-udfs" class="slide level2">
+<h2>Registering UDFs</h2>
+<ul>
+<li>First, run <code>arrow::schema()</code> on your Arrow table to review the field name / data type pairs</li>
+<li>Since I want to mutate the <code>vendor_name</code> field, I know I’ll be working with an Arrow <code>string()</code> data type</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7" data-code-line-numbers="1-10|3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href=""></a>arrow<span class="sc">::</span><span class="fu">schema</span>(nyc_taxi)</span>
+<span id="cb7-2"><a href=""></a><span class="co">#&gt; Schema</span></span>
+<span id="cb7-3"><a href=""></a><span class="co">#&gt; vendor_name: string</span></span>
+<span id="cb7-4"><a href=""></a><span class="co">#&gt; pickup_datetime: timestamp[ms]</span></span>
+<span id="cb7-5"><a href=""></a><span class="co">#&gt; dropoff_datetime: timestamp[ms]</span></span>
+<span id="cb7-6"><a href=""></a><span class="co">#&gt; passenger_count: int64</span></span>
+<span id="cb7-7"><a href=""></a><span class="co">#&gt; trip_distance: double</span></span>
+<span id="cb7-8"><a href=""></a><span class="co">#&gt; pickup_longitude: double</span></span>
+<span id="cb7-9"><a href=""></a><span class="co">#&gt; pickup_latitude: double</span></span>
+<span id="cb7-10"><a href=""></a><span class="co">#&gt; ...</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="footer">
+<p>Arrow | Learn more about registering Arrow <a href="https://arrow.apache.org/docs/r/reference/register_scalar_function.html">User Defined Functions (“UDFs”)</a></p>
+</div>
+</section>
+<section id="registering-udfs-1" class="slide level2">
+<h2>Registering UDFs</h2>
+<ul>
+<li>Next, use <code>register_scalar_function()</code></li>
+<li>Name your UDF “replace_arrow_nas” and remember to set <code>auto_convert = TRUE</code></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8" data-code-line-numbers="1-13|3-4|3-4,12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href=""></a>arrow<span class="sc">::</span><span class="fu">register_scalar_function</span>(</span>
+<span id="cb8-2"><a href=""></a>  <span class="at">name =</span> <span class="st">"replace_arrow_nas"</span>,</span>
+<span id="cb8-3"><a href=""></a>  <span class="co"># Note: The first argument must always be context</span></span>
+<span id="cb8-4"><a href=""></a>  <span class="cf">function</span>(context, x, replacement) {</span>
+<span id="cb8-5"><a href=""></a>    stringr<span class="sc">::</span><span class="fu">str_replace_na</span>(x, replacement)</span>
+<span id="cb8-6"><a href=""></a>  },</span>
+<span id="cb8-7"><a href=""></a>  <span class="at">in_type =</span> <span class="fu">schema</span>(</span>
+<span id="cb8-8"><a href=""></a>    <span class="at">x =</span> <span class="fu">string</span>(),</span>
+<span id="cb8-9"><a href=""></a>    <span class="at">replacement =</span> <span class="fu">string</span>()</span>
+<span id="cb8-10"><a href=""></a>  ),</span>
+<span id="cb8-11"><a href=""></a>  <span class="at">out_type =</span> <span class="fu">string</span>(),</span>
+<span id="cb8-12"><a href=""></a>  <span class="at">auto_convert =</span> <span class="cn">TRUE</span></span>
+<span id="cb8-13"><a href=""></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<aside class="notes">
+<p>Unless you’re developing a package, <code>auto_convert</code> should be set to <code>TRUE</code></p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<div class="footer">
+<p>Arrow | Learn more about registering Arrow <a href="https://arrow.apache.org/docs/r/reference/register_scalar_function.html">User Defined Functions (“UDFs”)</a></p>
+</div>
+</section>
+<section id="registering-udfs-2" class="slide level2">
+<h2>Registering UDFs</h2>
+<ul>
+<li>Try your new registered function</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href=""></a>nyc_taxi <span class="sc">|&gt;</span> </span>
+<span id="cb9-2"><a href=""></a>  <span class="fu">mutate</span>(<span class="at">vendor_name =</span> <span class="fu">replace_arrow_nas</span>(vendor_name, <span class="st">"No vendor"</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb9-3"><a href=""></a>  <span class="fu">distinct</span>(vendor_name) <span class="sc">|&gt;</span> </span>
+<span id="cb9-4"><a href=""></a>  <span class="fu">arrange</span>(vendor_name) <span class="sc">|&gt;</span> </span>
+<span id="cb9-5"><a href=""></a>  <span class="fu">collect</span>()</span>
+<span id="cb9-6"><a href=""></a><span class="co">#&gt; # A tibble: 3 × 1</span></span>
+<span id="cb9-7"><a href=""></a><span class="co">#&gt;   vendor_name</span></span>
+<span id="cb9-8"><a href=""></a><span class="co">#&gt;   &lt;chr&gt;      </span></span>
+<span id="cb9-9"><a href=""></a><span class="co">#&gt; 1 CMT</span></span>
+<span id="cb9-10"><a href=""></a><span class="co">#&gt; 2 No vendor</span></span>
+<span id="cb9-11"><a href=""></a><span class="co">#&gt; 3 VTS</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="footer">
+<p>Arrow | Learn more about registering Arrow <a href="https://arrow.apache.org/docs/r/reference/register_scalar_function.html">User Defined Functions (“UDFs”)</a></p>
+</div>
+</section>
+<section id="section-14" class="slide level2">
+<h2></h2>
+
+<img data-src="images/pokemon.gif" class="r-stretch"><div class="footer">
+<p>Eevee can’t believe it… “Wooooooooooow, Javi!”</p>
 </div>
 
 </section></section>
@@ -733,9 +1680,9 @@ flowchart LR
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
-        width: 1050,
+        width: 1280,
 
-        height: 700,
+        height: 720,
 
         // Factor of the display size that should remain empty around the content
         margin: 0.1,
@@ -767,6 +1714,44 @@ flowchart LR
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
