@@ -356,7 +356,7 @@ flowchart LR
 ::: {#shiny}
 ::: {style="text-align: left"}
 
-- Shiny is a [code-based web app framework]{.fragment .highlight-red} for Python and R
+- Shiny is a [code-based web app framework]{.fragment .highlight-green} for Python and R
 
 - *Easy-ish-ly* build web apps with no formal web dev experience
 
@@ -366,9 +366,9 @@ flowchart LR
 ::: {#shinyleft_text}
 ::: {style="text-align: left"}
 
-- Use [reactive programming]{.fragment .highlight-red} that allows for dynamic, real-time updates to the app based on user input
+- Use [reactive programming]{.fragment .highlight-green} that allows for dynamic, real-time updates to the app based on user input
 
-- Extend your Shiny apps with HTML widgets, [real-time data polling]{.fragment .highlight-red}, JavaScript, CSS, and more
+- Extend your Shiny apps with HTML widgets, [real-time data polling]{.fragment .highlight-green}, JavaScript, CSS, and more
 
 :::
 :::
@@ -392,13 +392,13 @@ Learn more about [Shiny for Python](https://shiny.posit.co/py/) and [Shiny for R
 
 <br>
 
-- Most [corporate dashboards feel clunky]{.fragment .highlight-red}...
+- Most [corporate dashboards feel clunky...]{.fragment .highlight-green}
 
 - They're laggy, very boxy, e.g., Power BI, Tableau, MicroStrategy
 
 - Dashboards typically struggle with fast, real-time calculations, search, and data manipulation capabilities
 
-- [For hiring teams, you can use Shiny as a resume accessory]{.fragment .highlight-red} to demonstrate how easy it is to develop **and** deploy a web app styled with the company’s brand aesthetics
+- [For hiring teams, you can use Shiny as a resume accessory]{.fragment .highlight-green} to demonstrate how easy it is to develop **and** deploy a web app styled with the company’s brand aesthetics
 
 ::: footer
 Check out my blog post: [Impressing Hiring Teams with a Shiny App Demo (2023-03-28)](https://www.javierorracadeatcu.com/posts/2023-03-28-shiny-bslib-socal-rug/2023-03-28-shiny-bslib-socal-rug)
@@ -424,6 +424,21 @@ Check out my blog post: [Impressing Hiring Teams with a Shiny App Demo (2023-03-
 
 ::: footer
 Launch this live Shiny app demo: <https://javierorraca.shinyapps.io/Bloomreach_Shiny_App>
+:::
+
+
+## Pro Tip! 💡 *Shiny Assistant*
+
+<br>
+
+- The new Shiny Assistant... 🤯... An LLM-powered tool that builds functional Python and R Shiny apps in minutes!
+<br><br>
+- Shiny Assistant builds apps using [Shinylive](https://github.com/posit-dev/shinylive), a web interface made possible by [WebAssembly](https://webassembly.org/) (or "wasm") 
+<br><br>
+- The LLM’s training data is a few months old as of this writing so it won't know about the latest Shiny features
+
+::: footer
+Posit's [Shiny Assistant blog](https://shiny.posit.co/blog/posts/shiny-assistant/) post | Try the [Shiny Assistant](https://gallery.shinyapps.io/assistant/) for yourself!
 :::
 
 
@@ -463,7 +478,7 @@ RStudio User Guide | <https://docs.posit.co/ide/user/ide/get-started>
 ![](images/connect_concept-map.png){height="75%" width="75%" fig-align="center"}
 
 ::: footer
-Learn about Posit Professional Products & Solutions | <https://solutions.posit.co/get-started>
+Learn about Posit [Professional Products & Solutions](https://solutions.posit.co/get-started) |  Deploy your content on Posit's beta [Connect Cloud](https://connect.posit.cloud/)!
 :::
 
 
@@ -476,12 +491,12 @@ Learn about Microsoft's Virtual Studio Code ("VS Code") User Interface | <https:
 :::
 
 
-## Typical Python Tools for Data Science {.center}
+## Typical Python Tools for Data Science
 
-![Image: © Ander Fernández Jauregui](images/jupyter_notebook.png){height="50%" width="50%"}
+![](images/jupyter_notebook.png){height="50%" width="50%" fig-align="center"}
 
 ::: footer
-Learn about Project Jupyter's Jupyter Notebook | <https://jupyter.org>
+Image: © Ander Fernández Jauregui | Learn about Project Jupyter's [Jupyter Notebook](https://jupyter.org)
 :::
 
 
@@ -491,9 +506,9 @@ Learn about Project Jupyter's Jupyter Notebook | <https://jupyter.org>
 
 - RStudio IDE's "always on" panes welcomed R users seeking a data-analysis-first experience
 
-- [For Python users, RStudio felt too R-centric]{.fragment .highlight-red} and other tools worked *just fine* including VS Code, Jupyter Notebooks, PyCharm, etc.
+- [For Python users, RStudio felt too R-centric]{.fragment .highlight-green} and other tools worked *just fine* including VS Code, Jupyter Notebooks, PyCharm, etc.
 
-- There are many programming languages that can be used for data science, but [Python and R serve as the de facto standards]{.fragment .highlight-red}
+- There are many programming languages that can be used for data analysis, [but Python and R are the de facto standards for data science]{.fragment .highlight-green}
 
 ## {.center background-color='{{< brand color yellow >}}'}
 
@@ -521,10 +536,19 @@ features from all IDEs?
 ![](images/tobias.gif){height="60%" width="60%" fig-align="center"}
 
 ::: footer
-Me, using RStudio while my teammates use VS Code, on any given Monday morning...
+Me, using RStudio while my teammates use VS Code...
 :::
 
 # Introducing: Positron™ {background-color='{{< brand color blue >}}'}
+
+## Positron, *it looks familiar!*
+
+![](images/positron.png){fig-align="center"}
+
+::: footer
+Visit the new Positron website to learn more | <https://positron.posit.co/>
+:::
+
 
 ## About Positron
 
@@ -534,16 +558,7 @@ Me, using RStudio while my teammates use VS Code, on any given Monday morning...
 > - An extensible, polyglot tool for writing code and exploring data
 > - A familiar environment for reproducible authoring and publishing
 
-- Positron is [a tailor-made IDE for data science]{.fragment .highlight-blue} built on top of [Code OSS](https://github.com/microsoft/vscode) that can be used with any combination of programming languages 
-
-::: footer
-Visit the new Positron website to learn more | <https://positron.posit.co/>
-:::
-
-
-## Positron... *It looks familiar!*
-
-![](images/positron.png){fig-align="center"}
+- Positron is [a tailor-made IDE for data science]{.fragment .highlight-green} built on top of [Code OSS](https://github.com/microsoft/vscode) that can be used with any combination of programming languages 
 
 ::: footer
 Visit the new Positron website to learn more | <https://positron.posit.co/>
@@ -619,7 +634,7 @@ Getting Started with Positron | [Machine Prerequisites](https://positron.posit.c
 ::: {.column width="60%"}
 - When Positron starts for the first time in a new workspace (or project directory), it will start Python and/or R depending on your workspace characteristics
 <br><br>
-- In subsequent runs, [Positron will start the same interpreter(s) that was running the last time]{.fragment .highlight-blue} that you used that workspace
+- In subsequent runs, [Positron will start the same interpreter(s) that was running the last time]{.fragment .highlight-green} that you used that workspace
 <br><br>
 - You can start, stop, and switch interpreters from the interpreter selector
 :::
@@ -660,7 +675,7 @@ Positron docs | [Keyboard Shortcuts](https://positron.posit.co/keyboard-shortcut
 
 | Shortcut | Description |
 | -------- | ----------- |
-| <kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>M</kbd> | Insert the pipe operator | 
+| <kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>M</kbd> | Insert the pipe operator (`|>` or `%>%`) | 
 | <kbd>Alt</kbd>+<kbd>-</kbd> | Insert the assignment operator (`<-`) |
 | <kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>L</kbd> | Load the current R package, if any | 
 | <kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> | Build and install the current R package, if any | 
@@ -677,7 +692,7 @@ Positron docs | [Keyboard Shortcuts](https://positron.posit.co/keyboard-shortcut
 
 <br>
 
-If you're an experienced RStudio user, you can [easily set the RStudio keybindings]{.fragment .highlight-blue} in the Positron settings:
+If you're an experienced RStudio user, you can [easily set the RStudio keybindings]{.fragment .highlight-green} in the Positron settings:
 
 - Open Positron's settings in the UI or the keystroke <kbd>Cmd/Ctrl</kbd>+<kbd>,</kbd>
 - Search for "keymap", or navigate to *Extensions > RStudio Keymap*
@@ -692,11 +707,12 @@ Positron docs | [Keyboard Shortcuts](https://positron.posit.co/keyboard-shortcut
 
 <br>
 
-- The new [Data Explorer allows for interactive exploration]{.fragment .highlight-blue} of various types of dataframes using Python (`pandas`, `polars`) or R (`data.frame`, `tibble`, `data.table`, `polars`)
+- The new [Data Explorer allows for interactive exploration]{.fragment .highlight-green} of various types of dataframes using Python (`pandas`, `polars`) or R (`data.frame`, `tibble`, `data.table`, `polars`)
 <br><br>
-- Navigate to the Variables Pane and click on the Data Explorer icon:
-
-![](images/data-explorer-variables.png){width="70%" height="70%" fig-align="center"}
+- The Data Explorer has three primary components
+  - **Data grid**: Spreadsheet-like display of the data with sorting
+  - **Summary panel**: Column name, type and missing data percentage for each column
+  - **Filter bar**: Ephemeral filters for specific columns
 
 ::: footer
 Positron docs | [Data Explorer](https://positron.posit.co/data-explorer.html)
@@ -707,10 +723,9 @@ Positron docs | [Data Explorer](https://positron.posit.co/data-explorer.html)
 
 <br>
 
-- The Data Explorer has three primary components
-  - **Data grid**: Spreadsheet-like display of the data with sorting
-  - **Summary panel**: Column name, type and missing data percentage for each column
-  - **Filter bar**: Ephemeral filters for specific columns
+- To use, navigate to the Variables Pane and click on the Data Explorer icon:
+
+![](images/data-explorer-variables.png){width="70%" height="70%" fig-align="center"}
 
 ::: footer
 Positron docs | [Data Explorer](https://positron.posit.co/data-explorer.html)
@@ -733,9 +748,9 @@ Positron docs | [Data Explorer](https://positron.posit.co/data-explorer.html)
 :::: {.columns}
 
 ::: {.column width="60%"}
-- The data grid is the primary display and [scales efficiently]{.fragment .highlight-blue} with large in-memory datasets up to millions of rows or columns
+- The data grid is the primary display and [scales efficiently]{.fragment .highlight-green} with large in-memory datasets up to millions of rows or columns
 <br><br>
-- At the top right of each column, there is a context menu to [control sorting or add a filter]{.fragment .highlight-blue} for the selected column
+- At the top right of each column, there is a context menu that [controls sorting and filtering]{.fragment .highlight-green} in the selected column
 :::
 
 ::: {.column width="5%"}
@@ -761,7 +776,7 @@ Positron docs | [Data Explorer](https://positron.posit.co/data-explorer.html)
 ::: {.column width="60%"}
 - Displays a vertical scrolling list of all columns in the data
 <br><br>
-- It [displays a sparkline histogram of that column’s data]{.fragment .highlight-blue}, displays the amount of missing data, and shows some summary statistics about that column
+- It [displays a sparkline histogram of that column’s data]{.fragment .highlight-green}, displays the amount of missing data, and shows some summary statistics about that column
 <br><br>
 - Double clicking on a column name will bring the column into focus in the data grid
 :::
@@ -808,7 +823,7 @@ Positron docs | [Data Explorer](https://positron.posit.co/data-explorer.html)
 
 ::: {.column width="35%"}
 <br>
-- [Explore database connections]{.fragment .highlight-blue} established with ODBC drivers or packages
+- [Explore database connections]{.fragment .highlight-green} established with ODBC drivers or packages
 <br><br>
 - For Python users, the `sqlite3` and `SQLAlchemy` packages are supported
 <br><br>
@@ -834,7 +849,7 @@ Positron docs | [Connections Pane](https://positron.posit.co/connections-pane.ht
 <br>
 - Instead of running apps from a Terminal, Positron lets you run supported apps by clicking the <kbd>Play</kbd> button in Editor Actions
 <br><br>
-- [Supported apps include the following: Shiny, Dash, FastAPI, Flask, Gradio, and Streamlit]{.fragment .highlight-blue}
+- [Supported apps include the following: Shiny, Dash, FastAPI, Flask, Gradio, and Streamlit]{.fragment .highlight-green}
 <br><br>
 - You can also start apps in Debug mode
 :::
@@ -847,6 +862,38 @@ Positron docs | [Connections Pane](https://positron.posit.co/connections-pane.ht
 
 ::: footer
 Positron docs | [Run Interactive Apps](https://positron.posit.co/run-interactive-apps.html)
+:::
+
+## Learn More about Positron
+
+{{< video https://youtu.be/8uRcB34Hhsw?si=AlSxeWoMzx0g9QlL width="100%" height="75%" >}}
+
+::: footer
+Visit Posit's new [Positron website](https://positron.posit.co) and their [YouTube channel](https://www.youtube.com/@PositPBC/videos) to learn more
+:::
+
+## Special Bonus for R Users 😘 {.smaller}
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="60%"}
+- Ark ("an R kernel") was created to serve as the interface between R and the Positron IDE and is a Jupyter kernel, a Language Server Protocol ("LSP") server, and it is a Debug Adapter Protocol ("DAP")
+<br><br>
+- It is compatible with all frontends implementing the Jupyter protocol and is bundled with Positron
+<br><br>
+- Ark's LSP was written with a Rust backend to future proof its ability to perform sophisticated static analysis of R code and its DAP allows for advanced step-debugging
+:::
+
+::: {.column width="40%"}
+![](images/ark_logo.png){width="75%" height="75%" fig-align="center"}
+:::
+
+::::
+
+::: footer
+Learn more about Ark on the [Ark GitHub repo](https://github.com/posit-dev/ark)
 :::
 
 ## {.center background-color='{{< brand color peach >}}'}
@@ -890,50 +937,46 @@ ETL 💨
 
 ![](images/jake_the_dog.gif){fig-align="center"}
 
-# Ultra Fast ETL with Apache Arrow, DuckDB, and Polars {background-color='{{< brand color blue >}}'}
+# Arrow, DuckDB, and Polars {background-color='{{< brand color blue >}}'}
 
-## Apache Arrow
-
-### Larger-than-Memory Data
+## About these Frameworks {.smaller}
 
 <br>
 
-![](images/apache_arrow.png)
+- **Apache Arrow**: An in-memory columnar format that lets data move quickly between systems and languages (like Python and R) and speeds up analytical tasks
+<br><br>
+- **DuckDB**: A lightweight, "in-process" SQL database that executes analytical queries very fast right inside your code - No separate server is needed and you can initialized in-line
+<br><br>
+- **Polars**: A modern DataFrame library with a multi-threaded query engine written in Rust that uses the Apache Arrow memory model under the hood
+<br><br>
+
+. . .
+
+- [**Apache Parquet**: A popular columnar storage format that compresses data to save space and is easily read by Arrow, DuckDB, and Polars for efficient data querying]{.fragment .highlight-green}
 
 ::: footer
-Arrow | Learn more at <https://arrow.apache.org/>
+Learn more about [Apache Arrow](https://arrow.apache.org/), [DuckDB](https://duckdb.org/), [Polars](https://pola.rs/), and [Apache Parquet](https://parquet.apache.org/)
 :::
 
-## Arrow and Parquet
 
--   Columnar memory format for flat data
--   Ultra-fast read times from Parquet files
--   Easily convert data.frames and tibbles to Arrow tables in-line
--   Plays well with Pandas (Python) and dplyr (R)
--   Arrow will soon be able to process nested list data
-
-::: footer
-Arrow | Learn more at <https://arrow.apache.org/>
-:::
-
-## How fast is fast?
-
--   My personal laptop has 24 GB RAM
--   To test Arrow's capabilities, I read a [40 GB dataset]{.fragment .highlight-blue} with over [1.1 billion rows]{.fragment .highlight-blue} and 24 columns
--   The `.parquet` dataset was partitioned by Year and Month (120 files)
--   Important to note that my laptop would not be able to load this object entirely into memory as a data.frame or tibble given my laptop's limited RAM
-
-::: footer
-Arrow | Learn more at <https://arrow.apache.org/>
-:::
-
-## Installing Arrow
+## Benefits & Use Cases {.smaller}
 
 <br>
 
-To install Arrow with AWS S3 and GCS support:
+- These frameworks provide [convenient methods for reading and writing columnar file formats]{.fragment .highlight-green}
+<br><br>
+- If you're working with a collection of `.parquet` files, the Arrow packages for C++, Python, and R support [reading entire directories of files and treating them as a single dataset]{.fragment .highlight-green} 
+<br><br>
+- Allows zero-copy data sharing inside a single process without any build-time or link-time dependency requirements. This allows, for example, R users to access Python `pyarrow`-based projects using R's `reticulate` package.
+<br><br>
+- Apache Spark uses Arrow as a data interchange format, and both Python's `PySpark` and R's `sparklyr` take advantage of Arrow for significant performance gains when transferring data
 
-<br>
+::: footer
+Learn more about [Apache Arrow](https://arrow.apache.org/), [DuckDB](https://duckdb.org/), [Polars](https://pola.rs/), and [Apache Parquet](https://parquet.apache.org/)
+:::
+
+
+## Installing Arrow, DuckDB, and Polars
 
 :::: {.columns}
 
@@ -945,14 +988,15 @@ To install Arrow with AWS S3 and GCS support:
 #| eval: false
 #| echo: true
 
-# Set required env vars
+# Arrow env vars for AWS S3 & GCP support
 import os
 os.environ["LIBARROW_MINIMAL"] = "FALSE"
 os.environ["ARROW_S3"] = "ON"
 os.environ["ARROW_GCS"] = "ON"
 
-# Install PyArrow
-!pip install pyarrow
+# Install packages
+!pip install pyarrow duckdb polars
+
 ```
 
 :::
@@ -968,20 +1012,88 @@ os.environ["ARROW_GCS"] = "ON"
 #| eval: false
 #| echo: true
 
-# Set required env vars
+# Arrow env vars for AWS S3 & GCP support
 Sys.setenv(LIBARROW_MINIMAL = "false")
 Sys.setenv(ARROW_S3 = "ON")
 Sys.setenv(ARROW_GCS = "ON")
 
-# Download & Install Arrow
-install.packages('arrow', repos = 'https://apache.r-universe.dev')
+# Enable Polars install with pre-built
+# Rust library binary 
+Sys.setenv(NOT_CRAN = "true")
+
+# Install packages
+install.packages(c("arrow", "duckdb"))
+install.packages("polars", repos = "https://community.r-multiverse.org")
 ```
 :::
 
 ::::
 
+::: footer
+Installation Guides: Apache Arrow ([Python](https://arrow.apache.org/docs/python/install.html), [R](https://arrow.apache.org/docs/r/)), DuckDB ([Python](https://duckdb.org/docs/guides/python/install.html), [R](https://r.duckdb.org/)), Polars ([Python](https://docs.pola.rs/user-guide/installation/), [R](https://pola-rs.github.io/r-polars/vignettes/install.html))
+:::
 
-## Reading the Parquet Data
+
+## Back to fast... *How fast?*
+
+-   My personal laptop is a [MacBook Air with 24 GB RAM]{.fragment .highlight-green}
+-   To test Arrow's capabilities, I read a [40 GB dataset]{.fragment .highlight-green} with more than [1.1 billion rows and 24 columns]{.fragment .highlight-green}
+-   The `.parquet` dataset was partitioned by Year and Month (120 files)
+-   Important to note that my laptop would not be able to load this object entirely into memory as a data.frame or tibble given my laptop's limited RAM
+
+::: footer
+Arrow | Learn more at <https://arrow.apache.org/>
+:::
+
+
+## Reading Remote Parquet Data {.smaller}
+
+:::: {.columns}
+
+::: {.column width="49%"}
+
+*Python*
+
+```{python}
+#| eval: false
+#| echo: true
+
+import pyarrow.dataset as ds
+import pyarrow.compute as pc
+import os
+
+# Set path for download
+# NYC Taxi Data download (40 GB)
+data_path = os.path.join("data", "nyc-taxi")
+
+# Open connection to the remote dataset
+nyc_dataset = ds.dataset(
+  "s3://voltrondata-labs-datasets/nyc-taxi", 
+  format = "parquet"
+)
+
+# Filter for years 2012 - 2021
+filtered_table = nyc_dataset.to_table(
+    filter = ds.field("year").isin(list(range(2012, 2022)))
+)
+
+# Write out the filtered data, partitioned by year and month
+ds.write_dataset(
+    filtered_table,
+    base_dir = data_path,
+    format = "parquet",
+    partitioning = ["year", "month"]
+)
+```
+
+:::
+
+::: {.column width="2%"}
+:::
+
+::: {.column width="49%"}
+
+*R*
 
 ```{r}
 #| eval: false
@@ -990,17 +1102,24 @@ install.packages('arrow', repos = 'https://apache.r-universe.dev')
 library(here)
 library(arrow)
 library(dplyr)
-library(ggplot2)
-library(bench)
 
+# Set path for download
 # NYC Taxi Data download (40 GB)
 data_path <- here::here("data/nyc-taxi")
 
+# Open connection to the remote dataset,
+# filter for years 2012 - 2021, and
+# write out the filtered data,
+# partitioned by year and month
 open_dataset("s3://voltrondata-labs-datasets/nyc-taxi") |>
   filter(year %in% 2012:2021) |> 
   write_dataset(data_path, partitioning = c("year", "month"))
-
 ```
+
+:::
+
+::::
+
 
 ::: footer
 Arrow | Learn more at <https://arrow.apache.org/>
@@ -1008,14 +1127,19 @@ Arrow | Learn more at <https://arrow.apache.org/>
 
 ## Benchmarking Read Times
 
+*R*
+
 ```{r}
 #| eval: false
 #| echo: true
 
-# 2. Benchmark Read Times
+library(ggplot2)
+library(bench)
+
+# Benchmark Read Times
 bnch <- bench::mark(
   min_iterations = 1000,
-  arrow = open_dataset(here::here("data/nyc-taxi"))
+  arrow = arrow::open_dataset(here::here("data/nyc-taxi"))
 )
 
 autoplot(bnch)
@@ -1027,26 +1151,28 @@ Arrow | Learn more at <https://arrow.apache.org/>
 
 ## Benchmarking Read Times
 
--   Results show read times from a 40GB parquet, 1.1 billion row dataset (benchmarked over 1,000 iterations)
+-   Once "locally" available, the 40GB, 1.1 billion row dataset (benchmarked 1,000 times) can be [read on average in 17ms]{.fragment .highlight-green}
 
-![](images/arrow_read.png){width="55%" fig-align="center"}
+![](images/plot_arrow_read.png){width="55%" fig-align="center"}
 
 ::: footer
 Arrow | Learn more at <https://arrow.apache.org/>
 :::
 
-## arrow + dplyr Benchmark
+## Benchmarking Data Manipulation
+
+- Using R's `dplyr`, we can perform ETL on an `arrow` table and `collect()` the results back to a df
 
 ```{r}
 #| eval: false
 #| echo: true
 
-# 1. Open Arrow connection to dataset (40 GB)
+# Open Arrow connection to dataset (40 GB)
 nyc_taxi <- open_dataset(here::here("data/nyc-taxi"))
 
-# 2. Benchmark dplyr pipeline
+# Benchmark dplyr pipeline
 bnch <- bench::mark(
-  min_iterations = 10,
+  min_iterations = 100,
   arrow = nyc_taxi |> 
     dplyr::group_by(year) |> 
     dplyr::summarise(all_trips = n(),
@@ -1062,17 +1188,17 @@ autoplot(bnch)
 Arrow | [Arrow + dplyr compatibility](https://r4ds.hadley.nz/arrow.html)
 :::
 
-## arrow + dplyr Benchmark
+## Benchmarking ETL
 
--   Arrow + dplyr summarized 1.1 billion rows in less than 5s (benchmarked over 10 iterations) to a 10 x 4 tibble
+- The results show the ETL pipeline [on average summarized 1.1 billion rows in 5.04s]{.fragment .highlight-green}, benchmarked over 100 iterations
 
-![](images/arrow_group_by.png){width="55%" fig-align="center"}
+![](images/plot_arrow_summarise.png){width="55%" fig-align="center"}
 
 ::: footer
 Arrow | [Arrow + dplyr compatibility](https://r4ds.hadley.nz/arrow.html)
 :::
 
-## Tidyverse Compatibility
+## Note for R's Tidyverse Users
 
 -  Many functions from the tidyverse collections of packages have 1:1 compatibility with Arrow tables
 -  However, sometimes you'll encounter a breaking point
@@ -1089,31 +1215,35 @@ nyc_taxi |>
 
 . . .
 
--   This `stringr` function is not supported by Arrow
+-  Out of the box, Arrow does not support `stringr::str_replace_na()`
 
 ::: footer
 Arrow | [Arrow + dplyr compatibility](https://r4ds.hadley.nz/arrow.html)
 :::
 
-##
+## 
 
-![](images/crying_cat.gif){fig-align="center"}
+![](images/tobias.gif){height="60%" width="60%" fig-align="center"}
 
-## {.center}
+::: footer
+Me, struggling to use my favorite `tidyverse` functions with Arrow...
+:::
+
+## {.center background-color='{{< brand color blue >}}'}
 
 ::: r-fit-text
 but wait!
 :::
 
 ::: r-fit-text
-problem solved
+*a solution exists*
 :::
 
 ## User Defined Functions
 
--   Lucky for us, Arrow allows us to create and register ***User Defined Functions ("UDFs")*** to the Arrow engine
--   Almost any function can be made compatible with Arrow by registering custom UDFs
--   Let's learn how to register `str_replace_na()` with the Arrow kernel
+-   Arrow allows users to create and register User Defined Functions (or "UDFs") to the Arrow engine
+-   Almost any function can be made Arrow-friendly by registering custom UDFs to the Arrow kernel
+-   Let's learn how to register `stringr::str_replace_na()` with the Arrow kernel
 
 ::: footer
 Arrow | Learn more about registering Arrow [User Defined Functions ("UDFs")](https://arrow.apache.org/docs/r/reference/register_scalar_function.html)
@@ -1121,8 +1251,7 @@ Arrow | Learn more about registering Arrow [User Defined Functions ("UDFs")](htt
 
 ## Registering UDFs
 
--   First, run `arrow::schema()` on your Arrow table to review the field name / data type pairs
--   Since I want to mutate the `vendor_name` field, I know I'll be working with an Arrow `string()` data type
+-   First, run `arrow::schema()` on your Arrow table to review the field name and data type pairs
 
 ```{r}
 #| echo: true
@@ -1139,14 +1268,17 @@ arrow::schema(nyc_taxi)
 #> ...
 ```
 
+-   Since I want to mutate the `vendor_name` field, I know I'll be working with an Arrow `string()` data type
+
 ::: footer
 Arrow | Learn more about registering Arrow [User Defined Functions ("UDFs")](https://arrow.apache.org/docs/r/reference/register_scalar_function.html)
 :::
 
 ## Registering UDFs
 
--   Next, use `register_scalar_function()`
--   Name your UDF "replace_arrow_nas" and remember to set `auto_convert = TRUE`
+-   Next, we'll use `arrow::register_scalar_function()`
+-   Name your UDF `replace_arrow_nas`
+- If you're registering a tidyverse function, set `auto_convert = TRUE`
 
 ```{r}
 #| echo: true
@@ -1174,9 +1306,9 @@ Unless you're developing a package, `auto_convert` should be set to `TRUE`
 Arrow | Learn more about registering Arrow [User Defined Functions ("UDFs")](https://arrow.apache.org/docs/r/reference/register_scalar_function.html)
 :::
 
-## Registering UDFs
+## Trying the UDF {auto-animate="true"}
 
--   Try your new registered function
+-   Let's see if the registered `replace_arrow_nas()` Arrow UDF works...
 
 ```{r}
 #| echo: true
@@ -1185,6 +1317,25 @@ nyc_taxi |>
   distinct(vendor_name) |> 
   arrange(vendor_name) |> 
   collect()
+```
+
+::: footer
+Arrow | Learn more about registering Arrow [User Defined Functions ("UDFs")](https://arrow.apache.org/docs/r/reference/register_scalar_function.html)
+:::
+
+
+## Trying the UDF {auto-animate="true"}
+
+-   Let's see if the registered `replace_arrow_nas()` Arrow UDF works...
+
+```{r}
+#| echo: true
+nyc_taxi |> 
+  mutate(vendor_name = replace_arrow_nas(vendor_name, "No vendor")) |> 
+  distinct(vendor_name) |> 
+  arrange(vendor_name) |> 
+  collect()
+
 #> # A tibble: 3 × 1
 #>   vendor_name
 #>   <chr>      
@@ -1192,6 +1343,10 @@ nyc_taxi |>
 #> 2 No vendor
 #> 3 VTS
 ```
+
+. . .
+
+- *Success! It works!*
 
 ::: footer
 Arrow | Learn more about registering Arrow [User Defined Functions ("UDFs")](https://arrow.apache.org/docs/r/reference/register_scalar_function.html)
@@ -1204,3 +1359,471 @@ Arrow | Learn more about registering Arrow [User Defined Functions ("UDFs")](htt
 ::: footer
 Eevee can't believe it... "Wooooooooooow, Javi!"
 :::
+
+
+## DuckDB {.smaller}
+
+<br><br>
+-   [DuckDB Labs](https://duckdblabs.com/) created an in-line database management system, like a SQLite database engine, but optimized for distributed compute and optimized for larger-than-memory analysis
+<br><br>
+-   The `duckdb` package for Python offers a state-of-the-art optimizer that pushes down filters and projections directly into Arrow scans
+<br><br>
+-   As a result, only relevant columns and partitions will be read thus significantly accelerates query execution
+<br><br>
+- DuckDB comes with core and community extensions that expand the framework to, e.g., scan remote Databricks Unity Catalog tables without needing to spin up a Spark cluster
+
+::: footer
+DuckDB Labs | Learn about [DuckDB](https://duckdb.org) and [DuckDB Extensions](https://duckdb.org/docs/extensions/overview.html)
+:::
+
+
+## DuckDB Usage Basics
+
+::: panel-tabset
+
+## Python
+
+```{python}
+#| eval: false
+#| echo: true
+import duckdb
+import pyarrow as pa
+import pyarrow.dataset as ds
+
+# Open dataset using year,month folder partition
+nyc = ds.dataset('nyc-taxi/', partitioning=["year", "month"])
+
+# We transform the nyc dataset into a DuckDB relation
+nyc = duckdb.arrow(nyc)
+
+# Run same query again
+nyc.filter("year > 2014 & passenger_count > 0 & trip_distance > 0.25 & fare_amount > 0")
+    .aggregate("SELECT AVG(fare_amount), AVG(tip_amount), AVG(tip_amount / fare_amount) as tip_pct","passenger_count").arrow()
+```
+
+## R
+
+```{r}
+#| eval: false
+#| echo: true
+library(duckdb)
+library(arrow)
+library(dplyr)
+
+ds <- arrow::open_dataset("nyc-taxi", partitioning = c("year", "month"))
+
+ds |>
+  filter(year > 2014 & passenger_count > 0 & 
+           trip_distance > 0.25 & fare_amount > 0) |>
+  # Pass off to DuckDB
+  to_duckdb() |>
+  group_by(passenger_count) |>
+  mutate(tip_pct = tip_amount / fare_amount) |>
+  summarise(fare_amount = mean(fare_amount, na.rm = TRUE),
+            tip_amount = mean(tip_amount, na.rm = TRUE),
+            tip_pct = mean(tip_pct, na.rm = TRUE)) |>
+  arrange(passenger_count) |>
+  collect()
+```
+
+:::
+
+::: footer
+DuckDB Labs | Learn how [DuckDB quacks Arrow](https://duckdb.org/2021/12/03/duck-arrow.html)
+:::
+
+## DuckDB Streaming
+
+::: panel-tabset
+
+## Python
+
+```{python}
+#| eval: false
+#| echo: true
+# Reads dataset partitioning it in year/month folder
+nyc_dataset = ds.dataset('nyc-taxi/', partitioning=["year", "month"])
+
+# Gets Database Connection
+con = duckdb.connect()
+
+query = con.execute("SELECT * FROM nyc_dataset")
+
+# DuckDB's queries can now produce a Record Batch Reader
+record_batch_reader = query.fetch_record_batch()
+
+# Which means we can stream the whole query per batch.
+# This retrieves the first batch
+chunk = record_batch_reader.read_next_batch()
+```
+
+## R
+
+```{r}
+#| eval: false
+#| echo: true
+# Reads dataset partitioning it in year/month folder
+nyc_dataset = open_dataset("nyc-taxi/", partitioning = c("year", "month"))
+
+# Gets Database Connection
+con <- dbConnect(duckdb::duckdb())
+
+# We can use the same function as before to register our arrow dataset
+duckdb::duckdb_register_arrow(con, "nyc", nyc_dataset)
+
+res <- dbSendQuery(con, "SELECT * FROM nyc", arrow = TRUE)
+
+# DuckDB's queries can now produce a Record Batch Reader
+record_batch_reader <- duckdb::duckdb_fetch_record_batch(res)
+
+# Which means we can stream the whole query per batch.
+# This retrieves the first batch
+cur_batch <- record_batch_reader$read_next_batch()
+```
+:::
+
+::: footer
+DuckDB Labs | Learn how [DuckDB quacks Arrow](https://duckdb.org/2021/12/03/duck-arrow.html)
+:::
+
+## DuckDB Streaming Speed
+
+::: panel-tabset
+## DuckDB
+
+```{r}
+#| eval: false
+#| echo: true
+# DuckDB via Python
+# Open dataset using year,month folder partition
+nyc = ds.dataset('nyc-taxi/', partitioning=["year", "month"])
+
+# Get database connection
+con = duckdb.connect()
+
+# Run query that selects part of the data
+query = con.execute("SELECT total_amount, passenger_count,year FROM nyc where total_amount > 100 and year > 2014")
+
+# Create Record Batch Reader from Query Result.
+# "fetch_record_batch()" also accepts an extra parameter related to the desired produced chunk size.
+record_batch_reader = query.fetch_record_batch()
+
+# Retrieve all batch chunks
+chunk = record_batch_reader.read_next_batch()
+while len(chunk) > 0:
+    chunk = record_batch_reader.read_next_batch()
+```
+
+## Pandas
+
+```{python}
+#| eval: false
+#| echo: true
+# We must exclude one of the columns of the NYC dataset due to an unimplemented cast in Arrow
+working_columns = ["vendor_id","pickup_at","dropoff_at","passenger_count","trip_distance","pickup_longitude",
+    "pickup_latitude","store_and_fwd_flag","dropoff_longitude","dropoff_latitude","payment_type",
+    "fare_amount","extra","mta_tax","tip_amount","tolls_amount","total_amount","year", "month"]
+
+# Open dataset using year,month folder partition
+nyc_dataset = ds.dataset(dir, partitioning=["year", "month"])
+# Generate a scanner to skip problematic column
+dataset_scanner = nyc_dataset.scanner(columns=working_columns)
+
+# Materialize dataset to an Arrow Table
+nyc_table = dataset_scanner.to_table()
+
+# Generate Dataframe from Arow Table
+nyc_df = nyc_table.to_pandas()
+
+# Apply Filter
+filtered_df = nyc_df[
+    (nyc_df.total_amount > 100) &
+    (nyc_df.year >2014)]
+
+# Apply Projection
+res = filtered_df[["total_amount", "passenger_count","year"]]
+
+# Transform Result back to an Arrow Table
+new_table = pa.Table.from_pandas(res)
+```
+:::
+
+::: footer
+DuckDB Labs | Learn how [DuckDB quacks Arrow](https://duckdb.org/2021/12/03/duck-arrow.html)
+:::
+
+## DuckDB Streaming Speed
+
+-   Pandas runtime was 146.91 seconds
+
+. . .
+
+-   DuckDB runtime was [0.05 seconds]{.fragment .highlight-green}
+
+. . .
+
+![](images/minion.gif){width="60%" fig-align="center"}
+
+::: footer
+DuckDB Labs | Learn how [DuckDB quacks Arrow](https://duckdb.org/2021/12/03/duck-arrow.html)
+:::
+
+## For R users: duckplyr
+
+-   `duckplyr`, from DuckDB Labs, offers 1:1 compatibility with `dplyr` functions but there are some caveats:
+    -   Factor columns, nested lists, and nested tibbles are not *yet* supported
+    -   To group data, use `dplyr`'s `summarize()` function with the `.by` argument as `group_by()` is not be supported
+
+::: footer
+duckplyr | Learn more at <https://duckdblabs.com/>
+:::
+
+## Benchmarking Analysis
+
+-   Arrow and DuckDB really stood out for fast manipulation of data using `dplyr` syntax
+-   The code below shows the basic transformation done to the data using `dplyr`, `arrow`, `duckdb`, `duckplyr`, and `polars`
+
+```{r}
+#| eval: false
+#| echo: true
+#| code-line-numbers: "1-7|7"
+nyc_taxi |> 
+    dplyr::filter(passenger_count > 1) |> 
+    dplyr::group_by(year) |> 
+    dplyr::summarise(all_trips = n(),
+                     shared_trips = sum(passenger_count, na.rm = T)) |>
+    dplyr::mutate(pct_shared = shared_trips / all_trips * 100) |> 
+    dplyr::collect()
+```
+ - The ending `collect()` writes the lazy / scanned data back to a df
+
+::: footer
+DuckDB Labs | Learn more at <https://duckdblabs.com/>
+:::
+
+## Benchmark: 1 million rows
+
+![](images/benchmark_1000000.png){fig-align="center"}
+
+::: footer
+DuckDB Labs | Learn more at <https://duckdblabs.com/>
+:::
+
+## Benchmark: 10 million rows
+
+![](images/benchmark_10000000.png){fig-align="center"}
+
+::: footer
+DuckDB Labs | Learn more at <https://duckdblabs.com/>
+:::
+
+## Benchmark: 100 million rows
+
+![](images/benchmark_100000000.png){fig-align="center"}
+
+::: footer
+DuckDB Labs | Learn more at <https://duckdblabs.com/>
+:::
+
+## Benchmark: 500 million rows
+
+![](images/benchmark_500000000.png){fig-align="center"}
+
+::: footer
+DuckDB Labs | Learn more at <https://duckdblabs.com/>
+:::
+
+
+##
+
+![](images/wrap_it_up.gif){fig-align="center"}
+
+
+# Quarto {background-color='{{< brand color blue >}}'}
+
+## {.center background-color='{{< brand color blue >}}'}
+
+::: r-fit-text
+Just to clarify...
+:::
+
+
+## {.center background-color='{{< brand color blue >}}'}
+
+::: r-fit-text
+It's *Quarto*.
+:::
+
+. . .
+
+::: r-fit-text
+Q-U-A-R-T-O.
+:::
+
+
+## {.center background-color='{{< brand color blue >}}'}
+
+::: r-fit-text
+Not #4 in Spanish (or "cuatro").
+:::
+
+
+## Quarto Presentations
+
+These web slides were built with [Quarto](https://quarto.org/) and this section was copied almost entirely from Quarto's Reveal.js demo documentation
+
+. . .
+
+The next few slides cover what you can do with Quarto and [Reveal.js](https://revealjs.com) including:
+
+-   Presenting code and LaTeX equations
+-   Rendering code chunk computations in slide output
+-   Fancy transitions, animations, and code windows
+
+::: footer
+Quarto | Learn more on Quarto's Reveal.js [demo presentation](https://github.com/quarto-dev/quarto-web/blob/main/docs/presentations/revealjs/demo/index.qmd)
+:::
+
+## Pretty Code {auto-animate="true"}
+
+-   Over 20 syntax highlighting themes available
+-   Default theme optimized for accessibility
+
+``` r
+# Define a server for the Shiny app
+function(input, output) {
+  
+  # Fill in the spot we created for a plot
+  output$phonePlot <- renderPlot({
+    # Render a barplot
+  })
+}
+```
+
+::: footer
+Quarto | [Syntax Highlighting](https://quarto.org/docs/output-formats/html-code.html#highlighting)
+:::
+
+## Code Animations {auto-animate="true"}
+
+-   Over 20 syntax highlighting themes available
+-   Default theme optimized for accessibility
+
+``` r
+# Define a server for the Shiny app
+function(input, output) {
+  
+  # Fill in the spot we created for a plot
+  output$phonePlot <- renderPlot({
+    # Render a barplot
+    barplot(WorldPhones[,input$region]*1000, 
+            main=input$region,
+            ylab="Number of Telephones",
+            xlab="Year")
+  })
+}
+```
+
+::: footer
+Quarto | [Code Animations](https://quarto.org/docs/presentations/revealjs/advanced.html#code-animations)
+:::
+
+## Line Highlighting
+
+-   Highlight specific lines for emphasis
+-   Incrementally highlight additional lines
+
+``` {.python code-line-numbers="4-5|7|10"}
+import numpy as np
+import matplotlib.pyplot as plt
+
+r = np.arange(0, 2, 0.01)
+theta = 2 * np.pi * r
+fig, ax = plt.subplots(subplot_kw={'projection': 'polar'})
+ax.plot(theta, r)
+ax.set_rticks([0.5, 1, 1.5, 2])
+ax.grid(True)
+plt.show()
+```
+
+::: footer
+Quarto | [Line Highlighting](https://quarto.org/docs/presentations/revealjs/#line-highlighting)
+:::
+
+
+## Counters
+
+Great for training purposes or when you've got a time limit
+
+::: columns
+::: {.column width="50%"}
+
+```{r}
+#| eval: false
+#| echo: true
+
+# YOUR TURN! Complete the below 
+# dplyr pipeline to group by and
+# summarize the data set
+
+library(dplyr)
+data(package = "ggplot2", "diamonds")
+
+diamonds |> 
+  <your code here>
+```
+:::
+
+::: {.column width="50%"}
+```{r}
+#| eval: false
+#| echo: true
+#| code-fold: true
+#| code-summary: "See {countdown} code"
+library(countdown)
+countdown(
+  minutes = 0, 
+  seconds = 10,
+  play_sound = TRUE,
+  color_border = "#1A4064",
+  color_text = "#76AADB",
+  font_size = "3em"
+)
+```
+:::
+:::
+
+```{r}
+#| eval: true
+#| echo: false
+library(countdown)
+countdown(
+  minutes = 0, 
+  seconds = 10,
+  right = "55%", 
+  bottom = "5%",
+  play_sound = TRUE,
+  color_border = "#FFDDD6",
+  color_text = "#ff3a12",
+  font_size = "3em"
+)
+```
+
+::: footer
+Quarto | Learn more about the [countdown](https://pkg.garrickadenbuie.com/countdown/) package
+:::
+
+## {.center background-color='{{< brand color peach >}}'}
+
+::: r-fit-text
+*Thank you!* 🤍
+:::
+
+# questions? {.center background-color='{{< brand color blue >}}'}
+
+<br><br>
+
+Connect with me!
+
+- Personal Site: [JavierOrracaDeatcu.com](https://www.javierorracadeatcu.com/){style="color: black"}
+- LinkedIn: [linkedin.com/in/orraca](https://www.linkedin.com/in/orraca/){style="color: black"}

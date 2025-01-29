@@ -12,7 +12,7 @@ typography:
   fonts:
     - family: Rubik
       source: google
-    - family: Space Mono
+    - family: Zilla Slab
       source: google
   base: 
     family: Rubik
@@ -23,7 +23,7 @@ typography:
   link:
     color: brightpeach
     decoration: underline
-  monospace: Space Mono
+  monospace: Zilla Slab
   monospace-inline:
     color: "#3d3d3d"
     background-color: lightpeach

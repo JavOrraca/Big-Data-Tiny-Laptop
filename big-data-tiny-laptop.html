@@ -93,7 +93,7 @@
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="big-data-tiny-laptop_files/libs/revealjs/dist/theme/quarto-ce32ae1854cdea5ced72074587d87fba.css">
+  <link rel="stylesheet" href="big-data-tiny-laptop_files/libs/revealjs/dist/theme/quarto-c2b80d5fd26e28740abd37bb455d4893.css">
   <link href="big-data-tiny-laptop_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="big-data-tiny-laptop_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="big-data-tiny-laptop_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -188,6 +188,8 @@
   <script src="big-data-tiny-laptop_files/libs/quarto-diagram/mermaid.min.js"></script>
   <script src="big-data-tiny-laptop_files/libs/quarto-diagram/mermaid-init.js"></script>
   <link href="big-data-tiny-laptop_files/libs/quarto-diagram/mermaid.css" rel="stylesheet">
+  <link href="big-data-tiny-laptop_files/libs/countdown-0.4.0/countdown.css" rel="stylesheet">
+  <script src="big-data-tiny-laptop_files/libs/countdown-0.4.0/countdown.js"></script>
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -643,7 +645,7 @@ flowchart LR
 <div id="shiny" class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
 <div style="text-align: left">
 <ul>
-<li><p>Shiny is a <span class="fragment highlight-red">code-based web app framework</span> for Python and R</p></li>
+<li><p>Shiny is a <span class="fragment highlight-green">code-based web app framework</span> for Python and R</p></li>
 <li><p><em>Easy-ish-ly</em> build web apps with no formal web dev experience</p></li>
 </ul>
 </div>
@@ -653,8 +655,8 @@ flowchart LR
 <div id="shinyleft_text" class="quarto-layout-cell" style="flex-basis: 60.0%;justify-content: flex-start;">
 <div style="text-align: left">
 <ul>
-<li><p>Use <span class="fragment highlight-red">reactive programming</span> that allows for dynamic, real-time updates to the app based on user input</p></li>
-<li><p>Extend your Shiny apps with HTML widgets, <span class="fragment highlight-red">real-time data polling</span>, JavaScript, CSS, and more</p></li>
+<li><p>Use <span class="fragment highlight-green">reactive programming</span> that allows for dynamic, real-time updates to the app based on user input</p></li>
+<li><p>Extend your Shiny apps with HTML widgets, <span class="fragment highlight-green">real-time data polling</span>, JavaScript, CSS, and more</p></li>
 </ul>
 </div>
 </div>
@@ -678,10 +680,10 @@ flowchart LR
 <h2>Shiny Demo as a Resume Accessory</h2>
 <p><br></p>
 <ul>
-<li><p>Most <span class="fragment highlight-red">corporate dashboards feel clunky</span>…</p></li>
+<li><p>Most <span class="fragment highlight-green">corporate dashboards feel clunky…</span></p></li>
 <li><p>They’re laggy, very boxy, e.g., Power BI, Tableau, MicroStrategy</p></li>
 <li><p>Dashboards typically struggle with fast, real-time calculations, search, and data manipulation capabilities</p></li>
-<li><p><span class="fragment highlight-red">For hiring teams, you can use Shiny as a resume accessory</span> to demonstrate how easy it is to develop <strong>and</strong> deploy a web app styled with the company’s brand aesthetics</p></li>
+<li><p><span class="fragment highlight-green">For hiring teams, you can use Shiny as a resume accessory</span> to demonstrate how easy it is to develop <strong>and</strong> deploy a web app styled with the company’s brand aesthetics</p></li>
 </ul>
 <div class="footer">
 <p>Check out my blog post: <a href="https://www.javierorracadeatcu.com/posts/2023-03-28-shiny-bslib-socal-rug/2023-03-28-shiny-bslib-socal-rug">Impressing Hiring Teams with a Shiny App Demo (2023-03-28)</a></p>
@@ -710,6 +712,18 @@ flowchart LR
 </div>
 <div class="footer">
 <p>Launch this live Shiny app demo: <a href="https://javierorraca.shinyapps.io/Bloomreach_Shiny_App" class="uri">https://javierorraca.shinyapps.io/Bloomreach_Shiny_App</a></p>
+</div>
+</section>
+<section id="pro-tip-shiny-assistant" class="slide level2">
+<h2>Pro Tip! 💡 <em>Shiny Assistant</em></h2>
+<p><br></p>
+<ul>
+<li>The new Shiny Assistant… 🤯… An LLM-powered tool that builds functional Python and R Shiny apps in minutes! <br><br></li>
+<li>Shiny Assistant builds apps using <a href="https://github.com/posit-dev/shinylive">Shinylive</a>, a web interface made possible by <a href="https://webassembly.org/">WebAssembly</a> (or “wasm”) <br><br></li>
+<li>The LLM’s training data is a few months old as of this writing so it won’t know about the latest Shiny features</li>
+</ul>
+<div class="footer">
+<p>Posit’s <a href="https://shiny.posit.co/blog/posts/shiny-assistant/">Shiny Assistant blog</a> post | Try the <a href="https://gallery.shinyapps.io/assistant/">Shiny Assistant</a> for yourself!</p>
 </div>
 </section>
 <section id="my-professional-data-science-workflow" class="slide level2">
@@ -753,7 +767,7 @@ flowchart LR
 </figure>
 </div>
 <div class="footer">
-<p>Learn about Posit Professional Products &amp; Solutions | <a href="https://solutions.posit.co/get-started" class="uri">https://solutions.posit.co/get-started</a></p>
+<p>Learn about Posit <a href="https://solutions.posit.co/get-started">Professional Products &amp; Solutions</a> | Deploy your content on Posit’s beta <a href="https://connect.posit.cloud/">Connect Cloud</a>!</p>
 </div>
 </section>
 <section id="typical-python-tools-for-data-science" class="slide level2">
@@ -767,16 +781,15 @@ flowchart LR
 <p>Learn about Microsoft’s Virtual Studio Code (“VS Code”) User Interface | <a href="https://code.visualstudio.com/docs/getstarted/userinterface" class="uri">https://code.visualstudio.com/docs/getstarted/userinterface</a></p>
 </div>
 </section>
-<section id="typical-python-tools-for-data-science-1" class="slide level2 center">
+<section id="typical-python-tools-for-data-science-1" class="slide level2">
 <h2>Typical Python Tools for Data Science</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/jupyter_notebook.png" style="width:50.0%;height:50.0%"></p>
-<figcaption>Image: © Ander Fernández Jauregui</figcaption>
+<p><img data-src="images/jupyter_notebook.png" class="quarto-figure quarto-figure-center" style="width:50.0%;height:50.0%"></p>
 </figure>
 </div>
 <div class="footer">
-<p>Learn about Project Jupyter’s Jupyter Notebook | <a href="https://jupyter.org" class="uri">https://jupyter.org</a></p>
+<p>Image: © Ander Fernández Jauregui | Learn about Project Jupyter’s <a href="https://jupyter.org">Jupyter Notebook</a></p>
 </div>
 </section>
 <section id="in-review" class="slide level2">
@@ -784,8 +797,8 @@ flowchart LR
 <p><br></p>
 <ul>
 <li><p>RStudio IDE’s “always on” panes welcomed R users seeking a data-analysis-first experience</p></li>
-<li><p><span class="fragment highlight-red">For Python users, RStudio felt too R-centric</span> and other tools worked <em>just fine</em> including VS Code, Jupyter Notebooks, PyCharm, etc.</p></li>
-<li><p>There are many programming languages that can be used for data science, but <span class="fragment highlight-red">Python and R serve as the de facto standards</span></p></li>
+<li><p><span class="fragment highlight-green">For Python users, RStudio felt too R-centric</span> and other tools worked <em>just fine</em> including VS Code, Jupyter Notebooks, PyCharm, etc.</p></li>
+<li><p>There are many programming languages that can be used for data analysis, <span class="fragment highlight-green">but Python and R are the de facto standards for data science</span></p></li>
 </ul>
 </section>
 <section id="section-1" class="slide level2 center" data-background-color="#FFC600">
@@ -815,13 +828,20 @@ flowchart LR
 </figure>
 </div>
 <div class="footer">
-<p>Me, using RStudio while my teammates use VS Code, on any given Monday morning…</p>
+<p>Me, using RStudio while my teammates use VS Code…</p>
 </div>
 </section></section>
 <section>
 <section id="introducing-positron" class="title-slide slide level1 center" data-background-color="#119BFE">
 <h1>Introducing: Positron™</h1>
 
+</section>
+<section id="positron-it-looks-familiar" class="slide level2">
+<h2>Positron, <em>it looks familiar!</em></h2>
+
+<img data-src="images/positron.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p>Visit the new Positron website to learn more | <a href="https://positron.posit.co/" class="uri">https://positron.posit.co/</a></p>
+</div>
 </section>
 <section id="about-positron" class="slide level2">
 <h2>About Positron</h2>
@@ -838,16 +858,9 @@ flowchart LR
 
 </blockquote>
 <ul>
-<li>Positron is <span class="fragment highlight-blue">a tailor-made IDE for data science</span> built on top of <a href="https://github.com/microsoft/vscode">Code OSS</a> that can be used with any combination of programming languages</li>
+<li>Positron is <span class="fragment highlight-green">a tailor-made IDE for data science</span> built on top of <a href="https://github.com/microsoft/vscode">Code OSS</a> that can be used with any combination of programming languages</li>
 </ul>
 <div class="footer">
-<p>Visit the new Positron website to learn more | <a href="https://positron.posit.co/" class="uri">https://positron.posit.co/</a></p>
-</div>
-</section>
-<section id="positron-it-looks-familiar" class="slide level2">
-<h2>Positron… <em>It looks familiar!</em></h2>
-
-<img data-src="images/positron.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
 <p>Visit the new Positron website to learn more | <a href="https://positron.posit.co/" class="uri">https://positron.posit.co/</a></p>
 </div>
 </section>
@@ -910,7 +923,7 @@ flowchart LR
 <div class="column" style="width:60%;">
 <ul>
 <li>When Positron starts for the first time in a new workspace (or project directory), it will start Python and/or R depending on your workspace characteristics <br><br></li>
-<li>In subsequent runs, <span class="fragment highlight-blue">Positron will start the same interpreter(s) that was running the last time</span> that you used that workspace <br><br></li>
+<li>In subsequent runs, <span class="fragment highlight-green">Positron will start the same interpreter(s) that was running the last time</span> that you used that workspace <br><br></li>
 <li>You can start, stop, and switch interpreters from the interpreter selector</li>
 </ul>
 </div><div class="column" style="width:40%;">
@@ -990,7 +1003,7 @@ flowchart LR
 <tbody>
 <tr class="odd">
 <td><kbd>Cmd/Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>M</kbd></td>
-<td>Insert the pipe operator</td>
+<td>Insert the pipe operator (<code>|&gt;</code> or <code>%&gt;%</code>)</td>
 </tr>
 <tr class="even">
 <td><kbd>Alt</kbd>+<kbd>-</kbd></td>
@@ -1025,7 +1038,7 @@ flowchart LR
 <section id="rstudio-keymap" class="slide level2 smaller">
 <h2>RStudio Keymap</h2>
 <p><br></p>
-<p>If you’re an experienced RStudio user, you can <span class="fragment highlight-blue">easily set the RStudio keybindings</span> in the Positron settings:</p>
+<p>If you’re an experienced RStudio user, you can <span class="fragment highlight-green">easily set the RStudio keybindings</span> in the Positron settings:</p>
 <ul>
 <li>Open Positron’s settings in the UI or the keystroke <kbd>Cmd/Ctrl</kbd>+<kbd>,</kbd></li>
 <li>Search for “keymap”, or navigate to <em>Extensions &gt; RStudio Keymap</em></li>
@@ -1039,14 +1052,14 @@ flowchart LR
 <h2>Data Explorer Overview</h2>
 <p><br></p>
 <ul>
-<li>The new <span class="fragment highlight-blue">Data Explorer allows for interactive exploration</span> of various types of dataframes using Python (<code>pandas</code>, <code>polars</code>) or R (<code>data.frame</code>, <code>tibble</code>, <code>data.table</code>, <code>polars</code>) <br><br></li>
-<li>Navigate to the Variables Pane and click on the Data Explorer icon:</li>
+<li>The new <span class="fragment highlight-green">Data Explorer allows for interactive exploration</span> of various types of dataframes using Python (<code>pandas</code>, <code>polars</code>) or R (<code>data.frame</code>, <code>tibble</code>, <code>data.table</code>, <code>polars</code>) <br><br></li>
+<li>The Data Explorer has three primary components
+<ul>
+<li><strong>Data grid</strong>: Spreadsheet-like display of the data with sorting</li>
+<li><strong>Summary panel</strong>: Column name, type and missing data percentage for each column</li>
+<li><strong>Filter bar</strong>: Ephemeral filters for specific columns</li>
+</ul></li>
 </ul>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/data-explorer-variables.png" class="quarto-figure quarto-figure-center" style="width:70.0%;height:70.0%"></p>
-</figure>
-</div>
 <div class="footer">
 <p>Positron docs | <a href="https://positron.posit.co/data-explorer.html">Data Explorer</a></p>
 </div>
@@ -1055,13 +1068,13 @@ flowchart LR
 <h2>Data Explorer Overview</h2>
 <p><br></p>
 <ul>
-<li>The Data Explorer has three primary components
-<ul>
-<li><strong>Data grid</strong>: Spreadsheet-like display of the data with sorting</li>
-<li><strong>Summary panel</strong>: Column name, type and missing data percentage for each column</li>
-<li><strong>Filter bar</strong>: Ephemeral filters for specific columns</li>
-</ul></li>
+<li>To use, navigate to the Variables Pane and click on the Data Explorer icon:</li>
 </ul>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/data-explorer-variables.png" class="quarto-figure quarto-figure-center" style="width:70.0%;height:70.0%"></p>
+</figure>
+</div>
 <div class="footer">
 <p>Positron docs | <a href="https://positron.posit.co/data-explorer.html">Data Explorer</a></p>
 </div>
@@ -1083,8 +1096,8 @@ flowchart LR
 <div class="columns">
 <div class="column" style="width:60%;">
 <ul>
-<li>The data grid is the primary display and <span class="fragment highlight-blue">scales efficiently</span> with large in-memory datasets up to millions of rows or columns <br><br></li>
-<li>At the top right of each column, there is a context menu to <span class="fragment highlight-blue">control sorting or add a filter</span> for the selected column</li>
+<li>The data grid is the primary display and <span class="fragment highlight-green">scales efficiently</span> with large in-memory datasets up to millions of rows or columns <br><br></li>
+<li>At the top right of each column, there is a context menu that <span class="fragment highlight-green">controls sorting and filtering</span> in the selected column</li>
 </ul>
 </div><div class="column" style="width:5%;">
 
@@ -1106,7 +1119,7 @@ flowchart LR
 <div class="column" style="width:60%;">
 <ul>
 <li>Displays a vertical scrolling list of all columns in the data <br><br></li>
-<li>It <span class="fragment highlight-blue">displays a sparkline histogram of that column’s data</span>, displays the amount of missing data, and shows some summary statistics about that column <br><br></li>
+<li>It <span class="fragment highlight-green">displays a sparkline histogram of that column’s data</span>, displays the amount of missing data, and shows some summary statistics about that column <br><br></li>
 <li>Double clicking on a column name will bring the column into focus in the data grid</li>
 </ul>
 </div><div class="column" style="width:40%;">
@@ -1145,7 +1158,7 @@ flowchart LR
 <h2>Connections Pane</h2>
 <div class="columns">
 <div class="column" style="width:35%;">
-<p><br> - <span class="fragment highlight-blue">Explore database connections</span> established with ODBC drivers or packages <br><br> - For Python users, the <code>sqlite3</code> and <code>SQLAlchemy</code> packages are supported <br><br> - For R users, the <code>odbc</code>, <code>sparklyr</code>, <code>bigrquery</code>, and more packages are supported</p>
+<p><br> - <span class="fragment highlight-green">Explore database connections</span> established with ODBC drivers or packages <br><br> - For Python users, the <code>sqlite3</code> and <code>SQLAlchemy</code> packages are supported <br><br> - For R users, the <code>odbc</code>, <code>sparklyr</code>, <code>bigrquery</code>, and more packages are supported</p>
 </div><div class="column" style="width:65%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
@@ -1161,7 +1174,7 @@ flowchart LR
 <h2>Interactive Apps</h2>
 <div class="columns">
 <div class="column" style="width:35%;">
-<p><br> - Instead of running apps from a Terminal, Positron lets you run supported apps by clicking the <kbd>Play</kbd> button in Editor Actions <br><br> - <span class="fragment highlight-blue">Supported apps include the following: Shiny, Dash, FastAPI, Flask, Gradio, and Streamlit</span> <br><br> - You can also start apps in Debug mode</p>
+<p><br> - Instead of running apps from a Terminal, Positron lets you run supported apps by clicking the <kbd>Play</kbd> button in Editor Actions <br><br> - <span class="fragment highlight-green">Supported apps include the following: Shiny, Dash, FastAPI, Flask, Gradio, and Streamlit</span> <br><br> - You can also start apps in Debug mode</p>
 </div><div class="column" style="width:65%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
@@ -1171,6 +1184,34 @@ flowchart LR
 </div></div>
 <div class="footer">
 <p>Positron docs | <a href="https://positron.posit.co/run-interactive-apps.html">Run Interactive Apps</a></p>
+</div>
+</section>
+<section id="learn-more-about-positron" class="slide level2">
+<h2>Learn More about Positron</h2>
+<iframe data-external="1" src="https://www.youtube.com/embed/8uRcB34Hhsw?si=AlSxeWoMzx0g9QlL" width="100%" height="75%" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<div class="footer">
+<p>Visit Posit’s new <a href="https://positron.posit.co">Positron website</a> and their <a href="https://www.youtube.com/@PositPBC/videos">YouTube channel</a> to learn more</p>
+</div>
+</section>
+<section id="special-bonus-for-r-users" class="slide level2 smaller">
+<h2>Special Bonus for R Users 😘</h2>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li>Ark (“an R kernel”) was created to serve as the interface between R and the Positron IDE and is a Jupyter kernel, a Language Server Protocol (“LSP”) server, and it is a Debug Adapter Protocol (“DAP”) <br><br></li>
+<li>It is compatible with all frontends implementing the Jupyter protocol and is bundled with Positron <br><br></li>
+<li>Ark’s LSP was written with a Rust backend to future proof its ability to perform sophisticated static analysis of R code and its DAP allows for advanced step-debugging</li>
+</ul>
+</div><div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/ark_logo.png" class="quarto-figure quarto-figure-center" style="width:75.0%;height:75.0%"></p>
+</figure>
+</div>
+</div></div>
+<div class="footer">
+<p>Learn more about Ark on the <a href="https://github.com/posit-dev/ark">Ark GitHub repo</a></p>
 </div>
 </section>
 <section id="section-5" class="slide level2 center" data-background-color="#FF6B4D">
@@ -1214,37 +1255,83 @@ flowchart LR
 
 <img data-src="images/jake_the_dog.gif" class="quarto-figure quarto-figure-center r-stretch"></section></section>
 <section>
-<section id="ultra-fast-etl-with-apache-arrow-duckdb-and-polars" class="title-slide slide level1 center" data-background-color="#119BFE">
-<h1>Ultra Fast ETL with Apache Arrow, DuckDB, and Polars</h1>
+<section id="arrow-duckdb-and-polars" class="title-slide slide level1 center" data-background-color="#119BFE">
+<h1>Arrow, DuckDB, and Polars</h1>
 
 </section>
-<section id="apache-arrow" class="slide level2">
-<h2>Apache Arrow</h2>
-<h3 id="larger-than-memory-data">Larger-than-Memory Data</h3>
+<section id="about-these-frameworks" class="slide level2 smaller">
+<h2>About these Frameworks</h2>
 <p><br></p>
-
-<img data-src="images/apache_arrow.png" class="r-stretch"><div class="footer">
-<p>Arrow | Learn more at <a href="https://arrow.apache.org/" class="uri">https://arrow.apache.org/</a></p>
-</div>
-</section>
-<section id="arrow-and-parquet" class="slide level2">
-<h2>Arrow and Parquet</h2>
 <ul>
-<li>Columnar memory format for flat data</li>
-<li>Ultra-fast read times from Parquet files</li>
-<li>Easily convert data.frames and tibbles to Arrow tables in-line</li>
-<li>Plays well with Pandas (Python) and dplyr (R)</li>
-<li>Arrow will soon be able to process nested list data</li>
+<li><strong>Apache Arrow</strong>: An in-memory columnar format that lets data move quickly between systems and languages (like Python and R) and speeds up analytical tasks <br><br></li>
+<li><strong>DuckDB</strong>: A lightweight, “in-process” SQL database that executes analytical queries very fast right inside your code - No separate server is needed and you can initialized in-line <br><br></li>
+<li><strong>Polars</strong>: A modern DataFrame library with a multi-threaded query engine written in Rust that uses the Apache Arrow memory model under the hood <br><br></li>
+</ul>
+<div class="fragment">
+<ul>
+<li><span class="fragment highlight-green"><strong>Apache Parquet</strong>: A popular columnar storage format that compresses data to save space and is easily read by Arrow, DuckDB, and Polars for efficient data querying</span></li>
 </ul>
 <div class="footer">
-<p>Arrow | Learn more at <a href="https://arrow.apache.org/" class="uri">https://arrow.apache.org/</a></p>
+<p>Learn more about <a href="https://arrow.apache.org/">Apache Arrow</a>, <a href="https://duckdb.org/">DuckDB</a>, <a href="https://pola.rs/">Polars</a>, and <a href="https://parquet.apache.org/">Apache Parquet</a></p>
+</div>
 </div>
 </section>
-<section id="how-fast-is-fast" class="slide level2">
-<h2>How fast is fast?</h2>
+<section id="benefits-use-cases" class="slide level2 smaller">
+<h2>Benefits &amp; Use Cases</h2>
+<p><br></p>
 <ul>
-<li>My personal laptop has 24 GB RAM</li>
-<li>To test Arrow’s capabilities, I read a <span class="fragment highlight-blue">40 GB dataset</span> with over <span class="fragment highlight-blue">1.1 billion rows</span> and 24 columns</li>
+<li>These frameworks provide <span class="fragment highlight-green">convenient methods for reading and writing columnar file formats</span> <br><br></li>
+<li>If you’re working with a collection of <code>.parquet</code> files, the Arrow packages for C++, Python, and R support <span class="fragment highlight-green">reading entire directories of files and treating them as a single dataset</span> <br><br></li>
+<li>Allows zero-copy data sharing inside a single process without any build-time or link-time dependency requirements. This allows, for example, R users to access Python <code>pyarrow</code>-based projects using R’s <code>reticulate</code> package. <br><br></li>
+<li>Apache Spark uses Arrow as a data interchange format, and both Python’s <code>PySpark</code> and R’s <code>sparklyr</code> take advantage of Arrow for significant performance gains when transferring data</li>
+</ul>
+<div class="footer">
+<p>Learn more about <a href="https://arrow.apache.org/">Apache Arrow</a>, <a href="https://duckdb.org/">DuckDB</a>, <a href="https://pola.rs/">Polars</a>, and <a href="https://parquet.apache.org/">Apache Parquet</a></p>
+</div>
+</section>
+<section id="installing-arrow-duckdb-and-polars" class="slide level2">
+<h2>Installing Arrow, DuckDB, and Polars</h2>
+<div class="columns">
+<div class="column" style="width:49%;">
+<p><em>Python</em></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href=""></a><span class="co"># Arrow env vars for AWS S3 &amp; GCP support</span></span>
+<span id="cb1-2"><a href=""></a><span class="im">import</span> os</span>
+<span id="cb1-3"><a href=""></a>os.environ[<span class="st">"LIBARROW_MINIMAL"</span>] <span class="op">=</span> <span class="st">"FALSE"</span></span>
+<span id="cb1-4"><a href=""></a>os.environ[<span class="st">"ARROW_S3"</span>] <span class="op">=</span> <span class="st">"ON"</span></span>
+<span id="cb1-5"><a href=""></a>os.environ[<span class="st">"ARROW_GCS"</span>] <span class="op">=</span> <span class="st">"ON"</span></span>
+<span id="cb1-6"><a href=""></a></span>
+<span id="cb1-7"><a href=""></a><span class="co"># Install packages</span></span>
+<span id="cb1-8"><a href=""></a><span class="op">!</span>pip install pyarrow duckdb polars</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div><div class="column" style="width:2%;">
+
+</div><div class="column" style="width:49%;">
+<p><em>R</em></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href=""></a><span class="co"># Arrow env vars for AWS S3 &amp; GCP support</span></span>
+<span id="cb2-2"><a href=""></a><span class="fu">Sys.setenv</span>(<span class="at">LIBARROW_MINIMAL =</span> <span class="st">"false"</span>)</span>
+<span id="cb2-3"><a href=""></a><span class="fu">Sys.setenv</span>(<span class="at">ARROW_S3 =</span> <span class="st">"ON"</span>)</span>
+<span id="cb2-4"><a href=""></a><span class="fu">Sys.setenv</span>(<span class="at">ARROW_GCS =</span> <span class="st">"ON"</span>)</span>
+<span id="cb2-5"><a href=""></a></span>
+<span id="cb2-6"><a href=""></a><span class="co"># Enable Polars install with pre-built</span></span>
+<span id="cb2-7"><a href=""></a><span class="co"># Rust library binary </span></span>
+<span id="cb2-8"><a href=""></a><span class="fu">Sys.setenv</span>(<span class="at">NOT_CRAN =</span> <span class="st">"true"</span>)</span>
+<span id="cb2-9"><a href=""></a></span>
+<span id="cb2-10"><a href=""></a><span class="co"># Install packages</span></span>
+<span id="cb2-11"><a href=""></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"arrow"</span>, <span class="st">"duckdb"</span>))</span>
+<span id="cb2-12"><a href=""></a><span class="fu">install.packages</span>(<span class="st">"polars"</span>, <span class="at">repos =</span> <span class="st">"https://community.r-multiverse.org"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div></div>
+<div class="footer">
+<p>Installation Guides: Apache Arrow (<a href="https://arrow.apache.org/docs/python/install.html">Python</a>, <a href="https://arrow.apache.org/docs/r/">R</a>), DuckDB (<a href="https://duckdb.org/docs/guides/python/install.html">Python</a>, <a href="https://r.duckdb.org/">R</a>), Polars (<a href="https://docs.pola.rs/user-guide/installation/">Python</a>, <a href="https://pola-rs.github.io/r-polars/vignettes/install.html">R</a>)</p>
+</div>
+</section>
+<section id="back-to-fast-how-fast" class="slide level2">
+<h2>Back to fast… <em>How fast?</em></h2>
+<ul>
+<li>My personal laptop is a <span class="fragment highlight-green">MacBook Air with 24 GB RAM</span></li>
+<li>To test Arrow’s capabilities, I read a <span class="fragment highlight-green">40 GB dataset</span> with more than <span class="fragment highlight-green">1.1 billion rows and 24 columns</span></li>
 <li>The <code>.parquet</code> dataset was partitioned by Year and Month (120 files)</li>
 <li>Important to note that my laptop would not be able to load this object entirely into memory as a data.frame or tibble given my laptop’s limited RAM</li>
 </ul>
@@ -1252,54 +1339,79 @@ flowchart LR
 <p>Arrow | Learn more at <a href="https://arrow.apache.org/" class="uri">https://arrow.apache.org/</a></p>
 </div>
 </section>
-<section id="installing-arrow" class="slide level2">
-<h2>Installing Arrow</h2>
-<p><br></p>
-<p>For the Arrow installation including AWS S3 and GCS support:</p>
-<p><br></p>
+<section id="reading-remote-parquet-data" class="slide level2 smaller">
+<h2>Reading Remote Parquet Data</h2>
 <div class="columns">
 <div class="column" style="width:49%;">
 <p><em>Python</em></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href=""></a><span class="co"># Set required env vars</span></span>
-<span id="cb1-2"><a href=""></a><span class="im">import</span> os</span>
-<span id="cb1-3"><a href=""></a>os.environ[<span class="st">"LIBARROW_MINIMAL"</span>] <span class="op">=</span> <span class="st">"FALSE"</span></span>
-<span id="cb1-4"><a href=""></a>os.environ[<span class="st">"ARROW_S3"</span>] <span class="op">=</span> <span class="st">"ON"</span></span>
-<span id="cb1-5"><a href=""></a>os.environ[<span class="st">"ARROW_GCS"</span>] <span class="op">=</span> <span class="st">"ON"</span></span>
-<span id="cb1-6"><a href=""></a></span>
-<span id="cb1-7"><a href=""></a><span class="co"># Install PyArrow</span></span>
-<span id="cb1-8"><a href=""></a><span class="op">!</span>pip install pyarrow</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href=""></a><span class="im">import</span> pyarrow.dataset <span class="im">as</span> ds</span>
+<span id="cb3-2"><a href=""></a><span class="im">import</span> pyarrow.compute <span class="im">as</span> pc</span>
+<span id="cb3-3"><a href=""></a><span class="im">import</span> os</span>
+<span id="cb3-4"><a href=""></a></span>
+<span id="cb3-5"><a href=""></a><span class="co"># Set path for download</span></span>
+<span id="cb3-6"><a href=""></a><span class="co"># NYC Taxi Data download (40 GB)</span></span>
+<span id="cb3-7"><a href=""></a>data_path <span class="op">=</span> os.path.join(<span class="st">"data"</span>, <span class="st">"nyc-taxi"</span>)</span>
+<span id="cb3-8"><a href=""></a></span>
+<span id="cb3-9"><a href=""></a><span class="co"># Open connection to the remote dataset</span></span>
+<span id="cb3-10"><a href=""></a>nyc_dataset <span class="op">=</span> ds.dataset(</span>
+<span id="cb3-11"><a href=""></a>  <span class="st">"s3://voltrondata-labs-datasets/nyc-taxi"</span>, </span>
+<span id="cb3-12"><a href=""></a>  <span class="bu">format</span> <span class="op">=</span> <span class="st">"parquet"</span></span>
+<span id="cb3-13"><a href=""></a>)</span>
+<span id="cb3-14"><a href=""></a></span>
+<span id="cb3-15"><a href=""></a><span class="co"># Filter for years 2012 - 2021</span></span>
+<span id="cb3-16"><a href=""></a>filtered_table <span class="op">=</span> nyc_dataset.to_table(</span>
+<span id="cb3-17"><a href=""></a>    <span class="bu">filter</span> <span class="op">=</span> ds.field(<span class="st">"year"</span>).isin(<span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">2012</span>, <span class="dv">2022</span>)))</span>
+<span id="cb3-18"><a href=""></a>)</span>
+<span id="cb3-19"><a href=""></a></span>
+<span id="cb3-20"><a href=""></a><span class="co"># Write out the filtered data, partitioned by year and month</span></span>
+<span id="cb3-21"><a href=""></a>ds.write_dataset(</span>
+<span id="cb3-22"><a href=""></a>    filtered_table,</span>
+<span id="cb3-23"><a href=""></a>    base_dir <span class="op">=</span> data_path,</span>
+<span id="cb3-24"><a href=""></a>    <span class="bu">format</span> <span class="op">=</span> <span class="st">"parquet"</span>,</span>
+<span id="cb3-25"><a href=""></a>    partitioning <span class="op">=</span> [<span class="st">"year"</span>, <span class="st">"month"</span>]</span>
+<span id="cb3-26"><a href=""></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div><div class="column" style="width:2%;">
 
 </div><div class="column" style="width:49%;">
 <p><em>R</em></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href=""></a><span class="co"># Set required env vars</span></span>
-<span id="cb2-2"><a href=""></a><span class="fu">Sys.setenv</span>(<span class="at">LIBARROW_MINIMAL =</span> <span class="st">"false"</span>)</span>
-<span id="cb2-3"><a href=""></a><span class="fu">Sys.setenv</span>(<span class="at">ARROW_S3 =</span> <span class="st">"ON"</span>)</span>
-<span id="cb2-4"><a href=""></a><span class="fu">Sys.setenv</span>(<span class="at">ARROW_GCS =</span> <span class="st">"ON"</span>)</span>
-<span id="cb2-5"><a href=""></a></span>
-<span id="cb2-6"><a href=""></a><span class="co"># Download &amp; Install Arrow</span></span>
-<span id="cb2-7"><a href=""></a><span class="fu">install.packages</span>(<span class="st">'arrow'</span>, <span class="at">repos =</span> <span class="st">'https://apache.r-universe.dev'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href=""></a><span class="fu">library</span>(here)</span>
+<span id="cb4-2"><a href=""></a><span class="fu">library</span>(arrow)</span>
+<span id="cb4-3"><a href=""></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb4-4"><a href=""></a></span>
+<span id="cb4-5"><a href=""></a><span class="co"># Set path for download</span></span>
+<span id="cb4-6"><a href=""></a><span class="co"># NYC Taxi Data download (40 GB)</span></span>
+<span id="cb4-7"><a href=""></a>data_path <span class="ot">&lt;-</span> here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data/nyc-taxi"</span>)</span>
+<span id="cb4-8"><a href=""></a></span>
+<span id="cb4-9"><a href=""></a><span class="co"># Open connection to the remote dataset,</span></span>
+<span id="cb4-10"><a href=""></a><span class="co"># filter for years 2012 - 2021, and</span></span>
+<span id="cb4-11"><a href=""></a><span class="co"># write out the filtered data,</span></span>
+<span id="cb4-12"><a href=""></a><span class="co"># partitioned by year and month</span></span>
+<span id="cb4-13"><a href=""></a><span class="fu">open_dataset</span>(<span class="st">"s3://voltrondata-labs-datasets/nyc-taxi"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb4-14"><a href=""></a>  <span class="fu">filter</span>(year <span class="sc">%in%</span> <span class="dv">2012</span><span class="sc">:</span><span class="dv">2021</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb4-15"><a href=""></a>  <span class="fu">write_dataset</span>(data_path, <span class="at">partitioning =</span> <span class="fu">c</span>(<span class="st">"year"</span>, <span class="st">"month"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div></div>
+<div class="footer">
+<p>Arrow | Learn more at <a href="https://arrow.apache.org/" class="uri">https://arrow.apache.org/</a></p>
+</div>
 </section>
 <section id="benchmarking-read-times" class="slide level2">
 <h2>Benchmarking Read Times</h2>
+<p><em>R</em></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href=""></a><span class="fu">library</span>(here)</span>
-<span id="cb3-2"><a href=""></a><span class="fu">library</span>(arrow)</span>
-<span id="cb3-3"><a href=""></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb3-4"><a href=""></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb3-5"><a href=""></a><span class="fu">library</span>(bench)</span>
-<span id="cb3-6"><a href=""></a></span>
-<span id="cb3-7"><a href=""></a><span class="co"># NYC Taxi Data download (40 GB)</span></span>
-<span id="cb3-8"><a href=""></a>data_path <span class="ot">&lt;-</span> here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data/nyc-taxi"</span>)</span>
-<span id="cb3-9"><a href=""></a></span>
-<span id="cb3-10"><a href=""></a><span class="fu">open_dataset</span>(<span class="st">"s3://voltrondata-labs-datasets/nyc-taxi"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb3-11"><a href=""></a>  <span class="fu">filter</span>(year <span class="sc">%in%</span> <span class="dv">2012</span><span class="sc">:</span><span class="dv">2021</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb3-12"><a href=""></a>  <span class="fu">write_dataset</span>(data_path, <span class="at">partitioning =</span> <span class="fu">c</span>(<span class="st">"year"</span>, <span class="st">"month"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href=""></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb5-2"><a href=""></a><span class="fu">library</span>(bench)</span>
+<span id="cb5-3"><a href=""></a></span>
+<span id="cb5-4"><a href=""></a><span class="co"># Benchmark Read Times</span></span>
+<span id="cb5-5"><a href=""></a>bnch <span class="ot">&lt;-</span> bench<span class="sc">::</span><span class="fu">mark</span>(</span>
+<span id="cb5-6"><a href=""></a>  <span class="at">min_iterations =</span> <span class="dv">1000</span>,</span>
+<span id="cb5-7"><a href=""></a>  <span class="at">arrow =</span> arrow<span class="sc">::</span><span class="fu">open_dataset</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data/nyc-taxi"</span>))</span>
+<span id="cb5-8"><a href=""></a>)</span>
+<span id="cb5-9"><a href=""></a></span>
+<span id="cb5-10"><a href=""></a><span class="fu">autoplot</span>(bnch)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="footer">
 <p>Arrow | Learn more at <a href="https://arrow.apache.org/" class="uri">https://arrow.apache.org/</a></p>
@@ -1307,78 +1419,66 @@ flowchart LR
 </section>
 <section id="benchmarking-read-times-1" class="slide level2">
 <h2>Benchmarking Read Times</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href=""></a><span class="co"># 2. Benchmark Read Times</span></span>
-<span id="cb4-2"><a href=""></a>bnch <span class="ot">&lt;-</span> bench<span class="sc">::</span><span class="fu">mark</span>(</span>
-<span id="cb4-3"><a href=""></a>  <span class="at">min_iterations =</span> <span class="dv">1000</span>,</span>
-<span id="cb4-4"><a href=""></a>  <span class="at">arrow =</span> <span class="fu">open_dataset</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data/nyc-taxi"</span>))</span>
-<span id="cb4-5"><a href=""></a>)</span>
-<span id="cb4-6"><a href=""></a></span>
-<span id="cb4-7"><a href=""></a><span class="fu">autoplot</span>(bnch)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="footer">
-<p>Arrow | Learn more at <a href="https://arrow.apache.org/" class="uri">https://arrow.apache.org/</a></p>
-</div>
-</section>
-<section id="benchmarking-read-times-2" class="slide level2">
-<h2>Benchmarking Read Times</h2>
 <ul>
-<li>Results show read times from a 40GB parquet, 1.1 billion row dataset (benchmarked over 1,000 iterations)</li>
+<li>Once “locally” available, the 40GB, 1.1 billion row dataset (benchmarked 1,000 times) can be <span class="fragment highlight-green">read on average in 17ms</span></li>
 </ul>
 
-<img data-src="images/arrow_read.png" class="quarto-figure quarto-figure-center r-stretch" style="width:55.0%"><div class="footer">
+<img data-src="images/plot_arrow_read.png" class="quarto-figure quarto-figure-center r-stretch" style="width:55.0%"><div class="footer">
 <p>Arrow | Learn more at <a href="https://arrow.apache.org/" class="uri">https://arrow.apache.org/</a></p>
 </div>
 </section>
-<section id="arrow-dplyr-benchmark" class="slide level2">
-<h2>arrow + dplyr Benchmark</h2>
+<section id="benchmarking-data-manipulation" class="slide level2">
+<h2>Benchmarking Data Manipulation</h2>
+<ul>
+<li>Using R’s <code>dplyr</code>, we can perform ETL on an <code>arrow</code> table and <code>collect()</code> the results back to a df</li>
+</ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href=""></a><span class="co"># 1. Open Arrow connection to dataset (40 GB)</span></span>
-<span id="cb5-2"><a href=""></a>nyc_taxi <span class="ot">&lt;-</span> <span class="fu">open_dataset</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data/nyc-taxi"</span>))</span>
-<span id="cb5-3"><a href=""></a></span>
-<span id="cb5-4"><a href=""></a><span class="co"># 2. Benchmark dplyr pipeline</span></span>
-<span id="cb5-5"><a href=""></a>bnch <span class="ot">&lt;-</span> bench<span class="sc">::</span><span class="fu">mark</span>(</span>
-<span id="cb5-6"><a href=""></a>  <span class="at">min_iterations =</span> <span class="dv">10</span>,</span>
-<span id="cb5-7"><a href=""></a>  <span class="at">arrow =</span> nyc_taxi <span class="sc">|&gt;</span> </span>
-<span id="cb5-8"><a href=""></a>    dplyr<span class="sc">::</span><span class="fu">group_by</span>(year) <span class="sc">|&gt;</span> </span>
-<span id="cb5-9"><a href=""></a>    dplyr<span class="sc">::</span><span class="fu">summarise</span>(<span class="at">all_trips =</span> <span class="fu">n</span>(),</span>
-<span id="cb5-10"><a href=""></a>                     <span class="at">shared_trips =</span> <span class="fu">sum</span>(passenger_count <span class="sc">&gt;</span> <span class="dv">1</span>, <span class="at">na.rm =</span> T)) <span class="sc">|&gt;</span></span>
-<span id="cb5-11"><a href=""></a>    dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">pct_shared =</span> shared_trips <span class="sc">/</span> all_trips <span class="sc">*</span> <span class="dv">100</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb5-12"><a href=""></a>    dplyr<span class="sc">::</span><span class="fu">collect</span>()</span>
-<span id="cb5-13"><a href=""></a>)</span>
-<span id="cb5-14"><a href=""></a></span>
-<span id="cb5-15"><a href=""></a><span class="fu">autoplot</span>(bnch)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href=""></a><span class="co"># Open Arrow connection to dataset (40 GB)</span></span>
+<span id="cb6-2"><a href=""></a>nyc_taxi <span class="ot">&lt;-</span> <span class="fu">open_dataset</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data/nyc-taxi"</span>))</span>
+<span id="cb6-3"><a href=""></a></span>
+<span id="cb6-4"><a href=""></a><span class="co"># Benchmark dplyr pipeline</span></span>
+<span id="cb6-5"><a href=""></a>bnch <span class="ot">&lt;-</span> bench<span class="sc">::</span><span class="fu">mark</span>(</span>
+<span id="cb6-6"><a href=""></a>  <span class="at">min_iterations =</span> <span class="dv">100</span>,</span>
+<span id="cb6-7"><a href=""></a>  <span class="at">arrow =</span> nyc_taxi <span class="sc">|&gt;</span> </span>
+<span id="cb6-8"><a href=""></a>    dplyr<span class="sc">::</span><span class="fu">group_by</span>(year) <span class="sc">|&gt;</span> </span>
+<span id="cb6-9"><a href=""></a>    dplyr<span class="sc">::</span><span class="fu">summarise</span>(<span class="at">all_trips =</span> <span class="fu">n</span>(),</span>
+<span id="cb6-10"><a href=""></a>                     <span class="at">shared_trips =</span> <span class="fu">sum</span>(passenger_count <span class="sc">&gt;</span> <span class="dv">1</span>, <span class="at">na.rm =</span> T)) <span class="sc">|&gt;</span></span>
+<span id="cb6-11"><a href=""></a>    dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">pct_shared =</span> shared_trips <span class="sc">/</span> all_trips <span class="sc">*</span> <span class="dv">100</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb6-12"><a href=""></a>    dplyr<span class="sc">::</span><span class="fu">collect</span>()</span>
+<span id="cb6-13"><a href=""></a>)</span>
+<span id="cb6-14"><a href=""></a></span>
+<span id="cb6-15"><a href=""></a><span class="fu">autoplot</span>(bnch)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="footer">
 <p>Arrow | <a href="https://r4ds.hadley.nz/arrow.html">Arrow + dplyr compatibility</a></p>
 </div>
 </section>
-<section id="arrow-dplyr-benchmark-1" class="slide level2">
-<h2>arrow + dplyr Benchmark</h2>
+<section id="benchmarking-etl" class="slide level2">
+<h2>Benchmarking ETL</h2>
 <ul>
-<li>Arrow + dplyr summarized 1.1 billion rows in less than 5s (benchmarked over 10 iterations) to a 10 x 4 tibble</li>
+<li>The results show the ETL pipeline <span class="fragment highlight-green">on average summarized 1.1 billion rows in 5.04s</span>, benchmarked over 100 iterations</li>
 </ul>
 
-<img data-src="images/arrow_group_by.png" class="quarto-figure quarto-figure-center r-stretch" style="width:55.0%"><div class="footer">
+<img data-src="images/plot_arrow_summarise.png" class="quarto-figure quarto-figure-center r-stretch" style="width:55.0%"><div class="footer">
 <p>Arrow | <a href="https://r4ds.hadley.nz/arrow.html">Arrow + dplyr compatibility</a></p>
 </div>
 </section>
-<section id="tidyverse-compatibility" class="slide level2">
-<h2>Tidyverse Compatibility</h2>
+<section id="note-for-rs-tidyverse-users" class="slide level2">
+<h2>Note for R’s Tidyverse Users</h2>
 <ul>
 <li>Many functions from the tidyverse collections of packages have 1:1 compatibility with Arrow tables</li>
 <li>However, sometimes you’ll encounter a breaking point</li>
 <li>Take this <code>stringr::str_replace_na()</code> example:</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6" data-code-line-numbers="1-4|3-4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href=""></a>nyc_taxi <span class="sc">|&gt;</span> </span>
-<span id="cb6-2"><a href=""></a>  <span class="fu">mutate</span>(<span class="at">vendor_name =</span> <span class="fu">str_replace_na</span>(vendor_name, <span class="st">"No vendor"</span>))</span>
-<span id="cb6-3"><a href=""></a><span class="co">#&gt; Error: Expression str_replace_na(vendor_name, "No vendor") </span></span>
-<span id="cb6-4"><a href=""></a><span class="co">#&gt; not supported in Arrow</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7" data-code-line-numbers="1-4|3-4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href=""></a>nyc_taxi <span class="sc">|&gt;</span> </span>
+<span id="cb7-2"><a href=""></a>  <span class="fu">mutate</span>(<span class="at">vendor_name =</span> <span class="fu">str_replace_na</span>(vendor_name, <span class="st">"No vendor"</span>))</span>
+<span id="cb7-3"><a href=""></a><span class="co">#&gt; Error: Expression str_replace_na(vendor_name, "No vendor") </span></span>
+<span id="cb7-4"><a href=""></a><span class="co">#&gt; not supported in Arrow</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="fragment">
 <ul>
-<li>This <code>stringr</code> function is not supported by Arrow</li>
+<li>Out of the box, Arrow does not support <code>stringr::str_replace_na()</code></li>
 </ul>
 <div class="footer">
 <p>Arrow | <a href="https://r4ds.hadley.nz/arrow.html">Arrow + dplyr compatibility</a></p>
@@ -1387,23 +1487,30 @@ flowchart LR
 </section>
 <section id="section-12" class="slide level2">
 <h2></h2>
-
-<img data-src="images/crying_cat.gif" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="section-13" class="slide level2 center">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/tobias.gif" class="quarto-figure quarto-figure-center" style="width:60.0%;height:60.0%"></p>
+</figure>
+</div>
+<div class="footer">
+<p>Me, struggling to use my favorite <code>tidyverse</code> functions with Arrow…</p>
+</div>
+</section>
+<section id="section-13" class="slide level2 center" data-background-color="#119BFE">
 <h2></h2>
 <div class="r-fit-text">
 <p>but wait!</p>
 </div>
 <div class="r-fit-text">
-<p>problem solved</p>
+<p><em>a solution exists</em></p>
 </div>
 </section>
 <section id="user-defined-functions" class="slide level2">
 <h2>User Defined Functions</h2>
 <ul>
-<li>Lucky for us, Arrow allows us to create and register <strong><em>User Defined Functions (“UDFs”)</em></strong> to the Arrow engine</li>
-<li>Almost any function can be made compatible with Arrow by registering custom UDFs</li>
-<li>Let’s learn how to register <code>str_replace_na()</code> with the Arrow kernel</li>
+<li>Arrow allows users to create and register User Defined Functions (or “UDFs”) to the Arrow engine</li>
+<li>Almost any function can be made Arrow-friendly by registering custom UDFs to the Arrow kernel</li>
+<li>Let’s learn how to register <code>stringr::str_replace_na()</code> with the Arrow kernel</li>
 </ul>
 <div class="footer">
 <p>Arrow | Learn more about registering Arrow <a href="https://arrow.apache.org/docs/r/reference/register_scalar_function.html">User Defined Functions (“UDFs”)</a></p>
@@ -1412,21 +1519,23 @@ flowchart LR
 <section id="registering-udfs" class="slide level2">
 <h2>Registering UDFs</h2>
 <ul>
-<li>First, run <code>arrow::schema()</code> on your Arrow table to review the field name / data type pairs</li>
-<li>Since I want to mutate the <code>vendor_name</code> field, I know I’ll be working with an Arrow <code>string()</code> data type</li>
+<li>First, run <code>arrow::schema()</code> on your Arrow table to review the field name and data type pairs</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7" data-code-line-numbers="1-10|3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href=""></a>arrow<span class="sc">::</span><span class="fu">schema</span>(nyc_taxi)</span>
-<span id="cb7-2"><a href=""></a><span class="co">#&gt; Schema</span></span>
-<span id="cb7-3"><a href=""></a><span class="co">#&gt; vendor_name: string</span></span>
-<span id="cb7-4"><a href=""></a><span class="co">#&gt; pickup_datetime: timestamp[ms]</span></span>
-<span id="cb7-5"><a href=""></a><span class="co">#&gt; dropoff_datetime: timestamp[ms]</span></span>
-<span id="cb7-6"><a href=""></a><span class="co">#&gt; passenger_count: int64</span></span>
-<span id="cb7-7"><a href=""></a><span class="co">#&gt; trip_distance: double</span></span>
-<span id="cb7-8"><a href=""></a><span class="co">#&gt; pickup_longitude: double</span></span>
-<span id="cb7-9"><a href=""></a><span class="co">#&gt; pickup_latitude: double</span></span>
-<span id="cb7-10"><a href=""></a><span class="co">#&gt; ...</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8" data-code-line-numbers="1-10|3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href=""></a>arrow<span class="sc">::</span><span class="fu">schema</span>(nyc_taxi)</span>
+<span id="cb8-2"><a href=""></a><span class="co">#&gt; Schema</span></span>
+<span id="cb8-3"><a href=""></a><span class="co">#&gt; vendor_name: string</span></span>
+<span id="cb8-4"><a href=""></a><span class="co">#&gt; pickup_datetime: timestamp[ms]</span></span>
+<span id="cb8-5"><a href=""></a><span class="co">#&gt; dropoff_datetime: timestamp[ms]</span></span>
+<span id="cb8-6"><a href=""></a><span class="co">#&gt; passenger_count: int64</span></span>
+<span id="cb8-7"><a href=""></a><span class="co">#&gt; trip_distance: double</span></span>
+<span id="cb8-8"><a href=""></a><span class="co">#&gt; pickup_longitude: double</span></span>
+<span id="cb8-9"><a href=""></a><span class="co">#&gt; pickup_latitude: double</span></span>
+<span id="cb8-10"><a href=""></a><span class="co">#&gt; ...</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<ul>
+<li>Since I want to mutate the <code>vendor_name</code> field, I know I’ll be working with an Arrow <code>string()</code> data type</li>
+</ul>
 <div class="footer">
 <p>Arrow | Learn more about registering Arrow <a href="https://arrow.apache.org/docs/r/reference/register_scalar_function.html">User Defined Functions (“UDFs”)</a></p>
 </div>
@@ -1434,23 +1543,24 @@ flowchart LR
 <section id="registering-udfs-1" class="slide level2">
 <h2>Registering UDFs</h2>
 <ul>
-<li>Next, use <code>register_scalar_function()</code></li>
-<li>Name your UDF “replace_arrow_nas” and remember to set <code>auto_convert = TRUE</code></li>
+<li>Next, we’ll use <code>arrow::register_scalar_function()</code></li>
+<li>Name your UDF <code>replace_arrow_nas</code></li>
+<li>If you’re registering a tidyverse function, set <code>auto_convert = TRUE</code></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8" data-code-line-numbers="1-13|3-4|3-4,12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href=""></a>arrow<span class="sc">::</span><span class="fu">register_scalar_function</span>(</span>
-<span id="cb8-2"><a href=""></a>  <span class="at">name =</span> <span class="st">"replace_arrow_nas"</span>,</span>
-<span id="cb8-3"><a href=""></a>  <span class="co"># Note: The first argument must always be context</span></span>
-<span id="cb8-4"><a href=""></a>  <span class="cf">function</span>(context, x, replacement) {</span>
-<span id="cb8-5"><a href=""></a>    stringr<span class="sc">::</span><span class="fu">str_replace_na</span>(x, replacement)</span>
-<span id="cb8-6"><a href=""></a>  },</span>
-<span id="cb8-7"><a href=""></a>  <span class="at">in_type =</span> <span class="fu">schema</span>(</span>
-<span id="cb8-8"><a href=""></a>    <span class="at">x =</span> <span class="fu">string</span>(),</span>
-<span id="cb8-9"><a href=""></a>    <span class="at">replacement =</span> <span class="fu">string</span>()</span>
-<span id="cb8-10"><a href=""></a>  ),</span>
-<span id="cb8-11"><a href=""></a>  <span class="at">out_type =</span> <span class="fu">string</span>(),</span>
-<span id="cb8-12"><a href=""></a>  <span class="at">auto_convert =</span> <span class="cn">TRUE</span></span>
-<span id="cb8-13"><a href=""></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9" data-code-line-numbers="1-13|3-4|3-4,12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href=""></a>arrow<span class="sc">::</span><span class="fu">register_scalar_function</span>(</span>
+<span id="cb9-2"><a href=""></a>  <span class="at">name =</span> <span class="st">"replace_arrow_nas"</span>,</span>
+<span id="cb9-3"><a href=""></a>  <span class="co"># Note: The first argument must always be context</span></span>
+<span id="cb9-4"><a href=""></a>  <span class="cf">function</span>(context, x, replacement) {</span>
+<span id="cb9-5"><a href=""></a>    stringr<span class="sc">::</span><span class="fu">str_replace_na</span>(x, replacement)</span>
+<span id="cb9-6"><a href=""></a>  },</span>
+<span id="cb9-7"><a href=""></a>  <span class="at">in_type =</span> <span class="fu">schema</span>(</span>
+<span id="cb9-8"><a href=""></a>    <span class="at">x =</span> <span class="fu">string</span>(),</span>
+<span id="cb9-9"><a href=""></a>    <span class="at">replacement =</span> <span class="fu">string</span>()</span>
+<span id="cb9-10"><a href=""></a>  ),</span>
+<span id="cb9-11"><a href=""></a>  <span class="at">out_type =</span> <span class="fu">string</span>(),</span>
+<span id="cb9-12"><a href=""></a>  <span class="at">auto_convert =</span> <span class="cn">TRUE</span></span>
+<span id="cb9-13"><a href=""></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <aside class="notes">
 <p>Unless you’re developing a package, <code>auto_convert</code> should be set to <code>TRUE</code></p>
@@ -1469,26 +1579,48 @@ flowchart LR
 <p>Arrow | Learn more about registering Arrow <a href="https://arrow.apache.org/docs/r/reference/register_scalar_function.html">User Defined Functions (“UDFs”)</a></p>
 </div>
 </section>
-<section id="registering-udfs-2" class="slide level2">
-<h2>Registering UDFs</h2>
+<section id="trying-the-udf" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Trying the UDF</h2>
 <ul>
-<li>Try your new registered function</li>
+<li>Let’s see if the registered <code>replace_arrow_nas()</code> Arrow UDF works…</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href=""></a>nyc_taxi <span class="sc">|&gt;</span> </span>
-<span id="cb9-2"><a href=""></a>  <span class="fu">mutate</span>(<span class="at">vendor_name =</span> <span class="fu">replace_arrow_nas</span>(vendor_name, <span class="st">"No vendor"</span>)) <span class="sc">|&gt;</span> </span>
-<span id="cb9-3"><a href=""></a>  <span class="fu">distinct</span>(vendor_name) <span class="sc">|&gt;</span> </span>
-<span id="cb9-4"><a href=""></a>  <span class="fu">arrange</span>(vendor_name) <span class="sc">|&gt;</span> </span>
-<span id="cb9-5"><a href=""></a>  <span class="fu">collect</span>()</span>
-<span id="cb9-6"><a href=""></a><span class="co">#&gt; # A tibble: 3 × 1</span></span>
-<span id="cb9-7"><a href=""></a><span class="co">#&gt;   vendor_name</span></span>
-<span id="cb9-8"><a href=""></a><span class="co">#&gt;   &lt;chr&gt;      </span></span>
-<span id="cb9-9"><a href=""></a><span class="co">#&gt; 1 CMT</span></span>
-<span id="cb9-10"><a href=""></a><span class="co">#&gt; 2 No vendor</span></span>
-<span id="cb9-11"><a href=""></a><span class="co">#&gt; 3 VTS</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb10-1" class="hljs-ln-code"><a href=""></a>nyc_taxi <span class="sc">|&gt;</span> </span>
+<span id="cb10-2" class="hljs-ln-code"><a href=""></a>  <span class="fu">mutate</span>(<span class="at">vendor_name =</span> <span class="fu">replace_arrow_nas</span>(vendor_name, <span class="st">"No vendor"</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb10-3" class="hljs-ln-code"><a href=""></a>  <span class="fu">distinct</span>(vendor_name) <span class="sc">|&gt;</span> </span>
+<span id="cb10-4" class="hljs-ln-code"><a href=""></a>  <span class="fu">arrange</span>(vendor_name) <span class="sc">|&gt;</span> </span>
+<span id="cb10-5" class="hljs-ln-code"><a href=""></a>  <span class="fu">collect</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="footer">
 <p>Arrow | Learn more about registering Arrow <a href="https://arrow.apache.org/docs/r/reference/register_scalar_function.html">User Defined Functions (“UDFs”)</a></p>
+</div>
+</section>
+<section id="trying-the-udf-1" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Trying the UDF</h2>
+<ul>
+<li>Let’s see if the registered <code>replace_arrow_nas()</code> Arrow UDF works…</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb11-1" class="hljs-ln-code"><a href=""></a>nyc_taxi <span class="sc">|&gt;</span> </span>
+<span id="cb11-2" class="hljs-ln-code"><a href=""></a>  <span class="fu">mutate</span>(<span class="at">vendor_name =</span> <span class="fu">replace_arrow_nas</span>(vendor_name, <span class="st">"No vendor"</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb11-3" class="hljs-ln-code"><a href=""></a>  <span class="fu">distinct</span>(vendor_name) <span class="sc">|&gt;</span> </span>
+<span id="cb11-4" class="hljs-ln-code"><a href=""></a>  <span class="fu">arrange</span>(vendor_name) <span class="sc">|&gt;</span> </span>
+<span id="cb11-5" class="hljs-ln-code"><a href=""></a>  <span class="fu">collect</span>()</span>
+<span id="cb11-6" class="hljs-ln-code"><a href=""></a></span>
+<span id="cb11-7" class="hljs-ln-code"><a href=""></a><span class="co">#&gt; # A tibble: 3 × 1</span></span>
+<span id="cb11-8" class="hljs-ln-code"><a href=""></a><span class="co">#&gt;   vendor_name</span></span>
+<span id="cb11-9" class="hljs-ln-code"><a href=""></a><span class="co">#&gt;   &lt;chr&gt;      </span></span>
+<span id="cb11-10" class="hljs-ln-code"><a href=""></a><span class="co">#&gt; 1 CMT</span></span>
+<span id="cb11-11" class="hljs-ln-code"><a href=""></a><span class="co">#&gt; 2 No vendor</span></span>
+<span id="cb11-12" class="hljs-ln-code"><a href=""></a><span class="co">#&gt; 3 VTS</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="fragment">
+<ul>
+<li><em>Success! It works!</em></li>
+</ul>
+<div class="footer">
+<p>Arrow | Learn more about registering Arrow <a href="https://arrow.apache.org/docs/r/reference/register_scalar_function.html">User Defined Functions (“UDFs”)</a></p>
+</div>
 </div>
 </section>
 <section id="section-14" class="slide level2">
@@ -1497,8 +1629,428 @@ flowchart LR
 <img data-src="images/pokemon.gif" class="r-stretch"><div class="footer">
 <p>Eevee can’t believe it… “Wooooooooooow, Javi!”</p>
 </div>
+</section>
+<section id="duckdb" class="slide level2 smaller">
+<h2>DuckDB</h2>
+<p><br><br> - <a href="https://duckdblabs.com/">DuckDB Labs</a> created an in-line database management system, like a SQLite database engine, but optimized for distributed compute and optimized for larger-than-memory analysis <br><br> - The <code>duckdb</code> package for Python offers a state-of-the-art optimizer that pushes down filters and projections directly into Arrow scans <br><br> - As a result, only relevant columns and partitions will be read thus significantly accelerates query execution <br><br> - DuckDB comes with core and community extensions that expand the framework to, e.g., scan remote Databricks Unity Catalog tables without needing to spin up a Spark cluster</p>
+<div class="footer">
+<p>DuckDB Labs | Learn about <a href="https://duckdb.org">DuckDB</a> and <a href="https://duckdb.org/docs/extensions/overview.html">DuckDB Extensions</a></p>
+</div>
+</section>
+<section id="duckdb-usage-basics" class="slide level2">
+<h2>DuckDB Usage Basics</h2>
+<div class="panel-tabset">
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Python</a></li><li><a href="#tabset-1-2">R</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href=""></a><span class="im">import</span> duckdb</span>
+<span id="cb12-2"><a href=""></a><span class="im">import</span> pyarrow <span class="im">as</span> pa</span>
+<span id="cb12-3"><a href=""></a><span class="im">import</span> pyarrow.dataset <span class="im">as</span> ds</span>
+<span id="cb12-4"><a href=""></a></span>
+<span id="cb12-5"><a href=""></a><span class="co"># Open dataset using year,month folder partition</span></span>
+<span id="cb12-6"><a href=""></a>nyc <span class="op">=</span> ds.dataset(<span class="st">'nyc-taxi/'</span>, partitioning<span class="op">=</span>[<span class="st">"year"</span>, <span class="st">"month"</span>])</span>
+<span id="cb12-7"><a href=""></a></span>
+<span id="cb12-8"><a href=""></a><span class="co"># We transform the nyc dataset into a DuckDB relation</span></span>
+<span id="cb12-9"><a href=""></a>nyc <span class="op">=</span> duckdb.arrow(nyc)</span>
+<span id="cb12-10"><a href=""></a></span>
+<span id="cb12-11"><a href=""></a><span class="co"># Run same query again</span></span>
+<span id="cb12-12"><a href=""></a>nyc.<span class="bu">filter</span>(<span class="st">"year &gt; 2014 &amp; passenger_count &gt; 0 &amp; trip_distance &gt; 0.25 &amp; fare_amount &gt; 0"</span>)</span>
+<span id="cb12-13"><a href=""></a>    .aggregate(<span class="st">"SELECT AVG(fare_amount), AVG(tip_amount), AVG(tip_amount / fare_amount) as tip_pct"</span>,<span class="st">"passenger_count"</span>).arrow()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-1-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href=""></a><span class="fu">library</span>(duckdb)</span>
+<span id="cb13-2"><a href=""></a><span class="fu">library</span>(arrow)</span>
+<span id="cb13-3"><a href=""></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb13-4"><a href=""></a></span>
+<span id="cb13-5"><a href=""></a>ds <span class="ot">&lt;-</span> arrow<span class="sc">::</span><span class="fu">open_dataset</span>(<span class="st">"nyc-taxi"</span>, <span class="at">partitioning =</span> <span class="fu">c</span>(<span class="st">"year"</span>, <span class="st">"month"</span>))</span>
+<span id="cb13-6"><a href=""></a></span>
+<span id="cb13-7"><a href=""></a>ds <span class="sc">|&gt;</span></span>
+<span id="cb13-8"><a href=""></a>  <span class="fu">filter</span>(year <span class="sc">&gt;</span> <span class="dv">2014</span> <span class="sc">&amp;</span> passenger_count <span class="sc">&gt;</span> <span class="dv">0</span> <span class="sc">&amp;</span> </span>
+<span id="cb13-9"><a href=""></a>           trip_distance <span class="sc">&gt;</span> <span class="fl">0.25</span> <span class="sc">&amp;</span> fare_amount <span class="sc">&gt;</span> <span class="dv">0</span>) <span class="sc">|&gt;</span></span>
+<span id="cb13-10"><a href=""></a>  <span class="co"># Pass off to DuckDB</span></span>
+<span id="cb13-11"><a href=""></a>  <span class="fu">to_duckdb</span>() <span class="sc">|&gt;</span></span>
+<span id="cb13-12"><a href=""></a>  <span class="fu">group_by</span>(passenger_count) <span class="sc">|&gt;</span></span>
+<span id="cb13-13"><a href=""></a>  <span class="fu">mutate</span>(<span class="at">tip_pct =</span> tip_amount <span class="sc">/</span> fare_amount) <span class="sc">|&gt;</span></span>
+<span id="cb13-14"><a href=""></a>  <span class="fu">summarise</span>(<span class="at">fare_amount =</span> <span class="fu">mean</span>(fare_amount, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb13-15"><a href=""></a>            <span class="at">tip_amount =</span> <span class="fu">mean</span>(tip_amount, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb13-16"><a href=""></a>            <span class="at">tip_pct =</span> <span class="fu">mean</span>(tip_pct, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb13-17"><a href=""></a>  <span class="fu">arrange</span>(passenger_count) <span class="sc">|&gt;</span></span>
+<span id="cb13-18"><a href=""></a>  <span class="fu">collect</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<p>DuckDB Labs | Learn how <a href="https://duckdb.org/2021/12/03/duck-arrow.html">DuckDB quacks Arrow</a></p>
+</div>
+</section>
+<section id="duckdb-streaming" class="slide level2">
+<h2>DuckDB Streaming</h2>
+<div class="panel-tabset">
+<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">Python</a></li><li><a href="#tabset-2-2">R</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href=""></a><span class="co"># Reads dataset partitioning it in year/month folder</span></span>
+<span id="cb14-2"><a href=""></a>nyc_dataset <span class="op">=</span> ds.dataset(<span class="st">'nyc-taxi/'</span>, partitioning<span class="op">=</span>[<span class="st">"year"</span>, <span class="st">"month"</span>])</span>
+<span id="cb14-3"><a href=""></a></span>
+<span id="cb14-4"><a href=""></a><span class="co"># Gets Database Connection</span></span>
+<span id="cb14-5"><a href=""></a>con <span class="op">=</span> duckdb.<span class="ex">connect</span>()</span>
+<span id="cb14-6"><a href=""></a></span>
+<span id="cb14-7"><a href=""></a>query <span class="op">=</span> con.execute(<span class="st">"SELECT * FROM nyc_dataset"</span>)</span>
+<span id="cb14-8"><a href=""></a></span>
+<span id="cb14-9"><a href=""></a><span class="co"># DuckDB's queries can now produce a Record Batch Reader</span></span>
+<span id="cb14-10"><a href=""></a>record_batch_reader <span class="op">=</span> query.fetch_record_batch()</span>
+<span id="cb14-11"><a href=""></a></span>
+<span id="cb14-12"><a href=""></a><span class="co"># Which means we can stream the whole query per batch.</span></span>
+<span id="cb14-13"><a href=""></a><span class="co"># This retrieves the first batch</span></span>
+<span id="cb14-14"><a href=""></a>chunk <span class="op">=</span> record_batch_reader.read_next_batch()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-2-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href=""></a><span class="co"># Reads dataset partitioning it in year/month folder</span></span>
+<span id="cb15-2"><a href=""></a>nyc_dataset <span class="ot">=</span> <span class="fu">open_dataset</span>(<span class="st">"nyc-taxi/"</span>, <span class="at">partitioning =</span> <span class="fu">c</span>(<span class="st">"year"</span>, <span class="st">"month"</span>))</span>
+<span id="cb15-3"><a href=""></a></span>
+<span id="cb15-4"><a href=""></a><span class="co"># Gets Database Connection</span></span>
+<span id="cb15-5"><a href=""></a>con <span class="ot">&lt;-</span> <span class="fu">dbConnect</span>(duckdb<span class="sc">::</span><span class="fu">duckdb</span>())</span>
+<span id="cb15-6"><a href=""></a></span>
+<span id="cb15-7"><a href=""></a><span class="co"># We can use the same function as before to register our arrow dataset</span></span>
+<span id="cb15-8"><a href=""></a>duckdb<span class="sc">::</span><span class="fu">duckdb_register_arrow</span>(con, <span class="st">"nyc"</span>, nyc_dataset)</span>
+<span id="cb15-9"><a href=""></a></span>
+<span id="cb15-10"><a href=""></a>res <span class="ot">&lt;-</span> <span class="fu">dbSendQuery</span>(con, <span class="st">"SELECT * FROM nyc"</span>, <span class="at">arrow =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb15-11"><a href=""></a></span>
+<span id="cb15-12"><a href=""></a><span class="co"># DuckDB's queries can now produce a Record Batch Reader</span></span>
+<span id="cb15-13"><a href=""></a>record_batch_reader <span class="ot">&lt;-</span> duckdb<span class="sc">::</span><span class="fu">duckdb_fetch_record_batch</span>(res)</span>
+<span id="cb15-14"><a href=""></a></span>
+<span id="cb15-15"><a href=""></a><span class="co"># Which means we can stream the whole query per batch.</span></span>
+<span id="cb15-16"><a href=""></a><span class="co"># This retrieves the first batch</span></span>
+<span id="cb15-17"><a href=""></a>cur_batch <span class="ot">&lt;-</span> record_batch_reader<span class="sc">$</span><span class="fu">read_next_batch</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<p>DuckDB Labs | Learn how <a href="https://duckdb.org/2021/12/03/duck-arrow.html">DuckDB quacks Arrow</a></p>
+</div>
+</section>
+<section id="duckdb-streaming-speed" class="slide level2">
+<h2>DuckDB Streaming Speed</h2>
+<div class="panel-tabset">
+<ul id="tabset-3" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-3-1">DuckDB</a></li><li><a href="#tabset-3-2">Pandas</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href=""></a><span class="co"># DuckDB via Python</span></span>
+<span id="cb16-2"><a href=""></a><span class="co"># Open dataset using year,month folder partition</span></span>
+<span id="cb16-3"><a href=""></a>nyc <span class="ot">=</span> <span class="fu">ds.dataset</span>(<span class="st">'nyc-taxi/'</span>, <span class="at">partitioning=</span>[<span class="st">"year"</span>, <span class="st">"month"</span>])</span>
+<span id="cb16-4"><a href=""></a></span>
+<span id="cb16-5"><a href=""></a><span class="co"># Get database connection</span></span>
+<span id="cb16-6"><a href=""></a>con <span class="ot">=</span> <span class="fu">duckdb.connect</span>()</span>
+<span id="cb16-7"><a href=""></a></span>
+<span id="cb16-8"><a href=""></a><span class="co"># Run query that selects part of the data</span></span>
+<span id="cb16-9"><a href=""></a>query <span class="ot">=</span> <span class="fu">con.execute</span>(<span class="st">"SELECT total_amount, passenger_count,year FROM nyc where total_amount &gt; 100 and year &gt; 2014"</span>)</span>
+<span id="cb16-10"><a href=""></a></span>
+<span id="cb16-11"><a href=""></a><span class="co"># Create Record Batch Reader from Query Result.</span></span>
+<span id="cb16-12"><a href=""></a><span class="co"># "fetch_record_batch()" also accepts an extra parameter related to the desired produced chunk size.</span></span>
+<span id="cb16-13"><a href=""></a>record_batch_reader <span class="ot">=</span> <span class="fu">query.fetch_record_batch</span>()</span>
+<span id="cb16-14"><a href=""></a></span>
+<span id="cb16-15"><a href=""></a><span class="co"># Retrieve all batch chunks</span></span>
+<span id="cb16-16"><a href=""></a>chunk <span class="ot">=</span> <span class="fu">record_batch_reader.read_next_batch</span>()</span>
+<span id="cb16-17"><a href=""></a><span class="cf">while</span> <span class="fu">len</span>(chunk) <span class="sc">&gt;</span> <span class="dv">0</span><span class="sc">:</span></span>
+<span id="cb16-18"><a href=""></a>    chunk <span class="ot">=</span> <span class="fu">record_batch_reader.read_next_batch</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-3-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href=""></a><span class="co"># We must exclude one of the columns of the NYC dataset due to an unimplemented cast in Arrow</span></span>
+<span id="cb17-2"><a href=""></a>working_columns <span class="op">=</span> [<span class="st">"vendor_id"</span>,<span class="st">"pickup_at"</span>,<span class="st">"dropoff_at"</span>,<span class="st">"passenger_count"</span>,<span class="st">"trip_distance"</span>,<span class="st">"pickup_longitude"</span>,</span>
+<span id="cb17-3"><a href=""></a>    <span class="st">"pickup_latitude"</span>,<span class="st">"store_and_fwd_flag"</span>,<span class="st">"dropoff_longitude"</span>,<span class="st">"dropoff_latitude"</span>,<span class="st">"payment_type"</span>,</span>
+<span id="cb17-4"><a href=""></a>    <span class="st">"fare_amount"</span>,<span class="st">"extra"</span>,<span class="st">"mta_tax"</span>,<span class="st">"tip_amount"</span>,<span class="st">"tolls_amount"</span>,<span class="st">"total_amount"</span>,<span class="st">"year"</span>, <span class="st">"month"</span>]</span>
+<span id="cb17-5"><a href=""></a></span>
+<span id="cb17-6"><a href=""></a><span class="co"># Open dataset using year,month folder partition</span></span>
+<span id="cb17-7"><a href=""></a>nyc_dataset <span class="op">=</span> ds.dataset(<span class="bu">dir</span>, partitioning<span class="op">=</span>[<span class="st">"year"</span>, <span class="st">"month"</span>])</span>
+<span id="cb17-8"><a href=""></a><span class="co"># Generate a scanner to skip problematic column</span></span>
+<span id="cb17-9"><a href=""></a>dataset_scanner <span class="op">=</span> nyc_dataset.scanner(columns<span class="op">=</span>working_columns)</span>
+<span id="cb17-10"><a href=""></a></span>
+<span id="cb17-11"><a href=""></a><span class="co"># Materialize dataset to an Arrow Table</span></span>
+<span id="cb17-12"><a href=""></a>nyc_table <span class="op">=</span> dataset_scanner.to_table()</span>
+<span id="cb17-13"><a href=""></a></span>
+<span id="cb17-14"><a href=""></a><span class="co"># Generate Dataframe from Arow Table</span></span>
+<span id="cb17-15"><a href=""></a>nyc_df <span class="op">=</span> nyc_table.to_pandas()</span>
+<span id="cb17-16"><a href=""></a></span>
+<span id="cb17-17"><a href=""></a><span class="co"># Apply Filter</span></span>
+<span id="cb17-18"><a href=""></a>filtered_df <span class="op">=</span> nyc_df[</span>
+<span id="cb17-19"><a href=""></a>    (nyc_df.total_amount <span class="op">&gt;</span> <span class="dv">100</span>) <span class="op">&amp;</span></span>
+<span id="cb17-20"><a href=""></a>    (nyc_df.year <span class="op">&gt;</span><span class="dv">2014</span>)]</span>
+<span id="cb17-21"><a href=""></a></span>
+<span id="cb17-22"><a href=""></a><span class="co"># Apply Projection</span></span>
+<span id="cb17-23"><a href=""></a>res <span class="op">=</span> filtered_df[[<span class="st">"total_amount"</span>, <span class="st">"passenger_count"</span>,<span class="st">"year"</span>]]</span>
+<span id="cb17-24"><a href=""></a></span>
+<span id="cb17-25"><a href=""></a><span class="co"># Transform Result back to an Arrow Table</span></span>
+<span id="cb17-26"><a href=""></a>new_table <span class="op">=</span> pa.Table.from_pandas(res)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<p>DuckDB Labs | Learn how <a href="https://duckdb.org/2021/12/03/duck-arrow.html">DuckDB quacks Arrow</a></p>
+</div>
+</section>
+<section id="duckdb-streaming-speed-1" class="slide level2">
+<h2>DuckDB Streaming Speed</h2>
+<ul>
+<li>Pandas runtime was 146.91 seconds</li>
+</ul>
+<div class="fragment">
+<ul>
+<li>DuckDB runtime was <span class="fragment highlight-green">0.05 seconds</span></li>
+</ul>
+</div>
+<div class="fragment">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/minion.gif" class="quarto-figure quarto-figure-center" style="width:60.0%"></p>
+</figure>
+</div>
+<div class="footer">
+<p>DuckDB Labs | Learn how <a href="https://duckdb.org/2021/12/03/duck-arrow.html">DuckDB quacks Arrow</a></p>
+</div>
+</div>
+</section>
+<section id="for-r-users-duckplyr" class="slide level2">
+<h2>For R users: duckplyr</h2>
+<ul>
+<li><code>duckplyr</code>, from DuckDB Labs, offers 1:1 compatibility with <code>dplyr</code> functions but there are some caveats:
+<ul>
+<li>Factor columns, nested lists, and nested tibbles are not <em>yet</em> supported</li>
+<li>To group data, use <code>dplyr</code>’s <code>summarize()</code> function with the <code>.by</code> argument as <code>group_by()</code> is not be supported</li>
+</ul></li>
+</ul>
+<div class="footer">
+<p>duckplyr | Learn more at <a href="https://duckdblabs.com/" class="uri">https://duckdblabs.com/</a></p>
+</div>
+</section>
+<section id="benchmarking-analysis" class="slide level2">
+<h2>Benchmarking Analysis</h2>
+<ul>
+<li>Arrow and DuckDB really stood out for fast manipulation of data using <code>dplyr</code> syntax</li>
+<li>The code below shows the basic transformation done to the data using <code>dplyr</code>, <code>arrow</code>, <code>duckdb</code>, <code>duckplyr</code>, and <code>polars</code></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18" data-code-line-numbers="1-7|7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href=""></a>nyc_taxi <span class="sc">|&gt;</span> </span>
+<span id="cb18-2"><a href=""></a>    dplyr<span class="sc">::</span><span class="fu">filter</span>(passenger_count <span class="sc">&gt;</span> <span class="dv">1</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb18-3"><a href=""></a>    dplyr<span class="sc">::</span><span class="fu">group_by</span>(year) <span class="sc">|&gt;</span> </span>
+<span id="cb18-4"><a href=""></a>    dplyr<span class="sc">::</span><span class="fu">summarise</span>(<span class="at">all_trips =</span> <span class="fu">n</span>(),</span>
+<span id="cb18-5"><a href=""></a>                     <span class="at">shared_trips =</span> <span class="fu">sum</span>(passenger_count, <span class="at">na.rm =</span> T)) <span class="sc">|&gt;</span></span>
+<span id="cb18-6"><a href=""></a>    dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">pct_shared =</span> shared_trips <span class="sc">/</span> all_trips <span class="sc">*</span> <span class="dv">100</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb18-7"><a href=""></a>    dplyr<span class="sc">::</span><span class="fu">collect</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>The ending <code>collect()</code> writes the lazy / scanned data back to a df</li>
+</ul>
+<div class="footer">
+<p>DuckDB Labs | Learn more at <a href="https://duckdblabs.com/" class="uri">https://duckdblabs.com/</a></p>
+</div>
+</section>
+<section id="benchmark-1-million-rows" class="slide level2">
+<h2>Benchmark: 1 million rows</h2>
 
+<img data-src="images/benchmark_1000000.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p>DuckDB Labs | Learn more at <a href="https://duckdblabs.com/" class="uri">https://duckdblabs.com/</a></p>
+</div>
+</section>
+<section id="benchmark-10-million-rows" class="slide level2">
+<h2>Benchmark: 10 million rows</h2>
+
+<img data-src="images/benchmark_10000000.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p>DuckDB Labs | Learn more at <a href="https://duckdblabs.com/" class="uri">https://duckdblabs.com/</a></p>
+</div>
+</section>
+<section id="benchmark-100-million-rows" class="slide level2">
+<h2>Benchmark: 100 million rows</h2>
+
+<img data-src="images/benchmark_100000000.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p>DuckDB Labs | Learn more at <a href="https://duckdblabs.com/" class="uri">https://duckdblabs.com/</a></p>
+</div>
+</section>
+<section id="benchmark-500-million-rows" class="slide level2">
+<h2>Benchmark: 500 million rows</h2>
+
+<img data-src="images/benchmark_500000000.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p>DuckDB Labs | Learn more at <a href="https://duckdblabs.com/" class="uri">https://duckdblabs.com/</a></p>
+</div>
+</section>
+<section id="section-15" class="slide level2">
+<h2></h2>
+
+<img data-src="images/wrap_it_up.gif" class="quarto-figure quarto-figure-center r-stretch"></section></section>
+<section>
+<section id="quarto" class="title-slide slide level1 center" data-background-color="#119BFE">
+<h1>Quarto</h1>
+
+</section>
+<section id="section-16" class="slide level2 center" data-background-color="#119BFE">
+<h2></h2>
+<div class="r-fit-text">
+<p>Just to clarify…</p>
+</div>
+</section>
+<section id="section-17" class="slide level2 center" data-background-color="#119BFE">
+<h2></h2>
+<div class="r-fit-text">
+<p>It’s <em>Quarto</em>.</p>
+</div>
+<div class="fragment">
+<div class="r-fit-text">
+<p>Q-U-A-R-T-O.</p>
+</div>
+</div>
+</section>
+<section id="section-18" class="slide level2 center" data-background-color="#119BFE">
+<h2></h2>
+<div class="r-fit-text">
+<p>Not #4 in Spanish (or “cuatro”).</p>
+</div>
+</section>
+<section id="quarto-presentations" class="slide level2">
+<h2>Quarto Presentations</h2>
+<p>These web slides were built with <a href="https://quarto.org/">Quarto</a> and this section was copied almost entirely from Quarto’s Reveal.js demo documentation</p>
+<div class="fragment">
+<p>The next few slides cover what you can do with Quarto and <a href="https://revealjs.com">Reveal.js</a> including:</p>
+<ul>
+<li>Presenting code and LaTeX equations</li>
+<li>Rendering code chunk computations in slide output</li>
+<li>Fancy transitions, animations, and code windows</li>
+</ul>
+<div class="footer">
+<p>Quarto | Learn more on Quarto’s Reveal.js <a href="https://github.com/quarto-dev/quarto-web/blob/main/docs/presentations/revealjs/demo/index.qmd">demo presentation</a></p>
+</div>
+</div>
+</section>
+<section id="pretty-code" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Pretty Code</h2>
+<ul>
+<li>Over 20 syntax highlighting themes available</li>
+<li>Default theme optimized for accessibility</li>
+</ul>
+<div class="sourceCode" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb19-1" class="hljs-ln-code"><a href=""></a><span class="co"># Define a server for the Shiny app</span></span>
+<span id="cb19-2" class="hljs-ln-code"><a href=""></a><span class="cf">function</span>(input, output) {</span>
+<span id="cb19-3" class="hljs-ln-code"><a href=""></a>  </span>
+<span id="cb19-4" class="hljs-ln-code"><a href=""></a>  <span class="co"># Fill in the spot we created for a plot</span></span>
+<span id="cb19-5" class="hljs-ln-code"><a href=""></a>  output<span class="sc">$</span>phonePlot <span class="ot">&lt;-</span> <span class="fu">renderPlot</span>({</span>
+<span id="cb19-6" class="hljs-ln-code"><a href=""></a>    <span class="co"># Render a barplot</span></span>
+<span id="cb19-7" class="hljs-ln-code"><a href=""></a>  })</span>
+<span id="cb19-8" class="hljs-ln-code"><a href=""></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="footer">
+<p>Quarto | <a href="https://quarto.org/docs/output-formats/html-code.html#highlighting">Syntax Highlighting</a></p>
+</div>
+</section>
+<section id="code-animations" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Code Animations</h2>
+<ul>
+<li>Over 20 syntax highlighting themes available</li>
+<li>Default theme optimized for accessibility</li>
+</ul>
+<div class="sourceCode" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb20-1" class="hljs-ln-code"><a href=""></a><span class="co"># Define a server for the Shiny app</span></span>
+<span id="cb20-2" class="hljs-ln-code"><a href=""></a><span class="cf">function</span>(input, output) {</span>
+<span id="cb20-3" class="hljs-ln-code"><a href=""></a>  </span>
+<span id="cb20-4" class="hljs-ln-code"><a href=""></a>  <span class="co"># Fill in the spot we created for a plot</span></span>
+<span id="cb20-5" class="hljs-ln-code"><a href=""></a>  output<span class="sc">$</span>phonePlot <span class="ot">&lt;-</span> <span class="fu">renderPlot</span>({</span>
+<span id="cb20-6" class="hljs-ln-code"><a href=""></a>    <span class="co"># Render a barplot</span></span>
+<span id="cb20-7" class="hljs-ln-code"><a href=""></a>    <span class="fu">barplot</span>(WorldPhones[,input<span class="sc">$</span>region]<span class="sc">*</span><span class="dv">1000</span>, </span>
+<span id="cb20-8" class="hljs-ln-code"><a href=""></a>            <span class="at">main=</span>input<span class="sc">$</span>region,</span>
+<span id="cb20-9" class="hljs-ln-code"><a href=""></a>            <span class="at">ylab=</span><span class="st">"Number of Telephones"</span>,</span>
+<span id="cb20-10" class="hljs-ln-code"><a href=""></a>            <span class="at">xlab=</span><span class="st">"Year"</span>)</span>
+<span id="cb20-11" class="hljs-ln-code"><a href=""></a>  })</span>
+<span id="cb20-12" class="hljs-ln-code"><a href=""></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="footer">
+<p>Quarto | <a href="https://quarto.org/docs/presentations/revealjs/advanced.html#code-animations">Code Animations</a></p>
+</div>
+</section>
+<section id="line-highlighting" class="slide level2">
+<h2>Line Highlighting</h2>
+<ul>
+<li>Highlight specific lines for emphasis</li>
+<li>Incrementally highlight additional lines</li>
+</ul>
+<div class="sourceCode" id="cb21" data-code-line-numbers="4-5|7|10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href=""></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb21-2"><a href=""></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb21-3"><a href=""></a></span>
+<span id="cb21-4"><a href=""></a>r <span class="op">=</span> np.arange(<span class="dv">0</span>, <span class="dv">2</span>, <span class="fl">0.01</span>)</span>
+<span id="cb21-5"><a href=""></a>theta <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> np.pi <span class="op">*</span> r</span>
+<span id="cb21-6"><a href=""></a>fig, ax <span class="op">=</span> plt.subplots(subplot_kw<span class="op">=</span>{<span class="st">'projection'</span>: <span class="st">'polar'</span>})</span>
+<span id="cb21-7"><a href=""></a>ax.plot(theta, r)</span>
+<span id="cb21-8"><a href=""></a>ax.set_rticks([<span class="fl">0.5</span>, <span class="dv">1</span>, <span class="fl">1.5</span>, <span class="dv">2</span>])</span>
+<span id="cb21-9"><a href=""></a>ax.grid(<span class="va">True</span>)</span>
+<span id="cb21-10"><a href=""></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="footer">
+<p>Quarto | <a href="https://quarto.org/docs/presentations/revealjs/#line-highlighting">Line Highlighting</a></p>
+</div>
+</section>
+<section id="counters" class="slide level2">
+<h2>Counters</h2>
+<p>Great for training purposes or when you’ve got a time limit</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href=""></a><span class="co"># YOUR TURN! Complete the below </span></span>
+<span id="cb22-2"><a href=""></a><span class="co"># dplyr pipeline to group by and</span></span>
+<span id="cb22-3"><a href=""></a><span class="co"># summarize the data set</span></span>
+<span id="cb22-4"><a href=""></a></span>
+<span id="cb22-5"><a href=""></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb22-6"><a href=""></a><span class="fu">data</span>(<span class="at">package =</span> <span class="st">"ggplot2"</span>, <span class="st">"diamonds"</span>)</span>
+<span id="cb22-7"><a href=""></a></span>
+<span id="cb22-8"><a href=""></a>diamonds <span class="sc">|&gt;</span> </span>
+<span id="cb22-9"><a href=""></a>  <span class="er">&lt;</span>your code here<span class="sc">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="cell">
+<details class="code-fold">
+<summary>See {countdown} code</summary>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href=""></a><span class="fu">library</span>(countdown)</span>
+<span id="cb23-2"><a href=""></a><span class="fu">countdown</span>(</span>
+<span id="cb23-3"><a href=""></a>  <span class="at">minutes =</span> <span class="dv">0</span>, </span>
+<span id="cb23-4"><a href=""></a>  <span class="at">seconds =</span> <span class="dv">10</span>,</span>
+<span id="cb23-5"><a href=""></a>  <span class="at">play_sound =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb23-6"><a href=""></a>  <span class="at">color_border =</span> <span class="st">"#1A4064"</span>,</span>
+<span id="cb23-7"><a href=""></a>  <span class="at">color_text =</span> <span class="st">"#76AADB"</span>,</span>
+<span id="cb23-8"><a href=""></a>  <span class="at">font_size =</span> <span class="st">"3em"</span></span>
+<span id="cb23-9"><a href=""></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+</div></div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_97122cc4" data-update-every="1" data-play-sound="true" tabindex="0" style="right:55%;bottom:5%;font-size:3em;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">00</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">10</span></code>
+</div>
+</div>
+</div>
+<div class="footer">
+<p>Quarto | Learn more about the <a href="https://pkg.garrickadenbuie.com/countdown/">countdown</a> package</p>
+</div>
+</section>
+<section id="section-19" class="slide level2 center" data-background-color="#FF6B4D">
+<h2></h2>
+<div class="r-fit-text">
+<p><em>Thank you!</em> 🤍</p>
+</div>
 </section></section>
+<section id="questions" class="title-slide slide level1 center" data-background-color="#119BFE">
+<h1>questions?</h1>
+<p><br><br></p>
+<p>Connect with me!</p>
+<ul>
+<li>Personal Site: <a href="https://www.javierorracadeatcu.com/" style="color: black">JavierOrracaDeatcu.com</a></li>
+<li>LinkedIn: <a href="https://www.linkedin.com/in/orraca/" style="color: black">linkedin.com/in/orraca</a></li>
+</ul>
+
+</section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
