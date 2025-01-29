@@ -1432,13 +1432,16 @@
   },
   "files": {
     "_brand.yml": {
-      "checksum": "fb5f76140bae4e1b4d6cba7a3569b247"
+      "checksum": "75cb554b1f2b54bc635a508c257b3e21"
     },
     "big-data-tiny-laptop.html": {
-      "checksum": "7cfd9fbc144c63f0bbae2d86d271509d"
+      "checksum": "becd54102ba29b5e089b74fe4ad43394"
     },
     "big-data-tiny-laptop.qmd": {
-      "checksum": "924b0de775b00b36db0de6842e0405d9"
+      "checksum": "954593137fa5501430eb9a544ecaa227"
+    },
+    "images/about_polars.png": {
+      "checksum": "5fcf2ad255a0340ee608c7d1f2674578"
     },
     "images/apache_arrow.png": {
       "checksum": "6f585b4c9fc6684f2802cb3a09777e74"
@@ -1458,11 +1461,17 @@
     "images/benchmark_100000000.png": {
       "checksum": "be01e2259a166749b22737e7cb926b59"
     },
+    "images/benchmark_1100000000.png": {
+      "checksum": "dc54c5b8618c1f66e5f30aed9261214c"
+    },
     "images/benchmark_500000000.png": {
       "checksum": "548c34f08d7b7b86b487e22935cf6f2f"
     },
     "images/bloomreach_site.png": {
       "checksum": "692b5cc329d124f99737aba4966a37df"
+    },
+    "images/command_palette.png": {
+      "checksum": "02b527f27466504e19e9455d43506517"
     },
     "images/connect_concept-map.png": {
       "checksum": "4679e297a9756e334c337a5ffdeeef48"
@@ -1507,7 +1516,7 @@
       "checksum": "f70d3ed3b556754ccd22fe8e953ffae6"
     },
     "images/plot_arrow_summarise.png": {
-      "checksum": "bfd55d6415f752346af5182b1177988b"
+      "checksum": "c5dc30ea393b5166e285714bd175201b"
     },
     "images/pokemon.gif": {
       "checksum": "2835c2598553a848ee18c25eb7eaa072"

@@ -510,24 +510,24 @@ Image: © Ander Fernández Jauregui | Learn about Project Jupyter's [Jupyter Not
 
 - There are many programming languages that can be used for data analysis, [but Python and R are the de facto standards for data science]{.fragment .highlight-green}
 
-## {.center background-color='{{< brand color yellow >}}'}
+
+## {background-color='{{< brand color yellow >}}'}
 
 ::: r-fit-text
 So, why isn't there
 :::
 
-## {.center background-color='{{< brand color yellow >}}'}
-
 ::: r-fit-text
 *one tool*
 :::
 
+
 ## {.center background-color='{{< brand color yellow >}}'}
 
 ::: r-fit-text
-that blends the best<br>
-features from all IDEs?
+to rule them all!?
 :::
+
 
 ##
 
@@ -597,7 +597,7 @@ Getting Started with Positron | [Machine Prerequisites](https://positron.posit.c
 
 - **Python** prereqs:
   <br><br>
-  - The Posit team recommends [pyenv](https://github.com/pyenv/pyenv) to manage Python versions, and actively supported Python versions from 3.8 to 3.12 are fully supported on Positron
+  - The Posit team recommends [pyenv](https://github.com/pyenv/pyenv) to manage Python versions, and Python versions from 3.8 to 3.12 are actively supported on Positron
   <br><br>
   - For Linux users, install the SQLite system libraries (`sqlite-devel` or `libsqlite3-dev`) ahead of time so `pyenv` can build your Python version(s) of choice
   <br><br>
@@ -647,6 +647,21 @@ Getting Started with Positron | [Machine Prerequisites](https://positron.posit.c
 
 ::: footer
 Getting Started with Positron | [Interpreter Selection](https://positron.posit.co/interpreters.html)
+:::
+
+
+## Key Bindings & Command Palette {.smaller}
+
+- Key bindings trigger actions by pressing a combination of keys
+- The key binding <kbd>Cmd</kbd>/<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> will bring up Positron's Command Palette
+- This lets you search and execute actions without needing to remember the key binding
+
+![](images/command_palette.png){width="75%" height="75%" fig-align="center"}
+
+<br>
+
+::: footer
+Learn more on Emil Hvitfeldt's blog post [Positron: My Key Bindings](https://emilhvitfeldt.com/post/positron-key-bindings/)
 :::
 
 
@@ -906,14 +921,18 @@ Positron = Amazing.
 ## {.center background-color='{{< brand color peach >}}'}
 
 ::: r-fit-text
-But next,
+But next...
 :::
-
-## {.center background-color='{{< brand color peach >}}'}
 
 ::: r-fit-text
 let's talk about
 :::
+
+<!-- ## {.center background-color='{{< brand color peach >}}'}
+
+::: r-fit-text
+let's talk about
+::: -->
 
 ## {.center background-color='{{< brand color peach >}}'}
 
@@ -945,7 +964,7 @@ ETL 💨
 
 - **Apache Arrow**: An in-memory columnar format that lets data move quickly between systems and languages (like Python and R) and speeds up analytical tasks
 <br><br>
-- **DuckDB**: A lightweight, "in-process" SQL database that executes analytical queries very fast right inside your code - No separate server is needed and you can initialized in-line
+- **DuckDB**: An in-process SQL database management system focused on analytical query processing
 <br><br>
 - **Polars**: A modern DataFrame library with a multi-threaded query engine written in Rust that uses the Apache Arrow memory model under the hood
 <br><br>
@@ -1024,6 +1043,7 @@ Sys.setenv(NOT_CRAN = "true")
 # Install packages
 install.packages(c("arrow", "duckdb"))
 install.packages("polars", repos = "https://community.r-multiverse.org")
+install.packages("polarssql", repos = "https://rpolars.r-universe.dev")
 ```
 :::
 
@@ -1036,10 +1056,10 @@ Installation Guides: Apache Arrow ([Python](https://arrow.apache.org/docs/python
 
 ## Back to fast... *How fast?*
 
--   My personal laptop is a [MacBook Air with 24 GB RAM]{.fragment .highlight-green}
--   To test Arrow's capabilities, I read a [40 GB dataset]{.fragment .highlight-green} with more than [1.1 billion rows and 24 columns]{.fragment .highlight-green}
--   The `.parquet` dataset was partitioned by Year and Month (120 files)
--   Important to note that my laptop would not be able to load this object entirely into memory as a data.frame or tibble given my laptop's limited RAM
+- My personal laptop is a [MacBook Air with 24 GB RAM]{.fragment .highlight-green}
+- To test Arrow's capabilities, I read a [40 GB dataset]{.fragment .highlight-green} with more than [1.1 billion rows and 24 columns]{.fragment .highlight-green}
+- The `.parquet` dataset was partitioned by Year and Month (120 files)
+- Important to note that my laptop would not be able to load this object entirely into memory as a data.frame or tibble given my laptop's limited RAM
 
 ::: footer
 Arrow | Learn more at <https://arrow.apache.org/>
@@ -1120,7 +1140,6 @@ open_dataset("s3://voltrondata-labs-datasets/nyc-taxi") |>
 
 ::::
 
-
 ::: footer
 Arrow | Learn more at <https://arrow.apache.org/>
 :::
@@ -1151,7 +1170,7 @@ Arrow | Learn more at <https://arrow.apache.org/>
 
 ## Benchmarking Read Times
 
--   Once "locally" available, the 40GB, 1.1 billion row dataset (benchmarked 1,000 times) can be [read on average in 17ms]{.fragment .highlight-green}
+- Once "locally" available, the 40GB, 1.1 billion row dataset (benchmarked 1,000 times) can be [read on average in 17ms]{.fragment .highlight-green}
 
 ![](images/plot_arrow_read.png){width="55%" fig-align="center"}
 
@@ -1174,10 +1193,11 @@ nyc_taxi <- open_dataset(here::here("data/nyc-taxi"))
 bnch <- bench::mark(
   min_iterations = 100,
   arrow = nyc_taxi |> 
-    dplyr::group_by(year) |> 
-    dplyr::summarise(all_trips = n(),
-                     shared_trips = sum(passenger_count > 1, na.rm = T)) |>
-    dplyr::mutate(pct_shared = shared_trips / all_trips * 100) |> 
+    filter(payment_type %in% c("Credit card", "Cash")) |> 
+    group_by(payment_type) |> 
+    summarise(mean_fare = mean(fare_amount, na.rm = T),
+              mean_tip = mean(tip_amount, na.rm = T)) |> 
+    ungroup() |> 
     dplyr::collect()
 )
 
@@ -1190,7 +1210,7 @@ Arrow | [Arrow + dplyr compatibility](https://r4ds.hadley.nz/arrow.html)
 
 ## Benchmarking ETL
 
-- The results show the ETL pipeline [on average summarized 1.1 billion rows in 5.04s]{.fragment .highlight-green}, benchmarked over 100 iterations
+- The results show the ETL pipeline [on average summarized 1.1 billion rows in 9.5s]{.fragment .highlight-green}, benchmarked over 100 iterations
 
 ![](images/plot_arrow_summarise.png){width="55%" fig-align="center"}
 
@@ -1200,10 +1220,10 @@ Arrow | [Arrow + dplyr compatibility](https://r4ds.hadley.nz/arrow.html)
 
 ## Note for R's Tidyverse Users
 
--  Many functions from the tidyverse collections of packages have 1:1 compatibility with Arrow tables
--  However, sometimes you'll encounter a breaking point
--  Take this `stringr::str_replace_na()` example:
-
+- Many functions from the tidyverse collections of packages have 1:1 compatibility with Arrow tables
+- However, sometimes you'll encounter a breaking point
+- Take this `stringr::str_replace_na()` example:
+<br><br>
 ```{r}
 #| echo: true
 #| code-line-numbers: "1-4|3-4"
@@ -1215,7 +1235,7 @@ nyc_taxi |>
 
 . . .
 
--  Out of the box, Arrow does not support `stringr::str_replace_na()`
+- Out of the box, Arrow does not support `stringr::str_replace_na()`
 
 ::: footer
 Arrow | [Arrow + dplyr compatibility](https://r4ds.hadley.nz/arrow.html)
@@ -1241,9 +1261,9 @@ but wait!
 
 ## User Defined Functions
 
--   Arrow allows users to create and register User Defined Functions (or "UDFs") to the Arrow engine
--   Almost any function can be made Arrow-friendly by registering custom UDFs to the Arrow kernel
--   Let's learn how to register `stringr::str_replace_na()` with the Arrow kernel
+- Arrow allows users to create and register User Defined Functions (or "UDFs") to the Arrow engine
+- Almost any function can be made Arrow-friendly by registering custom UDFs to the Arrow kernel
+- Let's learn how to register `stringr::str_replace_na()` with the Arrow kernel
 
 ::: footer
 Arrow | Learn more about registering Arrow [User Defined Functions ("UDFs")](https://arrow.apache.org/docs/r/reference/register_scalar_function.html)
@@ -1251,7 +1271,7 @@ Arrow | Learn more about registering Arrow [User Defined Functions ("UDFs")](htt
 
 ## Registering UDFs
 
--   First, run `arrow::schema()` on your Arrow table to review the field name and data type pairs
+- First, run `arrow::schema()` on your Arrow table to review the field name and data type pairs
 
 ```{r}
 #| echo: true
@@ -1268,7 +1288,7 @@ arrow::schema(nyc_taxi)
 #> ...
 ```
 
--   Since I want to mutate the `vendor_name` field, I know I'll be working with an Arrow `string()` data type
+- Since I want to mutate the `vendor_name` field, I know I'll be working with an Arrow `string()` data type
 
 ::: footer
 Arrow | Learn more about registering Arrow [User Defined Functions ("UDFs")](https://arrow.apache.org/docs/r/reference/register_scalar_function.html)
@@ -1276,8 +1296,8 @@ Arrow | Learn more about registering Arrow [User Defined Functions ("UDFs")](htt
 
 ## Registering UDFs
 
--   Next, we'll use `arrow::register_scalar_function()`
--   Name your UDF `replace_arrow_nas`
+- Next, we'll use `arrow::register_scalar_function()`
+- Name your UDF `replace_arrow_nas`
 - If you're registering a tidyverse function, set `auto_convert = TRUE`
 
 ```{r}
@@ -1308,7 +1328,7 @@ Arrow | Learn more about registering Arrow [User Defined Functions ("UDFs")](htt
 
 ## Trying the UDF {auto-animate="true"}
 
--   Let's see if the registered `replace_arrow_nas()` Arrow UDF works...
+- Let's see if the registered `replace_arrow_nas()` Arrow UDF works...
 
 ```{r}
 #| echo: true
@@ -1326,7 +1346,7 @@ Arrow | Learn more about registering Arrow [User Defined Functions ("UDFs")](htt
 
 ## Trying the UDF {auto-animate="true"}
 
--   Let's see if the registered `replace_arrow_nas()` Arrow UDF works...
+- Let's see if the registered `replace_arrow_nas()` Arrow UDF works...
 
 ```{r}
 #| echo: true
@@ -1364,11 +1384,11 @@ Eevee can't believe it... "Wooooooooooow, Javi!"
 ## DuckDB {.smaller}
 
 <br><br>
--   [DuckDB Labs](https://duckdblabs.com/) created an in-line database management system, like a SQLite database engine, but optimized for distributed compute and optimized for larger-than-memory analysis
+- [DuckDB Labs](https://duckdblabs.com/) created an in-line database management system, like a SQLite database engine, but optimized for distributed compute and optimized for larger-than-memory analysis
 <br><br>
--   The `duckdb` package for Python offers a state-of-the-art optimizer that pushes down filters and projections directly into Arrow scans
+- The `duckdb` package for Python offers a state-of-the-art optimizer that pushes down filters and projections directly into Arrow scans
 <br><br>
--   As a result, only relevant columns and partitions will be read thus significantly accelerates query execution
+- As a result, only relevant columns and partitions will be read thus significantly accelerates query execution
 <br><br>
 - DuckDB comes with core and community extensions that expand the framework to, e.g., scan remote Databricks Unity Catalog tables without needing to spin up a Spark cluster
 
@@ -1379,114 +1399,86 @@ DuckDB Labs | Learn about [DuckDB](https://duckdb.org) and [DuckDB Extensions](h
 
 ## DuckDB Usage Basics
 
-::: panel-tabset
+:::: {.columns}
 
-## Python
+::: {.column width="49%"}
+
+*Python*
 
 ```{python}
 #| eval: false
 #| echo: true
 import duckdb
-import pyarrow as pa
-import pyarrow.dataset as ds
 
-# Open dataset using year,month folder partition
-nyc = ds.dataset('nyc-taxi/', partitioning=["year", "month"])
+# Connect to an in-memory DuckDB instance and scan
+# the Parquet data set to make a temp View
+con = duckdb.connect()
 
-# We transform the nyc dataset into a DuckDB relation
-nyc = duckdb.arrow(nyc)
+con.execute("""
+    CREATE VIEW nyc_taxi AS
+    SELECT * FROM read_parquet('data/nyc-taxi/**/*.parquet', hive_partitioning=true)
+""")
 
-# Run same query again
-nyc.filter("year > 2014 & passenger_count > 0 & trip_distance > 0.25 & fare_amount > 0")
-    .aggregate("SELECT AVG(fare_amount), AVG(tip_amount), AVG(tip_amount / fare_amount) as tip_pct","passenger_count").arrow()
+# Run your SQL query
+df = con.execute("""
+    SELECT 
+        payment_type,
+        AVG(fare_amount) AS mean_fare,
+        AVG(tip_amount)  AS mean_tip
+    FROM nyc_taxi
+    WHERE payment_type IN ('Credit card', 'Cash')
+    GROUP BY payment_type
+""").df()
+
+print(df)
 ```
+:::
 
-## R
+::: {.column width="2%"}
+:::
+
+::: {.column width="49%"}
+
+*R*
 
 ```{r}
 #| eval: false
 #| echo: true
 library(duckdb)
-library(arrow)
-library(dplyr)
 
-ds <- arrow::open_dataset("nyc-taxi", partitioning = c("year", "month"))
+# Connect to an in-memory DuckDB instance and scan
+# the Parquet data set to make a temp View
+con <- dbConnect(duckdb())
 
-ds |>
-  filter(year > 2014 & passenger_count > 0 & 
-           trip_distance > 0.25 & fare_amount > 0) |>
-  # Pass off to DuckDB
-  to_duckdb() |>
-  group_by(passenger_count) |>
-  mutate(tip_pct = tip_amount / fare_amount) |>
-  summarise(fare_amount = mean(fare_amount, na.rm = TRUE),
-            tip_amount = mean(tip_amount, na.rm = TRUE),
-            tip_pct = mean(tip_pct, na.rm = TRUE)) |>
-  arrange(passenger_count) |>
-  collect()
+dbExecute(con, "
+  CREATE VIEW nyc_taxi AS 
+  SELECT * FROM read_parquet('data/nyc-taxi/**/*.parquet', hive_partitioning = true)"
+)
+
+# Run your SQL query
+df <- dbGetQuery(con, "
+    SELECT 
+        payment_type,
+        AVG(fare_amount) AS mean_fare,
+        AVG(tip_amount)  AS mean_tip
+    FROM nyc_taxi
+    WHERE payment_type IN ('Credit card', 'Cash')
+    GROUP BY payment_type
+")
+
+print(df)
 ```
-
 :::
+
+::::
+
 
 ::: footer
 DuckDB Labs | Learn how [DuckDB quacks Arrow](https://duckdb.org/2021/12/03/duck-arrow.html)
 :::
 
-## DuckDB Streaming
 
-::: panel-tabset
-
-## Python
-
-```{python}
-#| eval: false
-#| echo: true
-# Reads dataset partitioning it in year/month folder
-nyc_dataset = ds.dataset('nyc-taxi/', partitioning=["year", "month"])
-
-# Gets Database Connection
-con = duckdb.connect()
-
-query = con.execute("SELECT * FROM nyc_dataset")
-
-# DuckDB's queries can now produce a Record Batch Reader
-record_batch_reader = query.fetch_record_batch()
-
-# Which means we can stream the whole query per batch.
-# This retrieves the first batch
-chunk = record_batch_reader.read_next_batch()
-```
-
-## R
-
-```{r}
-#| eval: false
-#| echo: true
-# Reads dataset partitioning it in year/month folder
-nyc_dataset = open_dataset("nyc-taxi/", partitioning = c("year", "month"))
-
-# Gets Database Connection
-con <- dbConnect(duckdb::duckdb())
-
-# We can use the same function as before to register our arrow dataset
-duckdb::duckdb_register_arrow(con, "nyc", nyc_dataset)
-
-res <- dbSendQuery(con, "SELECT * FROM nyc", arrow = TRUE)
-
-# DuckDB's queries can now produce a Record Batch Reader
-record_batch_reader <- duckdb::duckdb_fetch_record_batch(res)
-
-# Which means we can stream the whole query per batch.
-# This retrieves the first batch
-cur_batch <- record_batch_reader$read_next_batch()
-```
-:::
-
-::: footer
-DuckDB Labs | Learn how [DuckDB quacks Arrow](https://duckdb.org/2021/12/03/duck-arrow.html)
-:::
-
-## DuckDB Streaming Speed
+## DuckDB Streaming with Python
 
 ::: panel-tabset
 ## DuckDB
@@ -1552,13 +1544,18 @@ new_table = pa.Table.from_pandas(res)
 DuckDB Labs | Learn how [DuckDB quacks Arrow](https://duckdb.org/2021/12/03/duck-arrow.html)
 :::
 
-## DuckDB Streaming Speed
+## DuckDB Streaming Speed Bump {.smaller}
 
--   Pandas runtime was 146.91 seconds
+
+- The Python `pandas` runtime was 146.91 seconds
 
 . . .
 
--   DuckDB runtime was [0.05 seconds]{.fragment .highlight-green}
+- Python's `duckdb` runtime was 0.05 seconds
+
+. . .
+
+- Data manipulation [processing time was 2,900x faster]{.fragment .highlight-green} with `duckdb` vs `pandas`
 
 . . .
 
@@ -1570,32 +1567,49 @@ DuckDB Labs | Learn how [DuckDB quacks Arrow](https://duckdb.org/2021/12/03/duck
 
 ## For R users: duckplyr
 
--   `duckplyr`, from DuckDB Labs, offers 1:1 compatibility with `dplyr` functions but there are some caveats:
-    -   Factor columns, nested lists, and nested tibbles are not *yet* supported
-    -   To group data, use `dplyr`'s `summarize()` function with the `.by` argument as `group_by()` is not be supported
+- `duckplyr`, from DuckDB Labs, offers 1:1 compatibility with `dplyr` functions but there are some caveats:
+    - Factor columns, nested lists, and nested tibbles are not *yet* supported
+    - To group data, use `dplyr`'s `summarize()` function with the `.by` argument as `group_by()` is not be supported
 
 ::: footer
 duckplyr | Learn more at <https://duckdblabs.com/>
 :::
 
+## Polars
+
+![](images/about_polars.png){fig-align="center"}
+
+::: footer
+polars | Learn more at <https://pola.rs/>
+:::
+
+## Polars
+
+- While Arrow is primarily a memory format and data transfer standard, Polars is specifically designed for data analysis with lazy evaluation, DataFrame manipulations, and a consistent API across languages
+<br><br>
+- DuckDB is a full database system that excels at SQL queries and can integrate with both Arrow and Polars, but Polars focuses on in-memory processing and programmatic data manipulation
+
+::: footer
+polars | Learn more at <https://pola.rs/>
+:::
+
+
 ## Benchmarking Analysis
 
--   Arrow and DuckDB really stood out for fast manipulation of data using `dplyr` syntax
--   The code below shows the basic transformation done to the data using `dplyr`, `arrow`, `duckdb`, `duckplyr`, and `polars`
+- Arrow and DuckDB really stood out for fast manipulation of data using `dplyr` syntax
+- The SQL below shows the basic transformation done to the data using `dplyr`, `arrow`, `duckdb`, `duckplyr`, and `polars`
 
-```{r}
+```{sql}
 #| eval: false
 #| echo: true
-#| code-line-numbers: "1-7|7"
-nyc_taxi |> 
-    dplyr::filter(passenger_count > 1) |> 
-    dplyr::group_by(year) |> 
-    dplyr::summarise(all_trips = n(),
-                     shared_trips = sum(passenger_count, na.rm = T)) |>
-    dplyr::mutate(pct_shared = shared_trips / all_trips * 100) |> 
-    dplyr::collect()
+SELECT 
+    payment_type,
+    AVG(fare_amount) AS mean_fare,
+    AVG(tip_amount)  AS mean_tip
+FROM nyc_taxi
+WHERE payment_type IN ('Credit card', 'Cash')
+GROUP BY payment_type;
 ```
- - The ending `collect()` writes the lazy / scanned data back to a df
 
 ::: footer
 DuckDB Labs | Learn more at <https://duckdblabs.com/>
@@ -1628,6 +1642,14 @@ DuckDB Labs | Learn more at <https://duckdblabs.com/>
 ## Benchmark: 500 million rows
 
 ![](images/benchmark_500000000.png){fig-align="center"}
+
+::: footer
+DuckDB Labs | Learn more at <https://duckdblabs.com/>
+:::
+
+## Benchmark: 1.1 billion rows
+
+![](images/benchmark_1100000000.png){fig-align="center"}
 
 ::: footer
 DuckDB Labs | Learn more at <https://duckdblabs.com/>
@@ -1668,17 +1690,31 @@ Not #4 in Spanish (or "cuatro").
 :::
 
 
+## Quarto Presentations {.smaller}
+
+<br>
+
+- These web slides were built with [Quarto](https://quarto.org/)!
+<br><br>
+- [Quarto is an open-source scientific and technical publishing system]{.fragment .highlight-green} that can be used with Python, R, [Julia](https://julialang.org/), and [Observable JS](https://observablehq.com/@observablehq/observable-javascript)
+<br><br>
+- Similar to Jupyter Notebook `.ipynb` files (and in many ways, the successor to R Markdown `.Rmd`), Quarto lets you [develop static and interactive reproducible, production quality content]{.fragment .highlight-green} including articles, presentations, dashboards, websites, blogs, and books in HTML, PDF, MS Word, ePub, and more
+<br><br>
+- In addition to custom styling with `.css` or `.scss`, the new `_brand.yml` file can be used with your Quarto and Shiny projects to provide a unifying and portable branding framework  
+
+::: footer
+Learn more about [Quarto](https://quarto.org/) and [brand.yml](https://posit-dev.github.io/brand-yml/) | Posit blog post: [Unified branding across Posit tools with brand.yml](https://posit.co/blog/unified-branding-across-posit-tools-with-brand-yml/)
+:::
+
+
 ## Quarto Presentations
 
-These web slides were built with [Quarto](https://quarto.org/) and this section was copied almost entirely from Quarto's Reveal.js demo documentation
+- The following sections were copied almost entirely from Quarto's Reveal.js demo documentation
 
-. . .
-
-The next few slides cover what you can do with Quarto and [Reveal.js](https://revealjs.com) including:
-
--   Presenting code and LaTeX equations
--   Rendering code chunk computations in slide output
--   Fancy transitions, animations, and code windows
+- The next few slides cover what you can do with Quarto and [Reveal.js](https://revealjs.com) including:
+  - Presenting code and LaTeX equations
+  - Rendering code chunk computations in slide output
+  - Fancy transitions, animations, and code windows
 
 ::: footer
 Quarto | Learn more on Quarto's Reveal.js [demo presentation](https://github.com/quarto-dev/quarto-web/blob/main/docs/presentations/revealjs/demo/index.qmd)
@@ -1686,8 +1722,8 @@ Quarto | Learn more on Quarto's Reveal.js [demo presentation](https://github.com
 
 ## Pretty Code {auto-animate="true"}
 
--   Over 20 syntax highlighting themes available
--   Default theme optimized for accessibility
+- Over 20 syntax highlighting themes available
+- Default theme optimized for accessibility
 
 ``` r
 # Define a server for the Shiny app
@@ -1706,8 +1742,8 @@ Quarto | [Syntax Highlighting](https://quarto.org/docs/output-formats/html-code.
 
 ## Code Animations {auto-animate="true"}
 
--   Over 20 syntax highlighting themes available
--   Default theme optimized for accessibility
+- Over 20 syntax highlighting themes available
+- Default theme optimized for accessibility
 
 ``` r
 # Define a server for the Shiny app
@@ -1730,8 +1766,8 @@ Quarto | [Code Animations](https://quarto.org/docs/presentations/revealjs/advanc
 
 ## Line Highlighting
 
--   Highlight specific lines for emphasis
--   Incrementally highlight additional lines
+- Highlight specific lines for emphasis
+- Incrementally highlight additional lines
 
 ``` {.python code-line-numbers="4-5|7|10"}
 import numpy as np
@@ -1750,6 +1786,17 @@ plt.show()
 Quarto | [Line Highlighting](https://quarto.org/docs/presentations/revealjs/#line-highlighting)
 :::
 
+## LaTeX Equations
+
+- To include a LaTeX equation in Quarto, you would use the double dollar sign delimiters ($$) for a display equation on a separate line, like this:
+
+- `$$x = \frac{-b \pm \sqrt{(b^2 - 4ac)}}{2a}$$`
+
+$$x = \frac{-b \pm \sqrt{(b^2 - 4ac)}}{2a}$$
+
+::: footer
+Quarto | [LaTeX Equations](https://quarto.org/docs/output-formats/html-basics.html#latex-equations)
+:::
 
 ## Counters
 
