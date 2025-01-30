@@ -83,7 +83,7 @@ flowchart LR
 ::::
 
 ::: footer
-Personal Site: <https://www.javierorracadeatcu.com> | LinkedIn: <https://www.linkedin.com/in/orraca>
+[Personal Site](https://www.javierorracadeatcu.com/): JavierOrracaDeatcu.com | [LinkedIn](https://www.linkedin.com/in/orraca/): linkedin.com/in/orraca
 :::
 
 ## Career & Skills Progression
@@ -159,7 +159,7 @@ flowchart LR
 ::::
 
 ::: footer
-Personal Site: <https://www.javierorracadeatcu.com> | LinkedIn: <https://www.linkedin.com/in/orraca>
+[Personal Site](https://www.javierorracadeatcu.com/): JavierOrracaDeatcu.com | [LinkedIn](https://www.linkedin.com/in/orraca/): linkedin.com/in/orraca
 :::
 
 ## Career & Skills Progression
@@ -237,7 +237,7 @@ flowchart LR
 ::::
 
 ::: footer
-Personal Site: <https://www.javierorracadeatcu.com> | LinkedIn: <https://www.linkedin.com/in/orraca>
+[Personal Site](https://www.javierorracadeatcu.com/): JavierOrracaDeatcu.com | [LinkedIn](https://www.linkedin.com/in/orraca/): linkedin.com/in/orraca
 :::
 
 ## Career & Skills Progression
@@ -343,7 +343,7 @@ flowchart LR
 ::::
 
 ::: footer
-[Personal Site](https://www.javierorracadeatcu.com/): javierorracadeatcu.com | [LinkedIn](https://www.linkedin.com/in/orraca/): linkedin.com/in/orraca
+[Personal Site](https://www.javierorracadeatcu.com/): JavierOrracaDeatcu.com | [LinkedIn](https://www.linkedin.com/in/orraca/): linkedin.com/in/orraca
 :::
 
 
