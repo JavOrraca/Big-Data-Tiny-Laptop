@@ -879,9 +879,9 @@ Positron docs | [Connections Pane](https://positron.posit.co/connections-pane.ht
 Positron docs | [Run Interactive Apps](https://positron.posit.co/run-interactive-apps.html)
 :::
 
-## Learn More about Positron
+## Learn More about Positron 
 
-{{< video https://youtu.be/8uRcB34Hhsw?si=AlSxeWoMzx0g9QlL width="100%" height="75%" >}}
+{{< video https://youtu.be/8uRcB34Hhsw?si=AlSxeWoMzx0g9QlL width="100%" height="85%" >}}
 
 ::: footer
 Visit Posit's new [Positron website](https://positron.posit.co) and their [YouTube channel](https://www.youtube.com/@PositPBC/videos) to learn more
@@ -1374,7 +1374,7 @@ Arrow | Learn more about registering Arrow [User Defined Functions ("UDFs")](htt
 
 ##
 
-![](images/pokemon.gif)
+![](images/pokemon.gif){fig-align="center"}
 
 ::: footer
 Eevee can't believe it... "Wooooooooooow, Javi!"
