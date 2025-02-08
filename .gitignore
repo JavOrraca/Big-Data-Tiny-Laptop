@@ -45,5 +45,5 @@ po/*~
 # RStudio Connect folder
 rsconnect/
 
-
+# Annoying Apple folder elements
 .DS_Store
