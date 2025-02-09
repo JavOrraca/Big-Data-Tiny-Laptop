@@ -46,4 +46,5 @@ po/*~
 rsconnect/
 
 # Annoying Apple folder elements
-.DS_Store
+*.DS_Store
+/*.DS_Store
