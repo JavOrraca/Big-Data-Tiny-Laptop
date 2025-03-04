@@ -1,7 +1,7 @@
 ---
 format: 
   revealjs:
-    embed-resources: false
+    embed-resources: true
     theme: [brand, styling.scss]
     width: 1280
     height: 720
