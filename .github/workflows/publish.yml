@@ -17,10 +17,20 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Render and Publish
-        uses: quarto-dev/quarto-actions/publish@v2
+      - name: Render Quarto Presentation
+        run: |
+          quarto render index.qmd
+
+      - name: Create deployment directory
+        run: |
+          mkdir -p _site
+          cp -r index.html index_files/ images/ _site/
+          cp .nojekyll _brand.yml styling.scss _site/
+          cp *.png _site/ || true
+          cp manifest.json _site/ || true
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          target: gh-pages
-          render: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          folder: _site
+          branch: gh-pages
